@@ -1,0 +1,303 @@
+
+<!doctype html>
+<html>
+<head>
+<style>
+	body {
+		font-family: "Courier";
+	}
+  .clickable {
+    cursor: pointer;
+  }
+  .clickable::selection {
+    user-select: none;
+  }
+</style>
+<meta charset="utf-8">
+<title>eat eat eat</title>
+</head>
+
+<pre></pre>
+<pre class="clickable">
+<span onClick="openTab('Kitchen', this, 'white')">
+_________
+|  THE  |
+|       | 
+|KITCHEN|</span>
+_________<span id="defaultOpen" onClick="openTab('Store', this, 'white')">
+|  THE  |
+|       |
+| STORE |</span>
+_________<span onClick="openTab('Library', this, 'white')">
+|  THE  |
+|       |
+|LIBRARY|</span>
+</pre>
+<div id="status-tracker">
+<pre>Calories:<span class="calories">0</span></pre>
+<pre>Money: <span class="money">0</span></pre>
+</div>
+	<pre><button onClick="save()">save</button><button onClick="load();alert('succesfully loaded save!')">load (You already loaded your save)</button></pre>
+<div id="Kitchen" class="tabcontent">
+  <h1>The kitchen</h1>
+  <pre>You do not have the permission to make food. let's try to convince the chef!</pre>
+	<pre>       .--,--.
+       `.  ,.'
+        |___|
+        :o o:   O   
+       _`~^~'_  |    
+     /'   ^   `\=)
+   .'  _______ '~|
+   `( =|     |= /'
+       |     |
+       |_____|  
+~~~~~~~ ===== ~~~~~~~~</pre>
+	
+<pre>"Meh, i don't really think you can cook. you can help me by finding 2 ingredients, dorito and cheese! That should cure your boredom. wait, why did you come here?"
+<pre class="chefresponce1"></pre>
+<pre id="chefresponce2"></pre>
+<button onClick="chefbutton()">Let's go!</button></pre>
+<pre id="yay"></pre>
+</div>
+<div id="vault" class="tabcontent">
+  <pre>
+          _________________________________________________________
+       ||-------------------------------------------------------||
+       ||.--.    .-._   the vault            .----.             ||
+       |||==|____| |H|___            .---.___|""""|_____.--.___ ||
+       |||  |====| | |xxx|_          |+++|=-=|_  _|-=+=-|==|---|||
+       |||==|    | | |   | \         |   |   |_\/_|Black|  | ^ |||
+       |||  |    | | |   |\ \   .--. |   |=-=|_/\_|-=+=-|  | ^ |||
+       |||  |    | | |   |_\ \_( oo )|   |   |    |Magus|  | ^ |||
+       |||==|====| |H|xxx|  \ \ |''| |+++|=-=|""""|-=+=-|==|---|||
+       ||`--^----'-^-^---'   `-' ""  '---^---^----^-----^--^---^||
+       ||-------------------------------------------------------||
+       ||-------------------------------------------------------||
+       ||               ___                   .-.__<span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true; founddorito();document.querySelector('.dorito').style = 'display: hidden;'">.-----.</span> .---.||
+       ||              |===| .---.   __   .---| |XX<span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true; founddorito();document.querySelector('.dorito').style = 'display: hidden;'">| (*) |</span>_|^^^|||
+       ||         ,  /(|   |_|III|__|''|__|:x:|=|  <span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true; founddorito();document.querySelector('.dorito').style = 'display: hidden;'">|     |</span>=| Q |||
+       ||      _a'{ / (|===|+|   |++|  |==|   | |  <span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true; founddorito();document.querySelector('.dorito').style = 'display: hidden;'">| DOR |</span> | R |||
+       ||      '/\\/ _(|===|-|   |  |''|  |:x:|=|  <span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true; founddorito();document.querySelector('.dorito').style = 'display: hidden;'">| ITO |</span> | Y |||
+       ||_____  -\{___(|   |-|   |  |  |  |   | |  |     | | Z |||
+       ||       _(____)|===|+|[I]|DK|''|==|:x:|=|XX| (*) |=|^^^|||
+       ||              `---^-^---^--^--'--^---^-^--^-----^-^---^||
+       ||-------------------------------------------------------||
+       ||_______________________________________________________||
+  
+  </pre>
+</div>
+<div id="pizzainformation" class="tabcontent">
+ <pre>
+ <h1>Pizza</h1>
+                                    ._
+                                   ,(  `-.
+                                 ,': `.   `.
+                               ,` *   `-.   \
+                             ,'  ` :+  = `.  `.
+                           ,~  (o):  .,   `.  `.
+                         ,'  ; :   ,(__) x;`.  ;
+                       ,'  :'  itz  ;  ; ; _,-'
+                     .'O ; = _' C ; ;'_,_ ;
+                   ,;  _;   ` : ;'_,-'   i'
+                 ,` `;(_)  0 ; ','       :
+               .';6     ; ' ,-'~
+             ,' Q  ,  ;',-.'
+           ,( :` ; _,-'~  ;
+         ,~.`c _','
+       .';^_,-' ~
+     ,'_;-''
+    ,,~
+    i'
+    :
+	pizzas are known how it's cheesy, and delicious taste and look. but expert cknologists say that pizza are more important then that. 
+	no  cknologists know how they are more important in other ways, but legend says that there is a ancient scroll that is hidden in the 
+	unknown regions of the cknaria dessert that may contain the answer. you need a world map to get there.<button onClick="openTab('Store', this, 'white')">back to the store</button>
+ 
+ </pre>
+</div>
+<div id="Library" class="tabcontent">
+	
+	<pre>
+	
+	   <br>
+<span id="librarianhello">"Hello, i'm the librarian. how can i help you?"</span>
+	 ______________________________________________________
+    |____________________________________________________|    |
+    | __     __   ____   ___ ||  ____    ____     _  __  |    |
+    ||  |__ |--|_| || |_|   |||_|**|*|__|+|+||___| ||  | |    |
+    ||==|^^||--| |=||=| |=*=||| |~~|~|  |=|=|| | |~||==| |    |
+    ||  |##||  | | || | |JRO|||-|  | |==|+|+||-|-|~||__| |    |
+    ||__|__||__|_|_||_|_|___|||_|__|_|__|_|_||_|_|_||__|_|    |
+    ||_______________________||__________________________|    |
+    | _____________________  ||      __   __  _  __    _ |    |     <span class="lockeddoor">A locked door</span>
+    ||=|=|=|=|=|=|=|=|=|=|=| __..\/ |  |_|  ||#||==|  / /|    |     ______________
+    || | | | | | | | | | | |/\ \  \\|++|=|  || ||==| / / |    |    /              \
+    ||_|_|_|_|_|_|_|_|_|_|_/_/\_.___\__|_|__||_||__|/_/__|    |   /                \
+    |____________________ /\~()/()~//\ __________________|    |  /                  \
+    | __   __    _  _     \_  (_ .  _/ _    ___     _____|    |  |                  |
+    ||~~|_|..|__| || |_ _   \ //\\ /  |=|__|~|~|___| | | |    |  |                  |
+    ||--|+|^^|==|1||2| | |__/\ __ /\__| |==|x|x|+|+|=|=|=|    |  |                  |
+    ||__|_|__|__|_||_|_| /  \ \  / /  \_|__|_|_|_|_|_|_|_|    |  |                  |
+    |_________________ _/    \/\/\/    \_ _______________|    |  |                  |
+    | _____   _   __  |/      \../      \|  __   __   ___|    |  |                  |
+    ||_____|_| |_|##|_||   |   \/ __|   ||_|==|_|++|_|-|||    |  |            <span style="cursor: pointer" onClick="lockdoor()"> _</span>    |
+    ||______||=|#|--| |\   \   o    /   /| |  |~|  | | |||    |  |           <span style="cursor: pointer" onClick="lockdoor()"> (_)</span>   |
+    ||______||_|_|__|_|_\   \  o   /   /_|_|__|_|__|_|_|||    |  |                  |
+    |_________ __________\___\____/___/___________ ______|    |  |                  |
+    |__    _  /    ________     ______           /| _ _ _|    |  |                  |
+    |\ \  |=|/   //    /| //   /  /  / |        / ||%|%|%|    |  |                  |
+    | \/\ |*/  .//____//.//   /__/__/ (_)      /  ||=|=|=|    |  |                  |
+  __|  \/\|/   /(____|/ //                    /  /||~|~|~|____|  |__________________|
+    |___\_/   /________//   ________         /  / ||_|_|_|<span style="cursor: pointer" onClick="librarypathway()"><--</span> |
+    |___ /   (|________/   |\_______\       /  /| |______|____|
+        /                  \|________)     /  / | |
+		
+		<input value="ask him a question..."><button onClick="AskLibrarian()">Ask</button>
+
+	<button onClick="document.getElementById('librarianhello').innerHTML = 'I dont know! My best bet is the chef. he has a LOT of stuff that he doesnt know what it is. he will ALWAYS ask you to find him cheese and dorito, no matter what. try doing that! maybe he might give it to you.'">Where do i get an world map?</button><button onClick="document.getElementById('librarianhello').innerHTML = 'A pizza, known to be 5 dollars, has a strange effect on you. you can do magic!! Well, at least the legend says that.'">What does an pizza do?</button>
+	<button onClick="ifound()">I found the world map!</button>
+	</pre>
+</div>
+	
+<div id="Libraryvault" class="tabcontent">
+	<h1>the vault</h1>
+<pre>                     <span class="soldier">"What are you doing here, in the vault?"</span>
+    |\                |\                |\                |\            
+    || .---.          || .---.          || .---.          || .---.      
+    ||/_____\         ||/_____\         ||/_____\         ||/_____\     
+    ||( '.' )         ||( '.' )         ||( '.' )         ||( '.' )     
+    || \_-_/_         || \_-_/_         || \_-_/_         || \_-_/_     
+    :-"`'V'//-.       :-"`'V'//-.       :-"`'V'//-.       :-"`'V'//-.   
+   / ,   |// , `\    / ,   |// , `\    / ,   |// , `\    / ,   |// , `\ 
+  / /|JS //Ll|| |   / /|LF //Ll|| |   / /|KF //Ll|| |   / /|JGS//Ll|| | 
+ /_/||__//   || |  /_/||__//   || |  /_/||__//   || |  /_/||__//   || | 
+ \ \/---|[]==|| |  \ \/---|[]==|| |  \ \/---|[]==|| |  \ \/---|[]==|| | 
+  \/\__/ |   \| |   \/\__/ |   \| |   \/\__/ |   \| |   \/\__/ |   \| | 
+  /\|_   | Ll_\ |   /|/_   | Ll_\ |   /|/_   | Ll_\ |   /|/_   | Ll_\ | 
+  `--|`^"""^`||_|   `--|`^"""^`||_|   `--|`^"""^`||_|   `--|`^"""^`||_| 
+     |   |   ||/       |   |   ||/       |   |   ||/       |   |   ||/  
+     |   |   |         |   |   |         |   |   |         |   |   |    
+     |   |   |         |   |   |         |   |   |         |   |   |    
+     |   |   |         |   |   |         |   |   |         |   |   |    
+     L___l___J         L___l___J         L___l___J         L___l___J    
+      |_ | _|           |_ | _|           |_ | _|           |_ | _|     
+     (___|___)         (___|___)         (___|___)         (___|___)    
+      ^^^ ^^^           ^^^ ^^^           ^^^ ^^^           ^^^ ^^^     
+                            
+							<button class="soldieranswer" onClick="changeSoldier()">The librarian let me come here.</button>
+
+</pre>	
+	
+</div>
+<div id="Store" class="tabcontent">
+<pre><h1>The store</h1></pre>
+<p>You can buy food! it lowers your money and make you calories go higher.</p>
+<pre>
+// ""--.._
+||  (_)  _ "-._
+||    _ (_)    '-.
+||   (_)   __..-'
+ \\__..--""
+ calories: 300
+ money: 5.00$
+ learn more information about this item in the <button onClick="openTab('pizzainformation', this, 'white')">library</button>
+</pre>
+<button class="pizzabutton" onClick="eat('pizza')">click to eat pizza</button>
+	
+<pre>
+   ,-.
+ _(*_*)_
+(_  o  _)
+  / o \
+ (_/ \_)
+ money: 5.00$
+ calories: 290
+</pre>
+<button class="pizzabutton" onClick="eat('gingerbread')">Click to eat a gingerbread man</button>
+	
+<pre>
+   _________
+  | _______ |
+ / \         \
+/___\_________\
+|   | \       |
+|   |  \      |
+|   |   \     |
+|   | M  \    |
+|   |     \   |
+|   |\  I  \  |
+|   | \     \ |                                                                          <span style="display: none;" class="dorito">   /\</span> 
+|   |  \  L  \|                                                                          <span style="display: none;" class="dorito">  / .\</span> 
+|   |   \     |                                                                          <span style="display: none;" class="dorito"> /.   \</span>
+|   |    \  K |                                                                          <span style="display: none;" class="dorito">/    . \</span>
+|   |     \   |                                                                         <span style="display: none;" class="dorito">/   .    \</span>
+|   |ckn   \  |                                                                        <span style="display: none;" class="dorito">/  .     . \</span>
+|___|_______\_|                                                                       <span style="display: none;" class="dorito">/____________\</span>
+cost: 3.00$
+calories: 3999 (i didn't choose the calories.)
+</pre>
+<button class="milkbutton" onclick="eat('milk')">Click to drink milk</button>
+	
+<pre>
+                          (             ) 
+                  )      (*)           (*)      ( 
+         *       (*)      |             |      (*) 
+                  |      |~|           |~|      |          * 
+                 |~|     | |           | |     |~| 
+                 | |     | |           | |     | | 
+                ,| |a@@@@| |@@@@@@@@@@@| |@@@@a| |. 
+           .,a@@@| |@@@@@| |@@@@@@@@@@@| |@@@@@| |@@@@a,. 
+         ,a@@@@@@| |@@@@@@@@@@@@.@@@@@@@@@@@@@@| |@@@@@@@a, 
+        a@@@@@@@@@@@@@@@@@@@@@' . `@@@@@@@@@@@@@@@@@@@@@@@@a 
+        ;`@@@@@@@@@@@@@@@@@@'   .   `@@@@@@@@@@@@@@@@@@@@@'; 
+        ;@@@`@@@@@@@@@@@@@'     .     `@@@@@@@@@@@@@@@@'@@@; 
+        ;@@@;,.aaaaaaaaaa       .       aaaaa,,aaaaaaa,;@@@; 
+        ;;@;;;;@@@@@@@@;@      @.@<span class="clickable" onClick="foundcheese(); var cheese = true;">cheese</span>;@@@;;;@@@@@@;;;;@@; 
+        ;;;;;;;@@@@;@@;;@    @@ . @@    ;;@;;;;@@;@@@;;;;;;; 
+        ;;;;;;;;@@;;;;;;;  @@   .   @@  ;;;;;;;;;;;@@;;;;@;; 
+        ;;;;;;;;;;;;;;;;;@@     .     @@;;;;;;;;;;;;;;;;@@a; 
+    ,%%%;;;;;;;;@;;;;;;;;       .       ;;;;;;;;;;;;;;;;@@;;%%%, 
+ .%%%%%%;;;;;;;a@;;;;;;;;     ,%%%,     ;;;;;;;;;;;;;;;;;;;;%%%%%%, 
+.%%%%%%%;;;;;;;@@;;;;;;;;   ,%%%%%%%,   ;;;;;;;;;;;;;;;;;;;;%%%%%%%, 
+%%%%%%%%`;;;;;;;;;;;;;;;;  %%%%%%%%%%%  ;;;;;;;;;;;;;;;;;;;'%%%%%%%% 
+%%%%%%%%%%%%`;;;;;;;;;;;;,%%%%%%%%%%%%%,;;;;;;;;;;;;;;;'%%%%%%%%%%%% 
+`%%%%%%%%%%%%%%%%%,,,,,,,%%%%%%%%%%%%%%%,,,,,,,%%%%%%%%%%%%%%%%%%%%' 
+  `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%' 
+      `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%' 
+             """"""""""""""`,,,,,,,,,'""""""""""""""""" 
+                            `%%%%%%%' 
+                             `%%%%%' 
+                               %%% 
+                              %%%%% 
+                           .,%%%%%%%,. 
+                      ,%%%%%%%%%%%%%%%%%%%, cost: 99999999999999999999999999999999999999999999999999999999999999999999999999999999 dollars (very sweet)
+          ---------------------------------------------
+</pre>
+<button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button>	
+	
+
+</div>
+<body>
+<pre>ASCII arts provided by <a href="https://ascii.co.uk/">ascii.co.uk</a></pre>
+	<pre>(c) Copyright 2020 <a href="https://ch1ck3n.com">ch1ck3n</a>, <a href="https://jonkoo.com">technodoggo</a>, <a href="https://ch1ck3n.com">bombus11.</a> All rights reserved. </pre>
+<script>
+function openTab(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+<script src="eatJS.js"></script>
+</html>
