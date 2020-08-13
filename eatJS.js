@@ -115,7 +115,7 @@ function ifound() {
 		document.querySelector(".lockeddoor").innerHTML = "An unlocked door"
 		lockeddoor = 1
 		setTimeout(function() {
-			openTab('desert', this, 'white')
+			openTab('Desert', this, 'white')
 		}, 5000)
 	} else {
 		document.getElementById("librarianhello").innerHTML = "Then, where is it? LIAR"
