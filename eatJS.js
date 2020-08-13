@@ -6,27 +6,6 @@ var buttontime = -1;
 var worldmap = false;
 var lockeddoor = -1
 var soldierbuttonpressed = -1;
-function save() {
-  localstorage.setItem("money", money)
-  localstorage.setItem("calories", calories)
-  localstorage.setItem("cheese", cheese)
-  localstorage.setItem("dorito", dorito)
-  localstorage.setItem("buttontime", buttontime)
-  localstorage.setItem("worldmap", worldmap)
-  localstorage.setItem("lockeddoor", lockeddoor)
-  localstorage.setItem("soldierbuttonpressed", soldierbuttonpressed)	
-}
-function load() {
-        var money = localstorage.getItem("money");
-	var calories = localstorage.getItem("calories");
-	var cheese = localstorage.getItem("cheese");
-	var dorito = localstorage.getItem("dorito");
-	var buttontime = localstorage.getItem("buttontime");
-	var worldmap = localstorage.getItem("worlmap");
-	var lockeddoor = localstorage.getItem("lockeddoor");
-	var soldierbuttonpressed = localstorage.getItem("soldierbuttonpressed");
-}
-load()
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
