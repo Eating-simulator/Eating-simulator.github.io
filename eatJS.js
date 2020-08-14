@@ -105,7 +105,7 @@ function lockdoor() {
 			document.getElementById("librarianhello").innerHTML = "Ah! that door, is the only known pathway to the unknown regions of the cknairia deserts. but only one thing: I can't unlock it...."
 	}
 	if (lockeddoor == 1){
-		openTab('desert', this, 'white')
+		openTab("Desert", this, "white")
 	}
 
 }
@@ -115,7 +115,7 @@ function ifound() {
 		document.querySelector(".lockeddoor").innerHTML = "An unlocked door"
 		lockeddoor = 1
 		setTimeout(function() {
-			openTab('Desert', this, 'white')
+			openTab("Desert", this, "white")
 		}, 5000)
 	} else {
 		document.getElementById("librarianhello").innerHTML = "Then, where is it? LIAR"
