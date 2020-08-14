@@ -1,4 +1,4 @@
-function openTab(cityName,elmnt,color) {
+function openTab(tabName,elmnt,color) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -8,7 +8,7 @@ function openTab(cityName,elmnt,color) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   elmnt.style.backgroundColor = color;
 
 }
