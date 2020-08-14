@@ -180,6 +180,38 @@ function fortresdoor() {
     document.querySelector(".fortressresponce").innerHTML = "Let's go in this thin-- uh. it just closed.";
     document.getElementById("fortressdoor").innerHTML = "##";
    };
+   if (fortressdoorclicked == 18) {
+    document.querySelector(".fortressresponce").innerHTML = "It just opened and closed! what is with this cursed door?";
+   };
+   if (fortressdoorclicked == 19) {
+    document.querySelector(".fortressresponce").innerHTML = "I'm starting t oget mad.";
+   };
+   if (fortressdoorclicked == 20) {
+    document.querySelector(".fortressresponce").innerHTML = "Should we kick it?";
+   };
+   if (fortressdoorclicked == 21) {
+    document.querySelector(".fortressresponce").innerHTML = "I want to set this thing on fire.";
+   };
+   if (fortressdoorclicked == 22) {
+    document.querySelector(".fortressresponce").innerHTML = "*grumble grumble*";
+   };
+   if (fortressdoorclicked == 23) {
+    document.querySelector(".fortressresponce").innerHTML = "Are you hungry?";
+   };
+   if (fortressdoorclicked == 24) {
+    document.querySelector(".fortressresponce").innerHTML = "You know we were knocking on this door for the whole night, right?";
+   };
+   if (fortressdoorclicked == 25) {
+    document.querySelector(".fortressresponce").innerHTML = "Why don't you use the world map on this?";
+   };
+   if (fortressdoorclicked == 26) {
+    document.querySelector(".fortressresponce").innerHTML = "Um. it just opened. LET'S GO IN! HURRY!";
+    document.getElementById("fortressdoor").innerHTML = "  ";
+   };
+   if (fortressdoorclicked >= 27) {
+    openTab("Castle", this, "white")
+   };
+
 
 
 
