@@ -111,9 +111,9 @@ function lockdoor() {
 }
 function ifound() {
 	if (worldmap == true) {
+		lockeddoor = 1
 		document.getElementById("librarianhello").innerHTML = "Good gravy! you found it! the world map! i knew it exist! i Opened the door that leads to the desert. turns out you needed a world map to unlock it. i was wondering. here, let me open the door. just 5 seconds...."
 		document.querySelector(".lockeddoor").innerHTML = "An unlocked door"
-		lockeddoor = 1
 		setTimeout(function() {
 			openTab("Desert", this, "white")
 		}, 5000)
