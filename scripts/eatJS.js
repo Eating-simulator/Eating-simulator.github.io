@@ -166,5 +166,21 @@ function fortresdoor() {
    if (fortressdoorclicked == 13) {
     document.querySelector(".fortressresponce").innerHTML = "I'm too nice to do that.";
    };
+   if (fortressdoorclicked == 14) {
+    document.querySelector(".fortressresponce").innerHTML = "What are we doing here, anyway?";
+   };
+   if (fortressdoorclicked == 15) {
+    document.querySelector(".fortressresponce").innerHTML = "You know there's no one here, right?!!!?!?! so can we <i>please</i> go?";
+   };
+   if (fortressdoorclicked == 16) {
+    document.querySelector(".fortressresponce").innerHTML = "There's no way that door's going to- uh. it just opened.";
+    document.getElementById("fortressdoor").innerHTML = "  ";
+   };
+   if (fortressdoorclicked == 17) {
+    document.querySelector(".fortressresponce").innerHTML = "Let's go in this thin-- uh. it just closed.";
+    document.getElementById("fortressdoor").innerHTML = "##";
+   };
+
+
 
 }
