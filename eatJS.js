@@ -6,6 +6,7 @@ var buttontime = -1;
 var worldmap = false;
 var lockeddoor = -1
 var soldierbuttonpressed = -1;
+var fortressdoorclicked = -1
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
@@ -121,3 +122,50 @@ function ifound() {
 		document.getElementById("librarianhello").innerHTML = "Then, where is it? LIAR"
 	}
 }
+function fortresdoor() {
+   fortressdoorclicked++;
+   if (fortressdoorclicked == 0) {
+    document.querySelector(".fortressresponce").innerHTML = "No responce. why don't you try again?";   
+   };
+   if (fortressdoorclicked == 1) {
+    document.querySelector(".fortressresponce").innerHTML = ".....";
+   };
+   if (fortressdoorclicked == 2) {
+    document.querySelector(".fortressresponce").innerHTML = "You know there's no one in here, all right?";
+   };
+   if (fortressdoorclicked == 3) {
+    document.querySelector(".fortressresponce").innerHTML = "You're wasting your time. stop.";
+   };
+   if (fortressdoorclicked == 4) {
+    document.querySelector(".fortressresponce").innerHTML = "Do you even know what you're doing?";
+   };
+   if (fortressdoorclicked == 5) {
+    document.querySelector(".fortressresponce").innerHTML = "The sun's almost down.";
+   };
+   if (fortressdoorclicked == 6) {
+    document.querySelector(".fortressresponce").innerHTML = "Uh oh, there's a hyena there.";
+   };
+   if (fortressdoorclicked == 7) {
+    document.querySelector(".fortressresponce").innerHTML = "It's starting to get cold.";
+   };
+   if (fortressdoorclicked == 8) {
+    document.querySelector(".fortressresponce").innerHTML = "Do you even know what you're doing?";
+   };
+   if (fortressdoorclicked == 9) {
+    document.querySelector(".fortressresponce").innerHTML = "You're really stubborn, aren't you?";
+   };
+   if (fortressdoorclicked == 10) {
+    document.querySelector(".fortressresponce").innerHTML = "You knocked on the door ELEVEN times And you're still knocking? come on bruh";
+   };
+   if (fortressdoorclicked == 11) {
+    document.querySelector(".fortressresponce").innerHTML = "If you click it ONE More time i will reset all your progress.";
+   };
+   if (fortressdoorclicked == 12) {
+    document.querySelector(".fortressresponce").innerHTML = "...";
+   };
+   if (fortressdoorclicked == 13) {
+    document.querySelector(".fortressresponce").innerHTML = "I'm too nice to do that.";
+   };
+
+}
+
