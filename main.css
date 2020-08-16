@@ -1,15 +1,16 @@
 body {
-		font-family: "Courier";
-	}
-	a {
-		color: blue;
-	}
-	a:hover {
-		color: red;
-	}
-  .clickable {
+    font-family: "Courier";
+    text-align: center;
+}
+a {
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+.clickable {
     cursor: pointer;
-  }
-  .clickable::selection {
+}
+.clickable::selection {
     user-select: none;
-  }
+}
