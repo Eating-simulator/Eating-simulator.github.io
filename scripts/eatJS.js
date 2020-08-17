@@ -216,3 +216,7 @@ function fortresdoor() {
 
 
 }
+function whynot() {
+ document.querySelector(".jonathanno").innerHTML = "Meh, because there's something i want to keep by my self."	
+}
+
