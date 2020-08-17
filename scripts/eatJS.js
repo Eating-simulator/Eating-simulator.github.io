@@ -4,7 +4,7 @@ var cheese = false;
 var dorito = false;
 var buttontime = -1;
 var worldmap = false;
-var lockeddoor = -1;
+var lockeddoor = -1
 var soldierbuttonpressed = -1;
 var fortressdoorclicked = -1
 function classchange(classname, changeto){
