@@ -221,6 +221,7 @@ function whynot() {
 }
 var i = 0;
 function aprontalk() {
+i++;
 var yay = document.getElementById("yay");
 if (i == 0) {
 yay.innerHTML = "You may defnitely NOT touch my...";	
