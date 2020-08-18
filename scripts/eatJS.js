@@ -240,7 +240,7 @@ document.getElementById("yay").innerHTML = "STOPPIT";
 if (chefapron == 6) {
 yay.innerHTML = "RIGHT NOW";
 }
-else {
+if (chefapron == 7) {
 document.getElementById("yay").innerHTML = "That's INUURF";
 chefapron = 0;
 }
