@@ -244,7 +244,7 @@ function whyy() {
    if (whynot == 7) {
      document.querySelector(".landonno").innerHTML = "Why is this conversation about my personal information now?"   
    };
-   if (whynot == 0) {
+   if (whynot == 8) {
      document.querySelector(".landonno").innerHTML = "Stop saying why!"   
    };
 }
