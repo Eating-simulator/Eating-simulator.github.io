@@ -219,26 +219,26 @@ function fortresdoor() {
 function whynot() {
  document.querySelector(".landonno").innerHTML = "Meh, because there's something i want to keep by my self."	
 }
-var i = 0;
-function aprontalk() {
-i++;
+var chefapron = 0;
 var yay = document.getElementById("yay");
-if (i == 0) {
+function aprontalk() {
+chefapron++;
+if (chefapron == 0) {
 yay.innerHTML = "You may defnitely NOT touch my...";	
 }
-if (i == 1) {
+if (chefapron == 1) {
 yay.innerHTML = "my...";
 }
-if (i == 2) {
+if (chefapron == 2) {
 yay.innerHTML = "uh...";
 }
-if (i == 3) {
+if (chefapron == 3) {
 yay.innerHTML = "whatchamacallit.";
 }
-if (i == 4) {
+if (chefapron == 4) {
 yay.innerHTML = "STOPPIT";
 }
-if (i == 5) {
+if (chefapron == 5) {
 yay.innerHTML = "RIGHT NOW";
 }
 else {
