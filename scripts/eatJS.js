@@ -219,6 +219,28 @@ function fortresdoor() {
 function whynot() {
  document.querySelector(".landonno").innerHTML = "Meh, because there's something i want to keep by my self."	
 }
+var i = 0;
 function aprontalk() {
- document.getElementById("yay").innerHTML = "Ah, don't do that! you're going to ruin my pot!";	
+var yay = document.getElementById("yay");
+if (i == 0) {
+yay.innerHTML = "You may defnitely NOT touch my...";	
+}
+if (i == 1) {
+yay.innerHTML = "my...";
+}
+if (i == 2) {
+yay.innerHTML = "uh...";
+}
+if (i == 3) {
+yay.innerHTML = "whatchamacallit.";
+}
+if (i == 4) {
+yay.innerHTML = "STOPPIT";
+}
+if (i == 5) {
+yay.innerHTML = "RIGHT NOW";
+}
+else {
+yay.innerHTML = "That's INUURF";
+i = 0;
 }
