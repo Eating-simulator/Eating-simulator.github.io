@@ -8,6 +8,7 @@ var lockeddoor = -1
 var soldierbuttonpressed = -1;
 var fortressdoorclicked = -1
 var chefapron = 0;
+var whynot = -1;
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
@@ -215,10 +216,36 @@ function fortresdoor() {
 
 
 
-
+var whynothtml = document.querySelector(".landonno");
 }
 function whynot() {
- document.querySelector(".landonno").innerHTML = "Meh, because there's something i want to keep by my self."	
+   if (whynot == 0) {
+     document.querySelector(".landonno").innerHTML = "Meh, because there's something i want to keep by my self."   
+   };
+   if (whynot == 1) {
+     document.querySelector(".landonno").innerHTML = "Because i'm selfish."   
+   };
+   if (whynot == 2) {
+     document.querySelector(".landonno").innerHTML = "Um..."   
+   };
+   if (whynot == 3) {
+     document.querySelector(".landonno").innerHTML = "It's none of your buisness!"   
+   };
+   if (whynot == 4) {
+     document.querySelector(".landonno").innerHTML = "Because it's my personal information!"   
+   };
+   if (whynot == 5) {
+     document.querySelector(".landonno").innerHTML = "Because it's about <i>me</i>"   
+   };
+   if (whynot == 6) {
+     document.querySelector(".landonno").innerHTML = "Because it's information about myself."   
+   };
+   if (whynot == 7) {
+     document.querySelector(".landonno").innerHTML = "Why is this conversation about my personal information now?"   
+   };
+   if (whynot == 0) {
+     document.querySelector(".landonno").innerHTML = "Stop saying why!"   
+   };
 }
 function aprontalk() {
 chefapron++;
