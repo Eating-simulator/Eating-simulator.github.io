@@ -219,6 +219,7 @@ function fortresdoor() {
 var whynothtml = document.querySelector(".landonno");
 }
 function whynot() {
+	whynot++;
    if (whynot == 0) {
      document.querySelector(".landonno").innerHTML = "Meh, because there's something i want to keep by my self."   
    };
