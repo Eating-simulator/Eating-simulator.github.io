@@ -219,4 +219,6 @@ function fortresdoor() {
 function whynot() {
  document.querySelector(".landonno").innerHTML = "Meh, because there's something i want to keep by my self."	
 }
-
+function aprontalk() {
+ document.getElementById("yay").innerHTML = "Ah, don't do that! you're going to ruin my pot!";	
+}
