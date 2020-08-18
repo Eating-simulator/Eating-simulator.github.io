@@ -244,3 +244,4 @@ else {
 yay.innerHTML = "That's INUURF";
 i = 0;
 }
+}
