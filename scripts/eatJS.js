@@ -7,6 +7,7 @@ var worldmap = false;
 var lockeddoor = -1
 var soldierbuttonpressed = -1;
 var fortressdoorclicked = -1
+var chefapron = 0;
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
@@ -219,30 +220,28 @@ function fortresdoor() {
 function whynot() {
  document.querySelector(".landonno").innerHTML = "Meh, because there's something i want to keep by my self."	
 }
-var chefapron = 0;
-var yay = document.getElementById("yay");
 function aprontalk() {
 chefapron++;
-if (chefapron == 0) {
-yay.innerHTML = "You may defnitely NOT touch my...";	
-}
 if (chefapron == 1) {
-yay.innerHTML = "my...";
+document.getElementById("yay").innerHTML = "You may defnitely NOT touch my...";	
 }
 if (chefapron == 2) {
-yay.innerHTML = "uh...";
+document.getElementById("yay").innerHTML = "my...";
 }
 if (chefapron == 3) {
-yay.innerHTML = "whatchamacallit.";
+document.getElementById("yay").innerHTML = "uh...";
 }
 if (chefapron == 4) {
-yay.innerHTML = "STOPPIT";
+document.getElementById("yay").innerHTML = "whatchamacallit.";
 }
 if (chefapron == 5) {
+document.getElementById("yay").innerHTML = "STOPPIT";
+}
+if (chefapron == 6) {
 yay.innerHTML = "RIGHT NOW";
 }
 else {
-yay.innerHTML = "That's INUURF";
-i = 0;
+document.getElementById("yay").innerHTML = "That's INUURF";
+chefapron = 0;
 }
 }
