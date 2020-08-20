@@ -224,13 +224,13 @@ function whyy() {
      document.querySelector(".landonno").innerHTML = "I am Rainbow the Wise Probotoad."   
    };
    if (whynot == 1) {
-     document.querySelector(".landonno").innerHTML = "Because my dad was a Proboscis Monkey and my mom was a toad. "   
+     document.querySelector(".landonno").innerHTML = "Because my dad was a Proboscis Monkey and my mom was a toad."   
    };
    if (whynot == 2) {
      document.querySelector(".landonno").innerHTML = "Just Joking! Both my parents were Probotoads."   
    };
    if (whynot == 3) {
-     document.querySelector(".landonno").innerHTML = "It's none of your buisness!"   
+     document.querySelector(".landonno").innerHTML = "You can go to the giant library. They have interesting stuff there."   
    };
    if (whynot == 4) {
      document.querySelector(".landonno").innerHTML = "Because it's my personal information!"   
