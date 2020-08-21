@@ -20,21 +20,21 @@ function eat(item) {
 	if (item === "pizza") {
 		calories += 300
 		money -= 5 
-		alert("Oh dear. you lost 5 dollars and gained 300 callories!")
+		output("Oh dear. you lost 5 dollars and gained 300 callories!")
 	}
 	if (item === "gingerbread") {
 		money -= 5 
-		alert("Oh dear. you lost 5 dollars! That cookie looks nice though. probably shouldn't eat it.")
+		output("Oh dear. you lost 5 dollars! That cookie looks nice though. probably shouldn't eat it.")
 	}
 	if (item === "milk") {
 		calories += 3999
 		money -= 3 
-		alert("You drunk some milk!")
+		output("You drunk some milk!")
 	}
 }
 function chefbutton() {
 	document.getElementById("yay").innerHTML = "Thanks! the cheese is probably in the store. i dont know about the dorito...";
-  alert("You started the quest.")
+  output("You started the quest.")
 }
 setInterval(function() {
 	money = money + 1;
@@ -54,20 +54,20 @@ setInterval(function() {
 		document.querySelector('.chefresponce1').innerHTML = ' '
 		document.getElementById("chefresponce2").innerHTML = " "
 		document.getElementById("yay").innerHTML = "Thank you for helping me! as a reward, here is a world map. you'll probably use it more then i do."
-    alert("You completed the quest and earned a world map!")
+    output("You completed the quest and earned a world map!")
 		worldmap = true;
 	}
 }, 1000)
 
 function founddorito() {
 	document.querySelector('.chefresponce1').innerHTML = 'Ah! you found my dorito! very much thanks.'
-  alert("You found the dorito!")
+  output("You found the dorito!")
 	dorito = true
 }
 
 function foundcheese() {
 	document.getElementById("chefresponce2").innerHTML = "Ah! you found my cheese! very much thanks."
-  alert("You found the dorito!")
+  output("You found the dorito!")
 	cheese = true;
 }
 
@@ -87,29 +87,31 @@ function librarypathway() {
 	}
 	if (buttontime == 4){
 			document.getElementById("librarianhello").innerHTML = "Fine. just go. *groan*"
-      alert("The librarian gave you permission to go inside the vault")
+      output("The librarian gave you permission to go inside the vault")
 	}
 	if (buttontime >= 5){
 			openTab('Libraryvault', this, 'white')
 	}
 }
-
+function output(output) {
+  document.getElementById("output").innerHTML = output;
+}
 function changeSoldier() {
 	soldierbuttonpressed++;
 	if (soldierbuttonpressed == 0) {
 		document.querySelector(".soldier").innerHTML = "oH! We'll let you in then."
-    alert("The soldier let you in!")
+    output("The soldier let you in!")
 		document.querySelector(".soldieranswer").innerHTML = "Thanks!"
 	}
 	if (soldierbuttonpressed >= 1) {
 		openTab('vault', this, 'white')
-    alert("You went inside the vault!")
+    output("You went inside the vault!")
 	}
 }
 
 function AskLibrarian() {
 	document.getElementById("librarianhello").innerHTML = "Good question."
-  alert("You asked the librarian a question!")
+  output("You asked the librarian a question!")
 }
 function lockdoor() {
 	if (lockeddoor == 0){
@@ -117,7 +119,7 @@ function lockdoor() {
 	}
 	if (lockeddoor == 1){
 		openTab("Desert", this, "white")
-    alert("You entered the desert!")
+    output("You entered the desert!")
 	}
 
 }
@@ -131,7 +133,7 @@ function ifound() {
 		}, 5000)
 	} else {
 		document.getElementById("librarianhello").innerHTML = "Then, where is it? LIAR"
-    alert("You've been called a liar")!
+    output("You've been called a liar")
 	}
 }
 function fortresdoor() {
@@ -222,7 +224,7 @@ function fortresdoor() {
    };
    if (fortressdoorclicked >= 27) {
     openTab("Castle", this, "white")
-    alert("You went inside the fortress!")
+    output("You went inside the fortress!")
    };
 
 
