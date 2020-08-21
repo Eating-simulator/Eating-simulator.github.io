@@ -1,5 +1,6 @@
 function openTab(tabName,elmnt,color) {
   checkstats();
+  output(`You went to ${tabName}!`);
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
