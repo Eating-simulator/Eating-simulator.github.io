@@ -130,25 +130,29 @@ function ifound() {
 		document.querySelector(".lockeddoor").innerHTML = "An unlocked door"
 		setTimeout(function() {
 			openTab("Desert", this, "white")
+      output("You entered the desert!")
 		}, 5000)
 	} else {
 		document.getElementById("librarianhello").innerHTML = "Then, where is it? LIAR"
-    output("You've been called a liar")
+    output("You've been called a liar!")
 	}
 }
 function fortresdoor() {
    fortressdoorclicked++;
    if (fortressdoorclicked == 0) {
     document.querySelector(".fortressresponce").innerHTML = "No responce. why don't you try again?";   
+    output("You've been ignored!")
    };
    if (fortressdoorclicked == 1) {
     document.querySelector(".fortressresponce").innerHTML = ".....";
    };
    if (fortressdoorclicked == 2) {
     document.querySelector(".fortressresponce").innerHTML = "You know there's no one in here, all right?";
+    output("You've been told no one is in here!")
    };
    if (fortressdoorclicked == 3) {
     document.querySelector(".fortressresponce").innerHTML = "You're wasting your time. stop.";
+    output("You've been told you're wasting your time!")
    };
    if (fortressdoorclicked == 4) {
     document.querySelector(".fortressresponce").innerHTML = "Do you even know what you're doing?";
@@ -161,18 +165,21 @@ function fortresdoor() {
    };
    if (fortressdoorclicked == 7) {
     document.querySelector(".fortressresponce").innerHTML = "It's starting to get cold.";
+    output("It's starting to get cold!")
    };
    if (fortressdoorclicked == 8) {
     document.querySelector(".fortressresponce").innerHTML = "Do you even know what you're doing?";
    };
    if (fortressdoorclicked == 9) {
     document.querySelector(".fortressresponce").innerHTML = "You're really stubborn, aren't you?";
+    output("You've been called stubborn!")
    };
    if (fortressdoorclicked == 10) {
     document.querySelector(".fortressresponce").innerHTML = "You knocked on the door ELEVEN times And you're still knocking? come on bruh";
    };
    if (fortressdoorclicked == 11) {
     document.querySelector(".fortressresponce").innerHTML = "If you click it ONE More time i will reset all your progress.";
+    output("You've been threatened!")
    };
    if (fortressdoorclicked == 12) {
     document.querySelector(".fortressresponce").innerHTML = "...";
@@ -188,10 +195,12 @@ function fortresdoor() {
    };
    if (fortressdoorclicked == 16) {
     document.querySelector(".fortressresponce").innerHTML = "There's no way that door's going to- uh. it just opened.";
+    output("The door opened!")
     document.getElementById("fortressdoor").innerHTML = "  ";
    };
    if (fortressdoorclicked == 17) {
     document.querySelector(".fortressresponce").innerHTML = "Let's go in this thin-- uh. it just closed.";
+    output("The door closed!")
     document.getElementById("fortressdoor").innerHTML = "##";
    };
    if (fortressdoorclicked == 18) {
@@ -235,12 +244,14 @@ function whyy() {
 	whynot++;
    if (whynot == 0) {
      document.querySelector(".landonno").innerHTML = "I am Rainbow the Wise Probotoad."   
+     output("You've been told he was a wise probotoad!")
    };
    if (whynot == 1) {
      document.querySelector(".landonno").innerHTML = "Because my dad was a Proboscis Monkey and my mom was a toad."   
    };
    if (whynot == 2) {
-     document.querySelector(".landonno").innerHTML = "Just Joking! Both my parents were Probotoads."   
+     document.querySelector(".landonno").innerHTML = "Just Joking! Both my parents were Probotoads."  
+     output("The probotoad joked!") 
    };
    if (whynot == 3) {
      document.querySelector(".landonno").innerHTML = "You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas."   
@@ -277,6 +288,7 @@ document.getElementById("yay").innerHTML = "I will take all your money if you wo
 }
 if (chefapron == 10) {
 document.getElementById("yay").innerHTML = "Ok, say goodbye to your money.";
+output("Your progress has been set to zero!")
 money = -1
 chefapron = 0
 }
