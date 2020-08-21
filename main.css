@@ -2,6 +2,9 @@
     font-family: "Courier";
     text-align: center;
 }
+html { 
+overflow: auto;
+ }
 a {
     color: blue;
 }
