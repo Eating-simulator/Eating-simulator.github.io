@@ -263,8 +263,8 @@ if (chefapron == 9) {
 document.getElementById("yay").innerHTML = "I will take all your money if you won't stop.";
 }
 if (chefapron == 10) {
-document.getElementById("yay").innerHTML = "Ok, say goodbye to your candies.";
-candies = -1
+document.getElementById("yay").innerHTML = "Ok, say goodbye to your money.";
+money = -1
 chefapron = 0
 }
 }
