@@ -265,6 +265,6 @@ document.getElementById("yay").innerHTML = "I will take all your money if you wo
 if (chefapron == 10) {
 document.getElementById("yay").innerHTML = "Ok, say goodbye to your candies.";
 candies = -1
-chefapron == 0
+chefapron = 0
 }
 }
