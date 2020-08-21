@@ -230,7 +230,7 @@ function whyy() {
      document.querySelector(".landonno").innerHTML = "Just Joking! Both my parents were Probotoads."   
    };
    if (whynot == 3) {
-     document.querySelector(".landonno").innerHTML = "You can go to the giant library. They have interesting stuff there."   
+     document.querySelector(".landonno").innerHTML = "You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas."   
    };
 }
 function aprontalk() {
