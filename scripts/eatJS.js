@@ -276,6 +276,7 @@ document.getElementById("yay").innerHTML = "STOPPIT";
 }
 if (chefapron == 6) {
 yay.innerHTML = "RIGHT NOW";
+output("Youve beeto")
 }
 if (chefapron == 7) {
 document.getElementById("yay").innerHTML = "That's INUURF";
@@ -285,6 +286,7 @@ document.getElementById("yay").innerHTML = "STOPPPPPIITTTTT";
 }
 if (chefapron == 9) {
 document.getElementById("yay").innerHTML = "I will take all your money if you won't stop.";
+output("You've been threatened!")
 }
 if (chefapron == 10) {
 document.getElementById("yay").innerHTML = "Ok, say goodbye to your money.";
