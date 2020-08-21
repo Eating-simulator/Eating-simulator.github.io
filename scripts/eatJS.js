@@ -10,6 +10,7 @@ var fortressdoorclicked = -1
 var chefapron = 0;
 var whynot = -1;
 var librarykey = false;
+var fWM = false;
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
@@ -51,11 +52,14 @@ setInterval(function() {
 		document.querySelector(".milkbutton").disabled = true;
 	}
 	if (dorito === true && cheese === true) {
+		if (fWM == false) {
 		document.querySelector('.chefresponce1').innerHTML = ' '
 		document.getElementById("chefresponce2").innerHTML = " "
 		document.getElementById("yay").innerHTML = "Thank you for helping me! as a reward, here is a world map. you'll probably use it more then i do."
     output("You completed the quest and earned a world map!")
 		worldmap = true;
+			fWM = true;
+		}
 	}
 }, 1000)
 
