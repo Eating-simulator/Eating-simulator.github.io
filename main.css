@@ -18,3 +18,9 @@ a:hover {
 html:selection {
     user-select: none;
 }
+div.output {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #000000;
+}
