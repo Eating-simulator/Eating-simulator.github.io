@@ -14,3 +14,7 @@ a:hover {
 .clickable::selection {
     user-select: none;
 }
+
+html:selection {
+    user-select: none;
+}
