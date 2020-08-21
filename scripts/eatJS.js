@@ -255,6 +255,16 @@ yay.innerHTML = "RIGHT NOW";
 }
 if (chefapron == 7) {
 document.getElementById("yay").innerHTML = "That's INUURF";
-chefapron = 0;
+}
+if (chefapron == 8) {
+document.getElementById("yay").innerHTML = "STOPPPPPIITTTTT";
+}
+if (chefapron == 9) {
+document.getElementById("yay").innerHTML = "I will take all your money if you won't stop.";
+}
+if (chefapron == 10) {
+document.getElementById("yay").innerHTML = "Ok, say goodbye to your candies.";
+candies = -1
+chefapron == 0
 }
 }
