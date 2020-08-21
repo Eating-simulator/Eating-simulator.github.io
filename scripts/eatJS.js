@@ -232,21 +232,6 @@ function whyy() {
    if (whynot == 3) {
      document.querySelector(".landonno").innerHTML = "You can go to the giant library. They have interesting stuff there."   
    };
-   if (whynot == 4) {
-     document.querySelector(".landonno").innerHTML = "Because it's my personal information!"   
-   };
-   if (whynot == 5) {
-     document.querySelector(".landonno").innerHTML = "Because it's about <i>me</i>"   
-   };
-   if (whynot == 6) {
-     document.querySelector(".landonno").innerHTML = "Because it's information about myself."   
-   };
-   if (whynot == 7) {
-     document.querySelector(".landonno").innerHTML = "Why is this conversation about my personal information now?"   
-   };
-   if (whynot == 8) {
-     document.querySelector(".landonno").innerHTML = "Stop saying why!"   
-   };
 }
 function aprontalk() {
 chefapron++;
