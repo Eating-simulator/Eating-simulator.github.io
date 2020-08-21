@@ -295,3 +295,14 @@ money = -1
 chefapron = 0
 }
 }
+function checkstats() {
+    if (libraryKey) {
+        document.getElementById("door1").class = 'clickable';
+	document.getElementById("door2").class = 'clickable';
+	document.getElementById("door1").onclick = 'enterLibrary()';
+	document.getElementById("door2").onclick = 'enterLibrary()';
+    }
+}
+function enterLibrary() {
+    output("You entered the giant library!")
+}
