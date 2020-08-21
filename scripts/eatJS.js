@@ -67,7 +67,7 @@ function founddorito() {
 
 function foundcheese() {
 	document.getElementById("chefresponce2").innerHTML = "Ah! you found my cheese! very much thanks."
-  output("You found the dorito!")
+  output("You found the cheese!")
 	cheese = true;
 }
 
