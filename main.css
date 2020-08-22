@@ -22,7 +22,7 @@ html:selection {
     user-select: none;
 }
 div.output {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   border: 3px solid #000000;
