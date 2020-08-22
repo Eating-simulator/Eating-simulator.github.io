@@ -9,7 +9,7 @@ var soldierbuttonpressed = -1;
 var fortressdoorclicked = -1
 var chefapron = 0;
 var whynot = -1;
-var librarykey = false;
+var libraryKey = false;
 var fWM = false;
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
