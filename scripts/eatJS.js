@@ -14,7 +14,7 @@ var fWM = false;
 var popularity = 0;
 var howpouplar = "Not known"
 var moneypersecond = 1;
-var caloriepersecond;
+var caloriepersecond = 1;
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
