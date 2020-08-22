@@ -13,6 +13,8 @@ var libraryKey = false;
 var fWM = false;
 var popularity = 0;
 var howpouplar = "Not known"
+var moneypersecond = 1;
+var caloriepersecond;
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
@@ -49,7 +51,10 @@ function chefbutton() {
   output("You started the quest.")
 }
 setInterval(function() {
-	money = money + 1;
+	money = money + moneypersecond;
+  if (calories != 0) {
+    calories = calories -= caloriepersecond
+  }
 	document.querySelector(".money").innerHTML = money;
 	document.querySelector(".calories").innerHTML = calories;
 	if (money  >= 5) {
