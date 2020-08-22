@@ -16,7 +16,7 @@ function openTab(tabName,elmnt,color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-dragElement(document.getElementById("output"));
+dragElement(document.querySelector("output"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
