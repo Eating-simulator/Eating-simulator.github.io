@@ -22,13 +22,13 @@ html:selection {
     user-select: none;
 }
 div.output {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   border: 3px solid #000000;
 }
  .actionbutton {
 	position: fixed;
-	bottom: 0;
+	bottom: 30;
 	right: 0;
 }
