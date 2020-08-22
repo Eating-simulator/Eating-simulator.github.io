@@ -11,11 +11,21 @@ var chefapron = 0;
 var whynot = -1;
 var libraryKey = false;
 var fWM = false;
+var popularity = 0;
+var howpouplar = "Not known"
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
 function idchange(idname, changetoid){
 	document.getElementById(idname).innerHTML = changetoid;
+}
+function CheckPouplarity() {
+  if (popularity >= 0) {
+    howpouplar = "Not known"
+  }
+  if (popularity >= 1) {
+    howpouplar = "Only a few people know you"
+  }
 }
 function eat(item) {
 	if (item === "pizza") {
@@ -35,6 +45,7 @@ function eat(item) {
 }
 function chefbutton() {
 	document.getElementById("yay").innerHTML = "Thanks! the cheese is probably in the store. i dont know about the dorito...";
+  popularity += 1
   output("You started the quest.")
 }
 setInterval(function() {
@@ -56,6 +67,7 @@ setInterval(function() {
 		document.querySelector('.chefresponce1').innerHTML = ' '
 		document.getElementById("chefresponce2").innerHTML = " "
 		document.getElementById("yay").innerHTML = "Thank you for helping me! as a reward, here is a world map. you'll probably use it more then i do."
+    popularity += 0.7
     output("You completed the quest and earned a world map!")
 		worldmap = true;
 			fWM = true;
@@ -258,7 +270,7 @@ function whyy() {
      output("The probotoad joked!") 
    };
    if (whynot == 3) {
-     document.querySelector(".landonno").innerHTML = "You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas."   
+     document.querySelector(".landonno").innerHTML = "You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas." 
    };
 }
 function aprontalk() {
@@ -280,7 +292,7 @@ document.getElementById("yay").innerHTML = "STOPPIT";
 }
 if (chefapron == 6) {
 yay.innerHTML = "RIGHT NOW";
-output("Youve beeto")
+output("You've been told to stop!")
 }
 if (chefapron == 7) {
 document.getElementById("yay").innerHTML = "That's INUURF";
