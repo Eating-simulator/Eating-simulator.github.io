@@ -29,6 +29,6 @@ div.output {
 }
 button.actionbutton {
 	position: fixed;
-	bottom: 300;
+	bottom: -300;
 	right: 0;
 }
