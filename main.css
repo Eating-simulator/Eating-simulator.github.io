@@ -27,8 +27,8 @@ div.output {
   right: 0;
   border: 3px solid #000000;
 }
-button.actionbutton {
+ .actionbutton {
 	position: fixed;
-	bottom: -300;
+	bottom: 0;
 	right: 0;
 }
