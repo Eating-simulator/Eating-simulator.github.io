@@ -52,7 +52,7 @@ function chefbutton() {
 }
 setInterval(function() {
 	money = money + moneypersecond;
-	calories = calories = caloriespersecond;
+	calories = calories = caloriepersecond;
   if (calories != 0) {
     calories = calories -= caloriepersecond
   }
