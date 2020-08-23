@@ -56,7 +56,7 @@ setInterval(function() {
     calories = calories -= caloriepersecond
   }
   if (calories <= 200) {
-    output("Better eat something!")
+    output(" Your calories are low. Better eat something!")
   }
 	document.querySelector(".money").innerHTML = money;
 	document.querySelector(".calories").innerHTML = calories;
