@@ -1,5 +1,5 @@
 var money = 0;
-var calories = 0;
+var calories = 300;
 var cheese = false;
 var dorito = false;
 var buttontime = -1;
@@ -54,6 +54,9 @@ setInterval(function() {
 	money = money + moneypersecond;
   if (calories != 0) {
     calories = calories -= caloriepersecond
+  }
+  if (calories <= 200) {
+    output("Better eat something!")
   }
 	document.querySelector(".money").innerHTML = money;
 	document.querySelector(".calories").innerHTML = calories;
