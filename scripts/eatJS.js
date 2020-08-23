@@ -55,8 +55,17 @@ setInterval(function() {
   if (calories != 0) {
     calories = calories -= caloriepersecond
   }
-  if (calories <= 200) {
-    output(" Your calories are low. Better eat something!")
+  if (calories <= 60) {
+    output(" Your calories are low. Better eat something! You only have one minute left!")
+  }
+  if (calories <= 10) {
+    output("URGENT! You need to eat something, and fast! Ten seconds!")
+  }
+  if (calories = 0) {
+    output("Too bad. You starved to death.")
+    setTimeout(function() {
+      window.location.href = window.location.href;
+    }, 2500);
   }
 	document.querySelector(".money").innerHTML = money;
 	document.querySelector(".calories").innerHTML = calories;
