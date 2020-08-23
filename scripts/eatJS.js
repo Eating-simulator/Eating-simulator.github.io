@@ -177,6 +177,7 @@ function fortresdoor() {
    };
    if (fortressdoorclicked == 4) {
     document.querySelector(".fortressresponce").innerHTML = "Do you even know what you're doing?";
+    output("You've been asked whether you know what you're doing!")
    };
    if (fortressdoorclicked == 5) {
     document.querySelector(".fortressresponce").innerHTML = "The sun's almost down.";
@@ -190,6 +191,7 @@ function fortresdoor() {
    };
    if (fortressdoorclicked == 8) {
     document.querySelector(".fortressresponce").innerHTML = "Do you even know what you're doing?";
+    output("You've been told you're wasting your time!")
    };
    if (fortressdoorclicked == 9) {
     document.querySelector(".fortressresponce").innerHTML = "You're really stubborn, aren't you?";
@@ -228,7 +230,7 @@ function fortresdoor() {
     document.querySelector(".fortressresponce").innerHTML = "It just opened and closed! what is with this cursed door?";
    };
    if (fortressdoorclicked == 19) {
-    document.querySelector(".fortressresponce").innerHTML = "I'm starting t oget mad.";
+    document.querySelector(".fortressresponce").innerHTML = "I'm starting to get mad.";
    };
    if (fortressdoorclicked == 20) {
     document.querySelector(".fortressresponce").innerHTML = "Should we kick it?";
