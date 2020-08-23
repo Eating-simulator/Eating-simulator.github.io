@@ -51,9 +51,9 @@ function chefbutton() {
   output("You started the quest.")
 }
 setInterval(function() {
-	money = money + moneypersecond;
+	money++;
   if (calories != 0) {
-    calories = calories -= caloriepersecond
+    calories -= 1
   }
   if (calories <= 60) {
     output(" Your calories are low. Better eat something! You only have one minute left!")
