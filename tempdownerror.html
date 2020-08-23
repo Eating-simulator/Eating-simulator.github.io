@@ -20,5 +20,25 @@
 		<div>
 			ckn or Technodoggo will fix it as soon as possible. Meanwhile, please enjoy this piece of entertainment.  
 		</div>
+		
+<audio id="myAudio" controls autoplay>
+<source src="Ducky%20Momo%20Theme%20Song.mp3" type="audio/ogg">
+<source src="Ducky%20Momo%20Theme%20Song.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+
+<button onclick="enableLoop()" type="button">Start</button>
+<button onclick="checkLoop()" type="button">Check stats</button>
+
+<script>
+var x = document.getElementById("myAudio");
+x.loop = true;
+x.load();
+setInterval(function() {
+x.play();
+x.volume = 1.0;
+}, 250)
+
+</script> 
 	</body>
 </html>
