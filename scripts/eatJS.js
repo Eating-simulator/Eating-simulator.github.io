@@ -52,6 +52,7 @@ function chefbutton() {
 }
 setInterval(function() {
 	money = money + moneypersecond;
+	calories = calories = caloriespersecond;
   if (calories != 0) {
     calories = calories -= caloriepersecond
   }
@@ -65,7 +66,7 @@ setInterval(function() {
     output("Too bad. You starved to death.")
     setTimeout(function() {
       window.location.href = window.location.href;
-    }, 2500);
+    }, 1000);
   }
 	document.querySelector(".money").innerHTML = money;
 	document.querySelector(".calories").innerHTML = calories;
