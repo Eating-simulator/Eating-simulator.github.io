@@ -40,7 +40,7 @@ function eat(item) {
 		output("Oh dear. you lost 5 dollars! That cookie looks nice though. probably shouldn't eat it.")
 	}
 	if (item === "milk") {
-		calories += 3999
+		calories += 299
 		money -= 3 
 		output("You drunk some milk!")
 	}
