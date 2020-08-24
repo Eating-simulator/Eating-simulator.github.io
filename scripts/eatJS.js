@@ -53,7 +53,7 @@ function chefbutton() {
 setInterval(function() {
 	money++;
   if (calories != 0) {
-    calories -= 1
+    calories = calories - 1
   }
   if (calories <= 60) {
     output(" Your calories are low. Better eat something! You only have one minute left!")
@@ -90,6 +90,8 @@ setInterval(function() {
 			fWM = true;
 		}
 	}
+	document.querySelector(".money").innerHTML = money;
+	document.querySelector(".calories").innerHTML = calories;
 }, 1000)
 
 function founddorito() {
