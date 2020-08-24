@@ -53,7 +53,9 @@ function chefbutton() {
   output("You started the quest.")
 }
 setInterval(function() {
+	checkstats()
 	money++;
+
   if (calories != 0) {
     calories--;
   }
