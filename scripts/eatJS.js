@@ -344,3 +344,7 @@ function checkstats() {
 function enterLibrary() {
     output("You entered the giant library!")
 }
+function triggerstore2door() {
+  opentab('store2door');
+  output('You found a door!');
+}
