@@ -27,7 +27,7 @@ div.output {
   right: 0;
   border: 3px solid #000000;
 }
-button{
+.button{
     cursor: pointer; /* To change the pointer when we pass the mouse on the button */
 
     /* The border itself */
@@ -42,7 +42,7 @@ button{
     position: absolute;
     user-select: none;
 }
-button:hover{
+.button:hover{
     background-color: #eeebe7; /* New background color, lighter grey */
     border-width: 1px;
 }
