@@ -91,6 +91,7 @@ setInterval(function() {
 		}
 	}
 	document.querySelector(".money").innerHTML = money;
+	console.log("Calories: " + calories)
 	document.querySelector(".calories").innerHTML = calories;
 }, 1000)
 
