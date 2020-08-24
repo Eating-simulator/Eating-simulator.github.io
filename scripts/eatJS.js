@@ -72,14 +72,14 @@ setInterval(function() {
 	document.querySelector(".money").innerHTML = money;
 	document.querySelector(".calories").innerHTML = calories;
 	if (money  >= 5) {
-		document.querySelector(".pizzabutton").disabled = false;
+		document.getElementById(".pizzabutton").disabled = false;
 	} else {
-		document.querySelector(".pizzabutton").disabled = true;
+		document.getElementById(".pizzabutton").disabled = true;
 	}
 	if (money  >= 3) {
-		document.querySelector(".milkbutton").disabled = false;
+		document.getElementById(".milkbutton").disabled = false;
 	} else {
-		document.querySelector(".milkbutton").disabled = true;
+		document.getElementById(".milkbutton").disabled = true;
 	}
 	if (dorito === true && cheese === true) {
 		if (fWM == false) {
@@ -137,9 +137,9 @@ function output(output) {
 function changeSoldier() {
 	soldierbuttonpressed++;
 	if (soldierbuttonpressed == 0) {
-		document.querySelector(".soldier").innerHTML = "oH! We'll let you in then."
+		document.getElementById(".soldier").innerHTML = "oH! We'll let you in then."
     output("The soldier let you in!")
-		document.querySelector(".soldieranswer").innerHTML = "Thanks!"
+		document.getElementById(".soldieranswer").innerHTML = "Thanks!"
 	}
 	if (soldierbuttonpressed >= 1) {
 		openTab('vault', this, 'white')
