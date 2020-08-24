@@ -53,15 +53,15 @@ function chefbutton() {
 setInterval(function() {
 	money++;
   if (calories != 0) {
-    calories = calories - 1
+    calories--;
   }
-  if (calories <= 60) {
+  if (calories < 60) {
     output(" Your calories are low. Better eat something! You only have one minute left!")
   }
-  if (calories <= 10) {
+  if (calories < 10) {
     output("URGENT! You need to eat something, and fast! Ten seconds!")
   }
-  if (calories = 0) {
+  if (calories == 0) {
     output("Too bad. You starved to death.")
     setTimeout(function() {
       window.location.href = window.location.href;
