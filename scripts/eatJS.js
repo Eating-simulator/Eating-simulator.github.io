@@ -345,7 +345,7 @@ function enterLibrary() {
     output("You entered the giant library!")
 }
 function triggerstore2door() {
-  opentab('store2door');
+  openTab('store2door');
   output('You found a door!');
 }
 function triggerstore2() {
