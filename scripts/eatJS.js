@@ -84,10 +84,10 @@ setInterval(function() {
 		document.querySelector('.chefresponce1').innerHTML = ' '
 		document.getElementById("chefresponce2").innerHTML = " "
 		document.getElementById("yay").innerHTML = "Thank you for helping me! as a reward, here is a world map. you'll probably use it more then i do."
-    popularity += 0.7
-    output("You completed the quest and earned a world map!")
+                popularity += 0.7
+                output("You completed the quest and earned a world map!")
 		worldmap = true;
-			fWM = true;
+		fWM = true;
 		}
 	}
 	document.querySelector(".money").innerHTML = money;
