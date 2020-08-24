@@ -42,3 +42,7 @@ button{
     position: absolute;
     user-select: none;
 }
+button:hover{
+    background-color: #eeebe7; /* New background color, lighter grey */
+    border-width: 1px;
+}
