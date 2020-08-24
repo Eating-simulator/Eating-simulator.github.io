@@ -493,9 +493,9 @@ Woah! This castle is named "Castle de pizza"! This must contain the ancient scro
 |   |  \ doggo| 
 |   |   \     | 
 |   | M  \    | 
-| <span class="clickable" onclick="triggerstore2()">^</span> |     \   | 
-| <span class="clickable" onclick="triggerstore2()">|</span> |\  I  \  | 
-| <span class="clickable" onclick="triggerstore2()">|</span> | \     \ | 
+| <span class="clickable" onclick="triggerstore2door()">^</span> |     \   | 
+| <span class="clickable" onclick="triggerstore2door()">|</span> |\  I  \  | 
+| <span class="clickable" onclick="triggerstore2door()">|</span> | \     \ | 
 |   |  \  L  \| 
 |   |   \     | 
 |   |    \  K | 
@@ -544,6 +544,18 @@ calories: 299 (i didn't choose the calories.)
           ---------------------------------------------
 </pre>
 <button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button> 
+<div id="store2door">
+ ____________
+|     NO     |
+|TRESSPASSING|
+|            |
+|         <span class="clickable" onclick="triggerstore2()">_</span>  |
+|        <span class="clickable" onclick="triggerstore2()">(_)</span> |
+|            |
+|  THE STORE |
+|            |
+|____________|
+</div>
 <div id="store2">
 <pre>
 _____________________________________________________                     
