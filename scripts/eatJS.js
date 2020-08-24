@@ -17,6 +17,7 @@ var popularity = 0;
 var howpouplar = "Not known"
 var moneypersecond = 1;
 var caloriepersecond = 1;
+var lotterymachinemoney = 0;
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
@@ -55,7 +56,8 @@ function chefbutton() {
 setInterval(function() {
 	checkstats()
 	money++;
-
+  lotterymachinemoney++;
+  document.querySelector(".factoryhowmany").innerHTML = lotterymachinemoney;
   if (calories != 0) {
     calories--;
   }
@@ -355,4 +357,9 @@ function triggerstore2door() {
 function triggerstore2() {
   openTab('store2');
   output('You trespassed in the store!');
+}
+function lotterymachine(item) {
+  if (item == "money") {
+    lotterymachinemoney = 1;
+  }
 }
