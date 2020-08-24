@@ -349,6 +349,6 @@ function triggerstore2door() {
   output('You found a door!');
 }
 function triggerstore2() {
-  opentab('store2');
+  openTab('store2');
   output('You trespassed in the store!');
 }
