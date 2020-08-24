@@ -1,3 +1,5 @@
+// JavaScript file (c) Copyright 2020 ckn, technodoggo. All rights reserved. 
+// This file may not be reproduced. 
 var money = 0;
 var calories = 300;
 var cheese = false;
