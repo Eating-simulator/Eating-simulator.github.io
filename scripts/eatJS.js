@@ -57,7 +57,9 @@ function chefbutton() {
 setInterval(function() {
 	checkstats()
 	money++;
-  lotterymachinemoney++;
+  if (lotterymachinemoneyturnedon == true) {
+    lotterymachinemoney++;
+  }
   document.querySelector(".factoryhowmany").innerHTML = lotterymachinemoney;
   if (calories != 0) {
     calDec = Math.floor(calories/300+1);
