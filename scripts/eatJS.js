@@ -65,10 +65,10 @@ setInterval(function() {
     calDec = Math.floor(calories/300+1);
     calories -= calDec;
   }
-  if (calories < 60) {
+  if (calories == 60) {
     output(" Your calories are low. Better eat something! You only have one minute left!")
   }
-  if (calories < 10) {
+  if (calories == 10) {
     output("URGENT! You need to eat something, and fast! Ten seconds!")
   }
   if (calories == 0) {
