@@ -1,0 +1,31 @@
+  
+© Copyright June-August 2020 technodoggo, ch1ck3n. All rights reserved. 
+The code was mainly written by technodoggo and ch1ck3n. According to ckn (short for ch1ck3n), bombus11 also worked on it for a brief period.
+   ©©©©©©     ©©©     ©©©©©  ©©    ©© ©©©©©  ©©©©©©   ©©©©   ©©  ©© ©©©©©©
+  ©©©       ©©© ©©©   ©©  ©©  ©©  ©©  ©©  ©©   ©©    ©©   ©  ©©  ©©   ©©  
+ ©©©      ©©©     ©©© ©©©©©    ©©©©   ©©©©©    ©©   ©©  ©©©© ©©©©©©   ©©  
+  ©©©       ©©© ©©©   ©©        ©©    ©© ©©    ©©    ©©  ©©  ©©  ©©   ©©  
+   ©©©©©©     ©©©     ©©        ©©    ©©  ©© ©©©©©©   ©©©©   ©©  ©©   ©©  
+All JavaScript, HyperText Markup Language (HTML), Cascading Style Sheets (CSS), Text files, etc. are property of either technodoggo, ch1ck3n, or both. To request 
+use of these files, contact jonathan@sakunkoo.com (technodoggo) ch1ck3n@ch1ck3n.com (ch1ck3n or ckn). 
+
+
+Copyright (c) 2020 Ch1ck3n, Technodoggo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
