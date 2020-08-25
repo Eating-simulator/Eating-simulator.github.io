@@ -6,4 +6,4 @@ The code was mainly written by technodoggo and ch1ck3n. According to ckn (short 
   ©©©       ©©© ©©©   ©©        ©©    ©© ©©    ©©    ©©  ©©  ©©  ©©   ©©  
    ©©©©©©     ©©©     ©©        ©©    ©©  ©© ©©©©©©   ©©©©   ©©  ©©   ©©  
 All JavaScript, HyperText Markup Language (HTML), Cascading Style Sheets (CSS), Text files, etc. are property of either technodoggo, ch1ck3n, or both. To request 
-use of these files, contact jonathan@sakunkoo.com or landon.fox@outlook.jp. 
+use of these files, contact jonathan@sakunkoo.com (technodoggo) ch1ck3n@ch1ck3n.com (ch1ck3n or ckn). 
