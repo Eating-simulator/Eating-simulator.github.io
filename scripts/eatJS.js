@@ -368,3 +368,9 @@ function lotterymachine(item) {
     document.getElementById("factorycandies").style.color = "red";
   }
 }
+function collectmoney() {
+  lotterymachinemoneyturnedon = false;
+  document.getElementById("factorymoney").style.color = "red";
+  money = money + lotterymachinemoney;
+  lotterymachinemoney = 0;
+}
