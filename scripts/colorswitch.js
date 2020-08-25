@@ -2,7 +2,7 @@ var mode = 0
 
 function triggerColors() {
   if (mode == 0) {mode = 1}
-  else if {mode = 0}
+  else {mode = 0}
   if (mode == 0) {
     document.body.style = 'color:black;background-color:white;';
   } else {
