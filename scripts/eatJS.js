@@ -19,7 +19,6 @@ var moneypersecond = 1;
 var caloriepersecond = 1;
 var lotterymachinemoney = 0;
 lotterymachinemoneyturnedon = false;
-document.onload = openTab("Store");
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
