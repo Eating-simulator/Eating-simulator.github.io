@@ -133,7 +133,7 @@ function librarypathway() {
       output("The librarian gave you permission to go inside the vault")
 	}
 	if (buttontime >= 5){
-			openTab('Libraryvault', this, 'white')
+			openTab('Libraryvault',  )
 	}
 }
 function output(output) {
@@ -147,7 +147,7 @@ function changeSoldier() {
 		document.querySelector(".soldieranswer").innerHTML = "Thanks!"
 	}
 	if (soldierbuttonpressed >= 1) {
-		openTab('vault', this, 'white')
+		openTab('vault',  )
     output("You went inside the vault!")
 	}
 }
