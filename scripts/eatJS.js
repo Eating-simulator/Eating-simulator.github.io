@@ -133,7 +133,7 @@ function librarypathway() {
       output("The librarian gave you permission to go inside the vault")
 	}
 	if (buttontime >= 5){
-			openTab('Libraryvault', this, 'white')
+			openTab('Libraryvault', this)
 	}
 }
 function output(output) {
@@ -147,7 +147,7 @@ function changeSoldier() {
 		document.querySelector(".soldieranswer").innerHTML = "Thanks!"
 	}
 	if (soldierbuttonpressed >= 1) {
-		openTab('vault', this, 'white')
+		openTab('vault', this)
     output("You went inside the vault!")
 	}
 }
@@ -161,7 +161,7 @@ function lockdoor() {
 			document.getElementById("librarianhello").innerHTML = "Ah! that door, is the only known pathway to the unknown regions of the cknairia deserts. but only one thing: I can't unlock it...."
 	}
 	if (lockeddoor == 1){
-		openTab("Desert", this, "white")
+		openTab("Desert", this)
     output("You entered the desert!")
 	}
 
@@ -172,7 +172,7 @@ function ifound() {
 		document.getElementById("librarianhello").innerHTML = "Good gravy! you found it! the world map! i knew it exist! i Opened the door that leads to the desert. turns out you needed a world map to unlock it. i was wondering. here, let me open the door. just 5 seconds...."
 		document.querySelector(".lockeddoor").innerHTML = "An unlocked door"
 		setTimeout(function() {
-			openTab("Desert", this, "white")
+			openTab("Desert", this)
       output("You entered the desert!")
 		}, 5000)
 	} else {
@@ -277,7 +277,7 @@ function fortresdoor() {
     document.getElementById("fortressdoor").innerHTML = "  ";
    };
    if (fortressdoorclicked >= 27) {
-    openTab("Castle", this, "white")
+    openTab("Castle", this)
     output("You went inside the fortress!")
    };
 
