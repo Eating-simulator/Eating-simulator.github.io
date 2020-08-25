@@ -18,6 +18,7 @@ var howpouplar = "Not known"
 var moneypersecond = 1;
 var caloriepersecond = 1;
 var lotterymachinemoney = 0;
+lotterymachinemoneyturnedon = false
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
@@ -361,7 +362,9 @@ function triggerstore2() {
 function lotterymachine(item) {
   if (item == "money") {
     lotterymachinemoney = 1;
+    lotterymachinemoneyturnedon = true
     output("You turned on the lotterymachine: money")
     document.getElementById("factorymoney").style.color = "green";
+    document.getElementById("factorycandies").style.color = "red";
   }
 }
