@@ -60,7 +60,7 @@ setInterval(function() {
   lotterymachinemoney++;
   document.querySelector(".factoryhowmany").innerHTML = lotterymachinemoney;
   if (calories != 0) {
-    calories -= Math.floor(calories/300);
+    calories -= Math.floor(calories/300+1);
   }
   if (calories < 60) {
     output(" Your calories are low. Better eat something! You only have one minute left!")
