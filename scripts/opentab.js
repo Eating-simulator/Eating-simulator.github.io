@@ -11,6 +11,10 @@ function openTab(tabName,elmnt,color) {
     tablinks[i].style.backgroundColor = "";
   }
   document.getElementById(tabName).style.display = "block";
+<<<<<<< HEAD
+=======
+  elmnt.style.backgroundColor = color;
+>>>>>>> parent of 76cce81... remove changecolor element from openTab function
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
