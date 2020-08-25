@@ -16,7 +16,7 @@ var fWM = false;
 var popularity = 0;
 var howpouplar = "Not known"
 var moneypersecond = 1;
-var caloriepersecond = 1;
+var calDec;
 var lotterymachinemoney = 0;
 lotterymachinemoneyturnedon = false;
 function classchange(classname, changeto){
@@ -60,7 +60,8 @@ setInterval(function() {
   lotterymachinemoney++;
   document.querySelector(".factoryhowmany").innerHTML = lotterymachinemoney;
   if (calories != 0) {
-    calories -= Math.floor(calories/300+1);
+    calDec = Math.floor(calories/300+1);
+    calories -= calDec;
   }
   if (calories < 60) {
     output(" Your calories are low. Better eat something! You only have one minute left!")
@@ -98,7 +99,6 @@ setInterval(function() {
 		}
 	}
 	document.querySelector(".money").innerHTML = money;
-	console.log("Calories: " + calories)
 	document.querySelector(".calories").innerHTML = calories;
 }, 1000)
 
