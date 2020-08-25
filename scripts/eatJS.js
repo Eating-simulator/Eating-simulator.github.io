@@ -361,5 +361,7 @@ function triggerstore2() {
 function lotterymachine(item) {
   if (item == "money") {
     lotterymachinemoney = 1;
+    output("You turned on the lotterymachine: money")
+    document.getElementById("factorymoney").style = "color: green";
   }
 }
