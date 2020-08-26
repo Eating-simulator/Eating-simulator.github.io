@@ -291,18 +291,18 @@ var whynothtml = document.querySelector(".landonno");
 function whyy() {
 	whynot++;
    if (whynot == 0) {
-     document.querySelector(".landonno").innerHTML = "I am Rainbow the Wise Probotoad."   
+     landon.setspeech("I am Rainbow the Wise Probotoad.")
      output("You've been told he was a wise probotoad!")
    };
    if (whynot == 1) {
-     document.querySelector(".landonno").innerHTML = "Because my dad was a Proboscis Monkey and my mom was a toad."   
+     landon.setspeech("Because my dad was a Proboscis Monkey and my mom was a toad.") 
    };
    if (whynot == 2) {
-     document.querySelector(".landonno").innerHTML = "Just Joking! Both my parents were Probotoads."  
+     landon.setspeech("Just Joking! Both my parents were Probotoads.")
      output("The probotoad joked!") 
    };
    if (whynot == 3) {
-     document.querySelector(".landonno").innerHTML = "You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas." 
+     landon.setspeech("You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas. \n Also, i think there is a second key. i don't know where. i heard it's in a store or something.")
    };
 }
 function aprontalk() {
