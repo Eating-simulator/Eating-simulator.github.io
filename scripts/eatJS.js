@@ -26,7 +26,7 @@ function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
 function idchange(idname, changetoid){
-	document.getElementById(idname).innerHTML = changetoid;
+	doent.getElementById(idname).innerHTML = changetoid;
 }
 function CheckPouplarity() {
   if (data.popularity >= 0) {
@@ -376,7 +376,7 @@ function lotterymachine(item) {
     document.getElementById("factorycandies").style.color = "red";
   }
 }
-function collectdata.money() {
+function collectmoney() {
   data.lotterymachinemoneyturnedon = false;
   document.getElementById("factorydata.money").style.color = "red";
   data.money = data.money + lotterymachinemoney;
