@@ -111,7 +111,7 @@ setInterval(function() {
 	document.querySelector(".calories").innerHTML = data.calories;
 }, 1000)
 
-function data.dorito() {
+function founddorito() {
 	document.querySelector('.chefresponce1').innerHTML = 'Ah! you found my dorito! very much thanks.'
   output("You found the dorito!")
 	data.dorito = true
