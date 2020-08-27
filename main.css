@@ -28,6 +28,13 @@ div.output {
   right: 0;
   border: 3px solid #000000;
 }
+.output-white {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #FFFFFF;
+  
+}
 .aroundRealButton{
     user-select: none;
 }
