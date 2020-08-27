@@ -84,8 +84,8 @@ setInterval(function() {
       window.location.href = window.location.href;
     }, 1000);
   }
-	document.querySelector(".data.money").innerHTML = data.money;
-	document.querySelector(".data.calories").innerHTML = data.calories;
+	document.querySelector(".money").innerHTML = data.money;
+	document.querySelector(".calories").innerHTML = data.calories;
 	if (data.money  >= 5) {
 		document.querySelector(".pizzabutton").disabled = false;
 	} else {
@@ -107,13 +107,13 @@ setInterval(function() {
 		data.fWM = true;
 		}
 	}
-	document.querySelector(".data.money").innerHTML = data.money;
-	document.querySelector(".data.calories").innerHTML = data.calories;
+	document.querySelector(".money").innerHTML = data.money;
+	document.querySelector(".calories").innerHTML = data.calories;
 }, 1000)
 
 function founddata.dorito() {
-	document.querySelector('.chefresponce1').innerHTML = 'Ah! you found my data.dorito! very much thanks.'
-  output("You found the data.dorito!")
+	document.querySelector('.chefresponce1').innerHTML = 'Ah! you found my dorito! very much thanks.'
+  output("You found the dorito!")
 	data.dorito = true
 }
 
@@ -142,7 +142,7 @@ function librarypathway() {
       output("The librarian gave you permission to go inside the vault")
 	}
 	if (data.buttontime >= 5){
-			openTab('Libraryvault',  )
+			openTab('Libraryvault')
 	}
 }
 function output(output) {
@@ -179,7 +179,7 @@ function ifound() {
 	if (data.worldmap == true) {
 		data.lockeddoor = 1
 		document.getElementById("librarianhello").innerHTML = "Good gravy! you found it! the world map! i knew it exist! i Opened the door that leads to the desert. turns out you needed a world map to unlock it. i was wondering. here, let me open the door. just 5 seconds...."
-		document.querySelector(".data.lockeddoor").innerHTML = "An unlocked door"
+		document.querySelector(".lockeddoor").innerHTML = "An unlocked door"
 		setTimeout(function() {
 			openTab("Desert", this, "white")
       output("You entered the desert!")
@@ -372,7 +372,7 @@ function lotterymachine(item) {
     lotterymachinemoney = 1;
     data.lotterymachinemoneyturnedon = true
     output("You turned on the lotterymachine: data.money")
-    document.getElementById("factorydata.money").style.color = "green";
+    document.getElementById("money").style.color = "green";
     document.getElementById("factorycandies").style.color = "red";
   }
 }
