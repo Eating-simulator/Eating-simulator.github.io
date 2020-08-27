@@ -66,7 +66,7 @@ setInterval(function() {
   if (data.lotterymachinemoneyturnedon == true) {
     lotterymachinemoney++;
   }
-  document.querySelector(".factoryhowmany").innerHTML = lotterymachinemoney;
+  document.querySelector(".factoryhowmany").innerHTML = data.lotterymachinemoney;
   console.error("Warning: A CHEATER IS LOOKING AT THE CONSOLE")
   if (data.calories != 0) {
     data.calDec = Math.floor(data.calories/300+1);
