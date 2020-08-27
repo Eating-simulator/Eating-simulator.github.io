@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">
 <meta charset="utf-8">
-<title>The Eating Simulator - CKN Technodoggo</title>
+<title>The Eating $imulator - CKN Technodoggo</title>
  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176391236-1"></script>
 <script>
@@ -617,14 +617,15 @@ ____________________________________________________\\
 </div>
   </div>
 <pre>ASCII arts provided by <a href="https://ascii.co.uk/">ascii.co.uk</a></pre>
-<button class="actionbutton" onclick="opentab('Action panel',  )">Action panel</button>
+<button onclick="triggerColors()">Invert Colors</button>
+<button onclick="checkSave()">Save</button>
+<button onclick="localStorage.clear()">Reset game</button>
 <div class="output">
 <pre style="size: 10em">Output: <span id="output">You loaded eating simulator!</span></pre>
 </div>
 <div class="status">
 <pre style="size: 10em">Your current popularity is: <span id="popularity">Not known</span></pre>
 </div>
-<button onclick="triggerColors()">Invert Colors</button>
   <pre>Eating Simulator v2.5.0</pre>
   <pre>© Copyright 2020 <a href="https://ch1ck3n.com">ch1ck3n</a>, <a href="https://jonkoo.com">technodoggo.</a> All rights reserved. 
   <a href="https://github.com/Eating-simulator/Eating-simulator.github.io/">Source code</a></pre>
@@ -633,5 +634,6 @@ ____________________________________________________\\
 <script src="/scripts/landon.js"></script>
 <script src="/scripts/opentab.js"></script>
 <script src="/scripts/colorswitch.js"></script>
+<script src="/scripts/save.js"></script>
 </body>
 </html>
