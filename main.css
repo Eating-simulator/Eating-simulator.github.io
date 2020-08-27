@@ -54,3 +54,8 @@ div.output {
     background-color: #eeebe7; /* New background color, lighter grey */
     border-width: 1px;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+  
+}
