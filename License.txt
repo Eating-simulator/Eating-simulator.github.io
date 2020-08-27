@@ -9,6 +9,8 @@ The code was mainly written by technodoggo and ch1ck3n. According to ckn (short 
 All JavaScript, HyperText Markup Language (HTML), Cascading Style Sheets (CSS), Text files, etc. are property of either technodoggo, ch1ck3n, or both. To request 
 use of these files, contact jonathan@sakunkoo.com (technodoggo) ch1ck3n@ch1ck3n.com (ch1ck3n or ckn). 
 
+If you break the laws of copyright ckn will come to your house and fill it up with doges until you unbreak the laws of copyright
+
 
 Copyright (c) 2020 Ch1ck3n, Technodoggo
 
