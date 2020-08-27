@@ -26,7 +26,7 @@ function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
 function idchange(idname, changetoid){
-	document.getElementById(idname).innerHTML = changetoid;
+	doent.getElementById(idname).innerHTML = changetoid;
 }
 function CheckPouplarity() {
   if (data.popularity >= 0) {
@@ -66,7 +66,7 @@ setInterval(function() {
   if (data.lotterymachinemoneyturnedon == true) {
     lotterymachinemoney++;
   }
-  document.querySelector(".factoryhowmany").innerHTML = lotterymachinemoney;
+  document.querySelector(".factoryhowmany").innerHTML = data.lotterymachinemoney;
   console.error("Warning: A CHEATER IS LOOKING AT THE CONSOLE")
   if (data.calories != 0) {
     data.calDec = Math.floor(data.calories/300+1);
@@ -111,7 +111,7 @@ setInterval(function() {
 	document.querySelector(".calories").innerHTML = data.calories;
 }, 1000)
 
-function data.dorito() {
+function founddorito() {
 	document.querySelector('.chefresponce1').innerHTML = 'Ah! you found my dorito! very much thanks.'
   output("You found the dorito!")
 	data.dorito = true
@@ -376,7 +376,7 @@ function lotterymachine(item) {
     document.getElementById("factorycandies").style.color = "red";
   }
 }
-function collectdata.money() {
+function collectmoney() {
   data.lotterymachinemoneyturnedon = false;
   document.getElementById("factorydata.money").style.color = "red";
   data.money = data.money + lotterymachinemoney;
