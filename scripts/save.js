@@ -10,7 +10,7 @@ function checkNull(variable) {
 }
 
 function checkSave() {
-    if (localStorage.getItem('data') == null) {
+    if (localStorage.getItem('data') == undefined) {
         localStorage.setItem('data', data);
         console.log("data is null")
     } else {
