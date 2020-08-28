@@ -67,7 +67,7 @@ setInterval(function() {
     lotterymachinemoney++;
   }
   document.querySelector(".factoryhowmany").innerHTML = data.lotterymachinemoney;
-  console.error("Warning: A CHEATER IS LOOKING AT THE CONSOLE")
+  console.warn("Warning: A CHEATER IS LOOKING AT THE CONSOLE")
   if (data.calories != 0) {
     data.calDec = Math.floor(data.calories/300+1);
     data.calories -= data.calDec;
