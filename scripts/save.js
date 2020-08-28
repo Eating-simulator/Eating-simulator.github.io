@@ -12,8 +12,10 @@ function checkNull(variable) {
 function checkSave() {
     if (localStorage.getItem('data') == null) {
         localStorage.setItem('data', data);
+        console.log("data is null")
     } else {
         data = localStorage.getItem('data');
+        console.log(data)
     }
 }
 
