@@ -36,6 +36,11 @@ Your browser does not support the audio element.
 <source src="Five - Everybody Get Up (Official Video) (128 kbps).mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio><br>
+<audio id="myAudio4" controls autoplay loop>
+<source src="Beach Boys - Wouldn't It Be Nice (128 kbps).mp3" type="audio/ogg">
+<source src="Beach Boys - Wouldn't It Be Nice (128 kbps).mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 <button onclick="enableLoop()" type="button">Start</button>
 <button onclick="checkLoop()" type="button">Check stats</button>
 
@@ -43,19 +48,24 @@ Your browser does not support the audio element.
 var x = document.getElementById("myAudio1");
 var y = document.getElementById("myAudio2");
 var z = document.getElementById("myAudio3");
+var v = document.getElementById("myAudio3");
 x.loop = true;
 y.loop = true;
 z.loop = true;
+y.loop = true
 x.load();
 y.load();
 z.load();
+y.load
 setInterval(function() {
 x.play();
 y.play();
 z.play();
+y.play();
 x.volume = 1.5;
 y.volume = 1.5;
 z.volume = 1.5;
+y.volume = 1.5;
 }, 250)
 
 </script> 
