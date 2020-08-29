@@ -2,21 +2,18 @@
 // Has error, do not work it yet
 
 function checkNull(variable) {
-    if (localStorage.getItem(variable) == null) {
-        return true;
-    } else {
-        return false;
-    }
+    return (localStorage.getItem(variable) == null);
 }
 
 function checkSave() {
-    if (checkNull('data')) {
-        localStorage.setItem('data', data);
-        console.log("data is null")
-    } else {
+    if (localStorage.getItem('data')) {
         data = localStorage.getItem('data');
-        console.log(data)
+    } else {
+        localStorage.setItem('data',data);
     }
 }
-
+/*
+* if data in local storage is not null then load the data into data variable
+* else save in local storage
+*/
 checkSave();
