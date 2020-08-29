@@ -1,15 +1,11 @@
 // For saving and loading
 // Has error, do not work it yet
 
-function checkNull(variable) {
-    return (localStorage.getItem(variable) == null);
-}
-
 function checkSave() {
     if (localStorage.getItem('data')) {
-        data = localStorage.getItem('data');
+        data = JSON.parse(localStorage.getItem('data'));
     } else {
-        localStorage.setItem('data',data);
+        localStorage.setItem('data',JSON.stringify(data));
     }
 }
 /*
