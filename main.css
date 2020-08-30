@@ -22,7 +22,7 @@ a:hover {
 html:selection {
     user-select: none;
 }
-div.output {
+.output {
   position: fixed;
   bottom: 0;
   right: 0;
