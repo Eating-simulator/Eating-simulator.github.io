@@ -356,7 +356,7 @@ function checkstats() {
 	document.getElementById("door1").onclick = 'enterLibrary()';
 	document.getElementById("door2").onclick = 'enterLibrary()';
     }
-    if (white) {
+    if (data.white) {
     	document.body.style = `background-color:white;color:black;`;
     } else {
     	document.body.style = `background-color:white;color:black;`;
