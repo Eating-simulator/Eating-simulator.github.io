@@ -359,7 +359,7 @@ function checkstats() {
     if (data.white) {
     	document.body.style = `background-color:white;color:black;`;
     } else {
-    	document.body.style = `background-color:white;color:black;`;
+    	document.body.style = `background-color:black;color:white;`;
     }
 }
 function enterLibrary() {
