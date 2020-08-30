@@ -1,7 +1,7 @@
 function triggerColors() {
-   if (white) {
-      white = false;
+   if (data.white) {
+      data.white = false;
    } else {
-      white = true;
+      data.white = true;
    }
 }
