@@ -20,7 +20,8 @@ var data = {
         moneypersecond : 1,
         calDec : null,
         lotterymachinemoney : 0,
-        lotterymachinemoneyturnedon : false
+        lotterymachinemoneyturnedon : false,
+	white = true;
 }
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
@@ -354,6 +355,11 @@ function checkstats() {
 	document.getElementById("door2").className = 'clickable';
 	document.getElementById("door1").onclick = 'enterLibrary()';
 	document.getElementById("door2").onclick = 'enterLibrary()';
+    }
+    if (white) {
+    	document.body.style = `background-color:white;color:black;`;
+    } else {
+    	document.body.style = `background-color:white;color:black;`;
     }
 }
 function enterLibrary() {
