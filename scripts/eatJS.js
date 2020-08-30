@@ -74,7 +74,7 @@ setInterval(function() {
     data.calories -= data.calDec;
   }
   if (data.calories == 60) {
-    output(" Your data.calories are low. Better eat something! You only have one minute left!")
+    output(" Your calories are low. Better eat something! You only have one minute left!")
   }
   if (data.calories == 10) {
     output("URGENT! You need to eat something, and fast! Ten seconds!")
