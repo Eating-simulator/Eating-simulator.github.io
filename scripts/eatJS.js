@@ -378,7 +378,7 @@ function lotterymachine(item) {
     lotterymachinemoney = 1;
     data.lotterymachinemoneyturnedon = true
     output("You turned on the lotterymachine: money")
-    document.getElementById("money").style.color = "green";
+    document.getElementById("factorymoney").style.color = "green";
     document.getElementById("factorycandies").style.color = "red";
   }
 }
