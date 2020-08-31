@@ -1,6 +1,6 @@
 var random = Math.floor(Math.random() * 11);
 var merchant = {
-  setmechantspeech : function(speech) {
+  setmerchantspeech : function(speech) {
   document.querySelector(".merchantspeech").innerHTML = speech;
   } ,
   givemesomething : function() {
@@ -11,6 +11,10 @@ var merchant = {
     merchant.setmerchantspeech("Here's a watermelon flavored dorito. <br> i never tried them, but i'm sure they taste good.")
     } else if (random == 2) {
     merchant.setmerchantspeech("Here's a lemon! eat them, your mouth will hurt. <br> but i think you can squirt the juice to a mob <br> and it'll get easier to defeat it.")
+    } else if (random == 3) {
+     merchant.setmerchantspeech("Here's a headphone! <br> wait, why am i giving you a headphone?") 
     }
+
+    
   }
 }
