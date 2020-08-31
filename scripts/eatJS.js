@@ -65,7 +65,7 @@ setInterval(function() {
 	checkstats()
 	data.money++;
   if (data.lotterymachinemoneyturnedon == true) {
-    lotterymachinemoney++;
+    data.lotterymachinemoney++;
   }
   document.querySelector(".factoryhowmany").innerHTML = data.lotterymachinemoney;
   console.warn("Warning: A CHEATER IS LOOKING AT THE CONSOLE")
