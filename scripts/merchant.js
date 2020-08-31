@@ -2,7 +2,7 @@ var random = Math.floor(Math.random() * 11);
 var merchant = {
   setmechantspeech : function(speech) {
   document.querySelector(".merchantspeech").innerHTML = speech;
-  }
+  } ,
   givemesomething : function() {
     random = Math.floor(Math.random() * 11);
     if (random == 0) {
