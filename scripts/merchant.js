@@ -1,9 +1,10 @@
+var random = Math.floor(Math.random() * 11);
 var merchant = {
   setmechantspeech : function(speech) {
   document.querySelector(".merchantspeech").innerHTML = speech;
   }
   givemesomething : function() {
-    var random = Math.floor(Math.random() * 11);
+    random = Math.floor(Math.random() * 11);
     if (random == 0) {
     merchant.setmerchantspeech("Here's a jumper flavored doggo! <br> They taste good.")
     } else if (random == 1) {
