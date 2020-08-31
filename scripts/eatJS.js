@@ -374,17 +374,17 @@ function triggerstore2() {
   output('You trespassed in the store!');
 }
 function lotterymachine(item) {
-  if (item == "data.money") {
+  if (item == "money") {
     lotterymachinemoney = 1;
     data.lotterymachinemoneyturnedon = true
-    output("You turned on the lotterymachine: data.money")
+    output("You turned on the lotterymachine: money")
     document.getElementById("money").style.color = "green";
     document.getElementById("factorycandies").style.color = "red";
   }
 }
 function collectmoney() {
   data.lotterymachinemoneyturnedon = false;
-  document.getElementById("factorydata.money").style.color = "red";
+  document.getElementById("factorymoney").style.color = "red";
   data.money = data.money + lotterymachinemoney;
   lotterymachinemoney = 0;
 }
