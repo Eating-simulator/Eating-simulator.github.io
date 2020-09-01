@@ -81,6 +81,7 @@ setInterval(function() {
   }
   if (data.calories == 0) {
     output("Too bad. You starved to death.")
+    localStorage.clear()
     setTimeout(function() {
       window.location.href = window.location.href;
     }, 1000);
