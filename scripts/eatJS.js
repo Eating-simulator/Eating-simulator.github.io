@@ -98,7 +98,7 @@ setInterval(function() {
 	} else {
 		document.querySelector(".milkbutton").disabled = true;
 	}
-	if (data.dorito === true && cheese === true) {
+	if (data.dorito === true && data.cheese === true) {
 		if (data.fWM == false) {
 		document.querySelector('.chefresponce1').innerHTML = ' '
 		document.getElementById("chefresponce2").innerHTML = " "
