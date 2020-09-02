@@ -124,6 +124,7 @@ function foundcheese() {
   output("You found the cheese!")
 	cheese = true;
 }
+document.getElementById("merchant").innerHTML = "                .---.            <br>               |   '.|  __       <br>               | ___.--'  )      <br>             _.-'_` _%%%_/       <br>          .-'%%% a: a %%%        <br>              %%  L   %%_        <br>              _%\\'=' |  /-.__    <br>           .-' / )--' #/     '\\  <br>          /'  /  /---'(    :   \\ <br>         /   |  /( /|##|  \\     |<br>        /   ||# | / | /|   \\    \\<br>        |   ||##| I \\/ |   |   _|<br>        |   ||: | o  |#|   |  / |<br>        |   ||  / I  |:/  /   |/ <br>        |   ||  | o   /  /    /  <br>        |   \\|  | I  |. /    /   <br>         \\  /|##| o  |.|    /    <br>          \\/ \\::|/\\_ /  ---'|    <br>           \\ |\\ |    |     :\\    <br>           | |  /     \\...' |    <br>           | |# |/\\    \\    |    <br>           | | :|  |    |   |    <br>           | |  |  |    |   |   "
 document.getElementById("yummypizzaascii").innerHTML = "                                    ._           <br>                                   ,(  `-.       <br>                                 ,': `.   `.     <br>                               ,` *   `-.   \\    <br>                             ,'  ` :+  = `.  `.  <br>                           ,~  (o):  .,   `.  `. <br>                         ,'  ; :   ,(__) x;`.  ; <br>                       ,'  :'  itz  ;  ; ; _,-'  <br>                     .'O ; = _' C ; ;'_,_ ;      <br>                   ,;  _;   ` : ;'_,-'   i'      <br>                 ,` `;(_)  0 ; ','       :       <br>               .';6     ; ' ,-'~                 <br>             ,' Q  ,  ;',-.'                     <br>           ,( :` ; _,-'~  ;                      <br>         ,~.`c _','                              <br>       .';^_,-' ~                                <br>     ,'_;-''                                     <br>    ,,~                                          <br>    i'                                           <br>    :  "
 function librarypathway() {
 	data.buttontime++;
@@ -309,7 +310,7 @@ function whyy() {
      output("The probotoad joked!") 
    };
    if (data.whynot == 3) {
-     landon.setspeech("You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas. \n Also, i think there is a second key. i don't know where. i heard it's in a store or something.")
+     landon.setspeech("You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas. \\n Also, i think there is a second key. i don't know where. i heard it's in a store or something.")
    };
 }
 function aprontalk() {
