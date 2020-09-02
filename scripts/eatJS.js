@@ -360,8 +360,12 @@ function checkstats() {
     }
     if (data.white) {
     	document.body.style = `background-color:white;color:black;`;
+	document.querySelector('a').style = `color:yellow;`;
+	document.querySelector('a').onmouseover = `color: orange;`;
     } else {
     	document.body.style = `background-color:black;color:white;`;
+	document.querySelector('a').style = `color:blue;`;
+	document.querySelector('a').onmouseover = `color: red;`;
     }
 }
 function enterLibrary() {
