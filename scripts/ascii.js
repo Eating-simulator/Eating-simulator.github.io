@@ -14,5 +14,4 @@ var ascii = {
 
 
 }
-=======
 ascii.reload()
