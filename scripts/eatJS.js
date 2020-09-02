@@ -63,7 +63,6 @@ function chefbutton() {
 }
 setInterval(function() {
 	checkstats()
-  ascii.reload()
 	data.money++;
   if (data.lotterymachinemoneyturnedon == true) {
     data.lotterymachinemoney++;
