@@ -21,7 +21,7 @@ var data = {
         calDec : null,
         lotterymachinemoney : 0,
         lotterymachinemoneyturnedon : false,
-	white : true
+	      white : true
 }
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
