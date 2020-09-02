@@ -4,7 +4,7 @@ var merchant = {
   document.querySelector(".merchantspeech").innerHTML = speech;
   } ,
   givemesomething : function() {
-    random = Math.floor(Math.random() * 9);
+    random = Math.floor(Math.random() * 8);
     if (random == 0) {
     merchant.setmerchantspeech("Here's a jumper flavored doggo!   They taste good.")
     } else if (random == 1) {
@@ -21,8 +21,6 @@ var merchant = {
      merchant.setmerchantspeech("It's a dorito!") 
     } else if (random == 7) {
      merchant.setmerchantspeech("Here is a scrumticiolamy-yuatizin lollipop!   it's actually a thing.") 
-    } else if (random == 8) {
-     merchant.setmerchantspeech("Here's my second favorite! it's a watermelon.") 
     }
   }
 }
