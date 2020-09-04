@@ -51,6 +51,11 @@ Your browser does not support the audio element.
 <source src="No Authority - Can I Get Your Number (A Girl Like You) (128 kbps).mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio><br>
+<audio id="myAudio7" controls autoplay loop>
+<source src="Harry Styles - Watermelon Sugar (Official Video) (128 kbps).mp3" type="audio/ogg">
+<source src="Harry Styles - Watermelon Sugar (Official Video) (128 kbps).mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
 <button onclick="enableLoop()" type="button">Start</button>
 <button onclick="checkLoop()" type="button">Check stats</button>
 
@@ -61,18 +66,21 @@ var z = document.getElementById("myAudio3");
 var v = document.getElementById("myAudio4");
 var u = document.getElementById("myAudio5");
 var a = document.getElementById("myAudio6");
+var b = document.getElementById("myAudio7");
 x.loop = true;
 y.loop = true;
 z.loop = true;
 v.loop = true;
 u.loop = true;
 a.loop = true;
+b.loop = true;
 x.load();
 y.load();
 z.load();
 v.load();
 u.load();
 a.load();
+b.load();
 setInterval(function() {
 x.play();
 y.play();
@@ -80,12 +88,14 @@ z.play();
 v.play();
 u.play();
 a.play();
+b.play();
 x.volume = 1;
 y.volume = 1;
 z.volume = 1;
 v.volume = 1;
 u.volume = 1;
 a.volume = 1;
+b.volume = 1;
 }, 250)
 
 </script> 
