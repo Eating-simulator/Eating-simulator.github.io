@@ -6,9 +6,9 @@ var ascii = {
     yummypizza : "                                    ._           <br>                                   ,(  `-.       <br>                                 ,': `.   `.     <br>                               ,` *   `-.   \\    <br>                             ,'  ` :+  = `.  `.  <br>                           ,~  (o):  .,   `.  `. <br>                         ,'  ; :   ,(__) x;`.  ; <br>                       ,'  :'  itz  ;  ; ; _,-'  <br>                     .'O ; = _' C ; ;'_,_ ;      <br>                   ,;  _;   ` : ;'_,-'   i'      <br>                 ,` `;(_)  0 ; ','       :       <br>               .';6     ; ' ,-'~                 <br>             ,' Q  ,  ;',-.'                     <br>           ,( :` ; _,-'~  ;                      <br>         ,~.`c _','                              <br>       .';^_,-' ~                                <br>     ,'_;-''                                     <br>    ,,~                                          <br>    i'                                           <br>    :  "
   },
   reload : function () {
-  	document.getElementById("merchant").innerHTML = this.merchant
-  	document.getElementById("soldierascii").innerHTML = this.soldiers
-    document.getElementById("yumpizzaascii").innerHTML = this.yummypizza
+  	document.getElementById("merchant").innerHTML = this.art.merchant
+  	document.getElementById("soldierascii").innerHTML = this.art.soldiers
+    document.getElementById("yumpizzaascii").innerHTML = this.art.yummypizza
     //document.getElementById("glibraryascii").innerHTML = this.glibrary
   }
 
