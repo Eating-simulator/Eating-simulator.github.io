@@ -56,6 +56,21 @@ Your browser does not support the audio element.
 <source src="Harry Styles - Watermelon Sugar (Official Video) (128 kbps).mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio><br>
+<audio id="myAudio8" controls autoplay loop>
+<source src="98º - Invisible Man (Official Music Video) (128 kbps).mp3" type="audio/ogg">
+<source src="98º - Invisible Man (Official Music Video) (128 kbps).mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+<audio id="myAudio9" controls autoplay loop>
+<source src="George Michael - Careless Whisper (Official Video) (128 kbps).mp3" type="audio/ogg">
+<source src="George Michael - Careless Whisper (Official Video) (128 kbps).mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+<audio id="myAudio10" controls autoplay loop>
+<source src="Imagine Dragons - Natural (Lyrics) (128 kbps).mp3" type="audio/ogg">
+<source src="Imagine Dragons - Natural (Lyrics) (128 kbps).mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
 <button onclick="enableLoop()" type="button">Start</button>
 <button onclick="checkLoop()" type="button">Check stats</button>
 
@@ -67,6 +82,9 @@ var v = document.getElementById("myAudio4");
 var u = document.getElementById("myAudio5");
 var a = document.getElementById("myAudio6");
 var b = document.getElementById("myAudio7");
+var c = document.getElementById("myAudio8");
+var d = document.getElementById("myAudio9");
+var e = document.getElementById("myAudio10");
 x.loop = true;
 y.loop = true;
 z.loop = true;
@@ -74,6 +92,9 @@ v.loop = true;
 u.loop = true;
 a.loop = true;
 b.loop = true;
+c.loop = true;
+d.loop = true;
+e.loop = true;
 x.load();
 y.load();
 z.load();
@@ -81,6 +102,9 @@ v.load();
 u.load();
 a.load();
 b.load();
+c.load();
+d.load();
+e.load();
 setInterval(function() {
 x.play();
 y.play();
@@ -89,15 +113,20 @@ v.play();
 u.play();
 a.play();
 b.play();
-x.volume = 1;
-y.volume = 1;
-z.volume = 1;
-v.volume = 1;
-u.volume = 1;
-a.volume = 1;
-b.volume = 1;
+c.play();
+d.play();
+e.play();
+x.volume = Math.floor((Math.random())*100)/100;
+y.volume = Math.floor((Math.random())*100)/100;
+z.volume = Math.floor((Math.random())*100)/100;
+v.volume = Math.floor((Math.random())*100)/100;
+u.volume = Math.floor((Math.random())*100)/100;
+a.volume = Math.floor((Math.random())*100)/100;
+b.volume = Math.floor((Math.random())*100)/100;
+c.volume = Math.floor((Math.random())*100)/100;
+d.volume = Math.floor((Math.random())*100)/100;
+e.volume = Math.floor((Math.random())*100)/100;
 }, 250)
 
-</script> 
-	</body>
+</script>	</body>
 </html>
