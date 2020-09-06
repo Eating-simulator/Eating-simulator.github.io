@@ -10,7 +10,7 @@ var ascii = {
   	document.getElementById("merchant").innerHTML = this.art.merchant
   	document.getElementById("soldierascii").innerHTML = this.art.soldiers
     document.getElementById("yumpizzaascii").innerHTML = this.art.yummypizza
-    document.getElementById("store").innerHTML = this.art.pizza
+    document.getElementById("storepizza").innerHTML = this.art.pizza
     //document.getElementById("glibraryascii").innerHTML = this.glibrary
   }
 
