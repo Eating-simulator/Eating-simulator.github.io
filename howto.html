@@ -1,0 +1,40 @@
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <center>
+  	<h1>Knoledge base for eating simulator</h1>
+  	<h3>Mexmia the terrible unicorn will tell you everything for eating simulator!</h3>
+
+  <div class="spinner-grow text-info"></div><h4 id="answer">Ask me anything...</h4>
+  <form>
+  <select id="selectables" name="question" class="custom-select">
+    <option selected>Ask a question</option>
+    <option value="whatis">What is eating simulator?</option>
+    <option value="play">How do i play eating simulator?</option>
+    <option value="how">How do i make my own version of eating simulator?</option>
+  </select>
+  <button onClick="ask()" type="button" class="btn btn-primary">Ask mexmia</button>
+</form>
+
+<script>
+var it;
+var answer = document.getElementById("answer");
+function ask() {
+	it = document.getElementById("selectables").value;
+	if (it == "whatis") {
+		answer.innerHTML = "Eating simulator is a game where you eat! Simple enough, isn't it?"
+	} else if (it == "play") {
+		answer.innerHTML = "you just click this link --> <a href='https://eating-simulator.github.io/'>Eating simulator</a>";
+	} else if (it == "how") {
+		answer.innerHTML = "I'm not really sure. maybe the developer might know!   <button class='btn btn-primary' onClick='location.replace('code.html')'><span class='spinner-grow spinner-grow-sm'></span>Ask the developer and the two other extras</button>"
+	}
+}
+
+
+
+
+
+</script>
