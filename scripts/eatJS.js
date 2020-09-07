@@ -298,18 +298,18 @@ function fortresdoor() {
 function whyy() {
 	data.whynot++;
    if (data.whynot == 0) {
-     landon.setspeech("I am Rainbow the Wise Probotoad.")
-     output("You've been told he was a wise probotoad!")
+     landon.setspeech("I have a very serious disease.")
+     output("You have been told he has a disease.")
    };
    if (data.whynot == 1) {
-     landon.setspeech("Because my dad was a Proboscis Monkey and my mom was a toad.") 
+     landon.setspeech("I think it's because i was here, in the computer for too long....") 
    };
    if (data.whynot == 2) {
-     landon.setspeech("Just Joking! Both my parents were Probotoads.")
-     output("The probotoad joked!") 
+     landon.setspeech("And now, i am beggening to fade, .")
+     output("The probotoad is fading!!") 
    };
    if (data.whynot == 3) {
-     landon.setspeech("You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas. \\n Also, i think there is a second key. i don't know where. i heard it's in a store or something.")
+     landon.setspeech("You can go to the giant library. They have interesting stuff there. but it's probably closed. The key to the door is hidden in the desert. watch out for hyenas. \n Also, i think there is a second key. i don't know where. i heard it's in a store or something. \n Also, there is a medicine that will cure me inside that library. please! oh woe is me")
    };
 }
 function aprontalk() {
