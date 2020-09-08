@@ -53,7 +53,7 @@ button {
     background-color: #dcdad5;
     
     /* Position absolute inside the aroundRealButton span */
-    position: absolute;
+    /*position: absolute; we definitely don't need this it makes an error*/
     user-select: none;
 }
 
