@@ -105,3 +105,30 @@ button:hover{
   text-decoration: none;
   cursor: pointer;
 }
+.aroundRealButton{
+    user-select: none;
+}
+
+/* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
+
+.asciiRealButton{
+    cursor: pointer; /* To change the pointer when we pass the mouse on the button */
+
+    /* The border itself */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #464c54;
+    
+    /* Grey background color */
+    background-color: #dcdad5;
+    
+    /* Position absolute inside the aroundRealButton span */
+    position: absolute;
+    user-select: none;
+}
+
+.asciiRealButton:hover{
+    background-color: #eeebe7; /* New background color, lighter grey */
+    border-width: 1px;
+}
+
