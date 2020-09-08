@@ -41,7 +41,7 @@ html:selection {
 
 /* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
 
-.asciiRealButton{
+button {
     cursor: pointer; /* To change the pointer when we pass the mouse on the button */
 
     /* The border itself */
@@ -57,7 +57,7 @@ html:selection {
     user-select: none;
 }
 
-.asciiRealButton:hover{
+button:hover{
     background-color: #eeebe7; /* New background color, lighter grey */
     border-width: 1px;
 }
