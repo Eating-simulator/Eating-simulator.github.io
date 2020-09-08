@@ -1,5 +1,5 @@
 var linkbot = {
-	speech : document.querySelector(".linkbotspeech");
+	speech : document.querySelector(".linkbotspeech"),
 	setspeech : function(text) {
 		linkbot.speech.innerHTML = text;
 	},
