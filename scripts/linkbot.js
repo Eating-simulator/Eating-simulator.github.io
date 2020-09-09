@@ -12,7 +12,7 @@ var linkbot = {
 			{text:"AHHAHHHAHHHH! I'M MAD!",insultValue:2},
 			{text:"I might take all of your links away if you don't stop.",insultValue:1},
 		];
-		text2 = texts[Math.floor(Math.random() * 4)];
+		text2 = texts[Math.floor(Math.random() * texts.length())];
 		linkbot.setspeech(text2.text);
 		this.insultLevel += text2.insultValue;
 	}
