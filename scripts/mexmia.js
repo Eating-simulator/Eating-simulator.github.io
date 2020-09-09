@@ -15,3 +15,4 @@ function mexmia() {
         mexmia.innerHTML = ''
   }
 }
+}
