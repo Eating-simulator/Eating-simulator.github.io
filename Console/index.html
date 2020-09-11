@@ -13,13 +13,14 @@ This is the output.
 //defines the input
 var input = document.getElementById("input");
 var output = document.getElementById("main");
-var data;
+var data, gotdata;
 function setoutput(text) {
 	output.innerHTML = text;
 }
 function print(text) {
 	$("#main").append("<br>" + text)
 }
+try {
 input.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
@@ -37,6 +38,13 @@ function submit(command) {
 	} else if (command == "getesdata") {
 		data = JSON.parse(localStorage.getItem('data'));
 		print("Got Eating simulator data: " + data)
+	} else {
+		print("Couldn't find that command.")
 	}
+input.value = ""
+}
+}
+catch(err) {
+	print("ERROR: " + err.message)
 }
 </script>
