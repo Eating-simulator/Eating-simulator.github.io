@@ -1,0 +1,42 @@
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <center>
+<h1>Eating simulator cheat console</h1>
+<pre id="main">
+This is the output.
+</pre>
+<input id="input" placeholder="Enter command here..."><button id="submit" style="display:none" onClick="submit(document.getElementById('input').value)"></button>
+</center>
+<script>
+//defines the input
+var input = document.getElementById("input");
+var output = document.getElementById("main");
+var data;
+function setoutput(text) {
+	output.innerHTML = text;
+}
+function print(text) {
+	$("#main").append("<br>" + text)
+}
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("submit").click();
+  }
+});
+function submit(command) {
+	if (command == "clear") {
+		setoutput(" ")
+	} else if (command == "print"){
+		print(window.prompt("Set append text:"))
+	} else if (command == "getesdata") {
+		data = JSON.parse(localStorage.getItem('data'));
+		print("Got Eating simulator data: " + data)
+	}
+}
+</script>
