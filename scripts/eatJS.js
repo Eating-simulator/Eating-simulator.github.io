@@ -344,7 +344,7 @@ document.getElementById("yay").innerHTML = "I will take all your data.money if y
 output("You've been threatened!")
 }
 if (data.chefapron == 10) {
-document.getElementById("yay").innerHTML = "Ok, say goodbye to your data.money.";
+document.getElementById("yay").innerHTML = "Ok, say goodbye to your money.";
 output("Your progress has been set to zero!")
 data.money = -1
 data.chefapron = 0
