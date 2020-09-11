@@ -39,7 +39,7 @@ function submit(command) {
 		data = JSON.parse(localStorage.getItem('data'));
 		print("Got Eating simulator data: " + data)
 	} else {
-		print("Couldn't find that command.")
+		print("Couldn't find that command: " + command)
 	}
 input.value = ""
 }
