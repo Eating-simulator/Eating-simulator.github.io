@@ -36,7 +36,7 @@ var data = {
         lotterymachinemoney : 0,
         lotterymachinemoneyturnedon : false,
 	      white : true
-        developer-mode : false
+        developermode : false
 }
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
@@ -369,7 +369,7 @@ var dev = function () {
   data.developer-mode = true
 }
 function checkstats() {
-  if (data.developer-mode == true){
+  if (data.developermode == true){
     document.getElementById("menu-developer").style.display = "block"
   }else {
     document.getElementById("menu-developer").style.display = "hidden"
