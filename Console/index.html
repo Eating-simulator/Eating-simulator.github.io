@@ -52,6 +52,7 @@ function submit(command) {
 		}else if (newdatatype == "B") {
 			print("Booleans are not supported in ES Console.")
 		}
+	localStorage.setItem("data", JSON.stringify(data));
 	}else {
 		print("Couldn't find that command: " + command)
 	}
