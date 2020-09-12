@@ -143,6 +143,7 @@ button:hover{
                 padding-bottom: 3px;
                 position: fixed;
                 display: none;
+                background-color: white;
             }
            
             .menu-item
