@@ -3,6 +3,18 @@
 window.onbeforeunload = function() {
    return "Do you really want to leave our brilliant application?";
 };
+var elem = document.getElementById("body");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
 var data = {
 	money: 0,
 	calories: 300,
