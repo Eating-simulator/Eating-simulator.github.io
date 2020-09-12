@@ -366,7 +366,7 @@ data.chefapron = 0
 }
 }
 var dev = function () {
-  data.developer-mode = true
+  data.developermode = true
 }
 function checkstats() {
   if (data.developermode == true){
