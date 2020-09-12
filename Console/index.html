@@ -41,7 +41,7 @@ function submit(command) {
 	} else if (command = "set") {
 		var setdatadata = prompt("What data?")
 		var newdata = prompt("What value would you like to put in?")
-		var newdatatype = promt("What type is this? N for number, S For string, B For boolean")
+		var newdatatype = prompt("What type is this? N for number, S For string, B For boolean")
 		if (newdatatype == "N") {
 			newdata = Number(newdata);
 			data[setdatadata] = newdata;
