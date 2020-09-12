@@ -35,7 +35,7 @@ var data = {
         calDec : null,
         lotterymachinemoney : 0,
         lotterymachinemoneyturnedon : false,
-	      white : true
+	      white : true,
         developermode : false
 }
 function classchange(classname, changeto){
