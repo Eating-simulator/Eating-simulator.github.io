@@ -77,6 +77,9 @@ function chefbutton() {
 }
 setInterval(function() {
 	checkstats()
+  if (libraryKey == true) {
+    output("You found the keys to the Great Library of the Eating Simulator World!")
+  }
 	data.money++;
   if (data.lotterymachinemoneyturnedon == true) {
     data.lotterymachinemoney++;
