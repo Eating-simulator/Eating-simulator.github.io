@@ -1,6 +1,8 @@
 // JavaScript file (c) Copyright 2020 ckn, technodoggo. All rights reserved. 
 // This file may not be reproduced. 
-
+window.onbeforeunload = function() {
+   return "Do you really want to leave our brilliant application?";
+};
 var data = {
 	money: 0,
 	calories: 300,
