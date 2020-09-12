@@ -44,10 +44,10 @@ function submit(command) {
 		var newdatatype = promt("What type is this? N for number, S For string, B For boolean")
 		if (newdatatype == "N") {
 			newdata = Number(newdata);
-			data.[setdatadata] = newdata;
+			data[setdatadata] = newdata;
 		}else if (newdatatype == "S") {
 			newdata = String(newdata);
-			data.[setdatadata] = newdata;
+			data[setdatadata] = newdata;
 		}else if (newdatatype == "B") {
 			print("Booleans are not supported in ES Console.")
 		}
