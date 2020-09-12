@@ -35,7 +35,8 @@ var data = {
         calDec : null,
         lotterymachinemoney : 0,
         lotterymachinemoneyturnedon : false,
-	white : true
+	      white : true
+        developer-mode : false
 }
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
@@ -364,8 +365,16 @@ data.money = -1
 data.chefapron = 0
 }
 }
+var dev = function () {
+  data.developer-mode = true
+}
 function checkstats() {
-    if (data.libraryKey) {
+  if (data.developer-mode == true){
+    document.getElementById("menu-developer").style.display = "block"
+  }else {
+    document.getElementById("menu-developer").style.display = "hidden"
+  }
+  if (data.libraryKey) {
         document.getElementById("door1").className = 'clickable';
 	document.getElementById("door2").className = 'clickable';
 	document.getElementById("door1").onclick = 'enterLibrary()';
