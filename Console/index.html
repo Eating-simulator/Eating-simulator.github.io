@@ -38,7 +38,20 @@ function submit(command) {
 	} else if (command == "getesdata") {
 		data = JSON.parse(localStorage.getItem('data'));
 		print("Got Eating simulator data: " + data)
-	} else {
+	} else if (command = "set") {
+		var setdatadata = prompt("What data?")
+		var newdata = prompt("What value would you like to put in?")
+		var newdatatype = promt("What type is this? N for number, S For string, B For boolean")
+		if (newdatatype == "N") {
+			newdata = Number(newdata);
+			data.[setdatadata] = newdata;
+		}else if (newdatatype == "S") {
+			newdata = String(newdata);
+			data.[setdatadata] = newdata;
+		}else if (newdatatype == "B") {
+			print("Booleans are not supported in ES Console.")
+		}
+	}else {
 		print("Couldn't find that command: " + command)
 	}
 input.value = ""
