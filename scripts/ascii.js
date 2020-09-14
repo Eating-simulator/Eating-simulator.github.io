@@ -18,7 +18,7 @@ var ascii = {
     document.getElementById("storegingerbreadman").innerHTML = this.art.gingerbreadman
     document.getElementById("storemilk").innerHTML = this.art.storemilk
     document.getElementById("storecake").innerHTML = this.art.storecake
-    document.getElementById("mexmiaasccii").innerHTML = this.art.mexmia
+    document.getElementById("mexmiaascii").innerHTML = this.art.mexmia
     //document.getElementById("glibraryascii").innerHTML = this.glibrary
   }
 
