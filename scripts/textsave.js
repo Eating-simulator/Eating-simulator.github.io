@@ -1,5 +1,5 @@
 var textsave = {
 	save : function() {
-		setInnerHTML("textareasave", JSON.stringify(data))
+		document.getElementById("textareasave").innerHTML = JSON.stringify(data);
 	}
 }
