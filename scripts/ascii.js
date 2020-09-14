@@ -17,10 +17,7 @@ var ascii = {
     document.getElementById("storegingerbreadman").innerHTML = this.art.gingerbreadman
     document.getElementById("storemilk").innerHTML = this.art.storemilk
     document.getElementById("storecake").innerHTML = this.art.storecake
-<<<<<<< HEAD
     document.getElementById("mexmiaascii").innerHTML = this.art.mexmia
-=======
->>>>>>> parent of 3be32e3... Rudolf von convnerto mexmia
     //document.getElementById("glibraryascii").innerHTML = this.glibrary
   }
 
