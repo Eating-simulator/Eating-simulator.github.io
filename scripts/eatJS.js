@@ -23,6 +23,12 @@ var data = {
 	      white : true,
         developermode : false
 }
+function classchange(classname, changeto){
+	document.querySelector("." + classname).innerHTML = changeto;
+}
+function idchange(idname, changetoid){
+	doent.getElementById(idname).innerHTML = changetoid;
+}
 function CheckPouplarity() {
   if (data.popularity >= 0) {
     data.howpopular = "Not known"
@@ -51,7 +57,7 @@ function eat(item) {
 	}
 }
 function chefbutton() {
-	setInnerHtml("yay", "Thanks! the cheese is probably in the store. i dont know about the dorito...");
+	document.getElementById("yay").innerHTML = "Thanks! the cheese is probably in the store. i dont know about the data.dorito...";
   data.popularity += 1
   output("You started the quest.")
 }
@@ -84,8 +90,8 @@ setInterval(function() {
 	if (data.dorito === true && data.cheese === true) {
 		if (data.fWM == false) {
 		document.querySelector('.chefresponce1').innerHTML = ' '
-		setInnerHtml("chefresponce2", "")
-		setInnerHtml("yay", "Thank you for helping me! as a reward, here is a world map. you'll probably use it more then i do.")
+		document.getElementById("chefresponce2").innerHTML = " "
+		document.getElementById("yay").innerHTML = "Thank you for helping me! as a reward, here is a world map. you'll probably use it more then i do."
                 data.popularity += 0.7
                 output("You completed the quest and earned a world map!")
 		data.worldmap = true;
@@ -107,6 +113,8 @@ function foundcheese() {
   output("You found the cheese!")
 	data.cheese = true;
 }
+document.getElementById("merchant").innerHTML = "                .---.            <br>               |   '.|  __       <br>               | ___.--'  )      <br>             _.-'_` _%%%_/       <br>          .-'%%% a: a %%%        <br>              %%  L   %%_        <br>              _%\\'=' |  /-.__    <br>           .-' / )--' #/     '\\  <br>          /'  /  /---'(    :   \\ <br>         /   |  /( /|##|  \\     |<br>        /   ||# | / | /|   \\    \\<br>        |   ||##| I \\/ |   |   _|<br>        |   ||: | o  |#|   |  / |<br>        |   ||  / I  |:/  /   |/ <br>        |   ||  | o   /  /    /  <br>        |   \\|  | I  |. /    /   <br>         \\  /|##| o  |.|    /    <br>          \\/ \\::|/\\_ /  ---'|    <br>           \\ |\\ |    |     :\\    <br>           | |  /     \\...' |    <br>           | |# |/\\    \\    |    <br>           | | :|  |    |   |    <br>           | |  |  |    |   |   "
+document.getElementById("yumpizzaascii").innerHTML = "                                    ._           <br>                                   ,(  `-.       <br>                                 ,': `.   `.     <br>                               ,` *   `-.   \\    <br>                             ,'  ` :+  = `.  `.  <br>                           ,~  (o):  .,   `.  `. <br>                         ,'  ; :   ,(__) x;`.  ; <br>                       ,'  :'  itz  ;  ; ; _,-'  <br>                     .'O ; = _' C ; ;'_,_ ;      <br>                   ,;  _;   ` : ;'_,-'   i'      <br>                 ,` `;(_)  0 ; ','       :       <br>               .';6     ; ' ,-'~                 <br>             ,' Q  ,  ;',-.'                     <br>           ,( :` ; _,-'~  ;                      <br>         ,~.`c _','                              <br>       .';^_,-' ~                                <br>     ,'_;-''                                     <br>    ,,~                                          <br>    i'                                           <br>    :  "
 function librarypathway() {
 	data.buttontime++;
 	if (data.buttontime == 0){
