@@ -1,20 +1,5 @@
 // JavaScript file (c) Copyright 2020 ckn, technodoggo. All rights reserved. 
 // This file may not be reproduced. 
-window.onbeforeunload = function() {
-   return "Do you really want to leave our brilliant application?";
-};
-var elem = document.getElementById("body");
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }
-}
 var data = {
 	money: 0,
 	calories: 300,
@@ -102,16 +87,6 @@ setInterval(function() {
   }
 	document.querySelector(".money").innerHTML = data.money;
 	document.querySelector(".calories").innerHTML = data.calories;
-	if (data.money  >= 5) {
-		document.querySelector(".pizzabutton").disabled = false;
-	} else {
-		document.querySelector(".pizzabutton").disabled = true;
-	}
-	if (data.money  >= 3) {
-		document.querySelector(".milkbutton").disabled = false;
-	} else {
-		document.querySelector(".milkbutton").disabled = true;
-	}
 	if (data.dorito === true && data.cheese === true) {
 		if (data.fWM == false) {
 		document.querySelector('.chefresponce1').innerHTML = ' '
@@ -126,7 +101,7 @@ setInterval(function() {
 	document.querySelector(".money").innerHTML = data.money;
 	document.querySelector(".calories").innerHTML = data.calories;
 }, 1000)
-
+setInterval(function() {checkstats()}, 1)
 function founddorito() {
 	document.querySelector('.chefresponce1').innerHTML = 'Ah! you found my dorito! very much thanks.'
   output("You found the dorito!")
@@ -369,6 +344,16 @@ var dev = function () {
   data.developermode = true
 }
 function checkstats() {
+		if (data.money  >= 5) {
+		document.querySelector(".pizzabutton").disabled = false;
+	} else {
+		document.querySelector(".pizzabutton").disabled = true;
+	}
+	if (data.money  >= 3) {
+		document.querySelector(".milkbutton").disabled = false;
+	} else {
+		document.querySelector(".milkbutton").disabled = true;
+	}
   if (data.developermode == true){
     document.getElementById("menu-developer").style.display = "block"
   }else {
