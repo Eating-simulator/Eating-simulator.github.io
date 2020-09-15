@@ -22,6 +22,8 @@ var data = {
         lotterymachinemoneyturnedon : false,
 	      white : true,
         developermode : false
+        ascii : ascii,
+        
 }
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
