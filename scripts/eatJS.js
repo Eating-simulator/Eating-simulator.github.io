@@ -22,7 +22,6 @@ var data = {
         lotterymachinemoneyturnedon : false,
 	      white : true,
         developermode : false
-        ascii : ascii,
         
 }
 function classchange(classname, changeto){
