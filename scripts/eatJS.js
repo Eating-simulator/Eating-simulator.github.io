@@ -1,7 +1,10 @@
 // JavaScript file (c) Copyright 2020 ckn, technodoggo. All rights reserved. 
 // This file may not be reproduced. 
+var functions = {
+  money : money
+}
 var data = {
-	money: 0,
+	money: money.total,
 	calories: 300,
         cheese : false,
         dorito : false,
@@ -21,9 +24,13 @@ var data = {
         lotterymachinemoney : 0,
         lotterymachinemoneyturnedon : false,
 	      white : true,
-        developermode : false
+        developermode : false,
+        functions : functions;
+
+
         
 }
+
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
