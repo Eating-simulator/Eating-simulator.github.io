@@ -25,7 +25,7 @@ var data = {
         lotterymachinemoneyturnedon : false,
 	      white : true,
         developermode : false,
-        functions : functions;
+        functions : functions
 
 
         
