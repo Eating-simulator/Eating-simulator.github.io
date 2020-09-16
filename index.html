@@ -25,7 +25,7 @@
 </div>
 </pre>
 <div id="status-tracker" class="center">
-<pre>Calories:<span class="calories">300</span></pre>
+<pre>Calories:<span class="calories">300</span> <span class="calorieconverter" style="display: none;">----CALORIES CONVERTER----> <span id="candies">0</span>candies.</span></pre>
 <pre>Money: <span class="money">0</span></pre>
 </div>
 <div class="center">
@@ -62,6 +62,9 @@
                                    ___) | (_| |\ V /| | | | | (_| |                                 
                                   |____/ \__,_| \_/ |_|_| |_|\__, |                                 
                              |___/ 
+                             When you clear your local storage (for whatever reason) and you lose your save,
+                             You can text save! Get the text save here and just paste it in the loading area and you go back RIGHT where you left off!
+                             (Warning: when game updates, when you text load, there is a chance game might break)
 
                             <button onClick="textsave.save()">Get the current game as text</button>                         
           <textarea rows=6 cols="96" id="textareasave" onClick="document.getElementById('textareasave').select();" readonly></textarea>
