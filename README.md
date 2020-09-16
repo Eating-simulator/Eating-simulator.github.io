@@ -1,5 +1,5 @@
 # The eating simulator
-Lord jonathan the epic techonodoggo has been promoted to ES Master, due to confidential reasons..
+_Epic Lord Technodoggo_ has been promoted to ES Master, due to confidential reasons...
 
 Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!
 
