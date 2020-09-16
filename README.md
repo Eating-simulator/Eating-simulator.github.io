@@ -8,6 +8,7 @@ _Current status: making the giant library of the eating simulator world and the 
 
 WIKI:
 https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki
+
 FULL TEXT VERSION:
 https://eating-simulator-python.eatingsimulator.repl.run/
 
