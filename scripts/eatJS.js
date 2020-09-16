@@ -31,7 +31,9 @@ var data = {
 
         
 }
-
+function gotolandon() {
+  openTab("landon")
+}
 function classchange(classname, changeto){
 	document.querySelector("." + classname).innerHTML = changeto;
 }
