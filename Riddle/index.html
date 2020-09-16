@@ -1,0 +1,35 @@
+<script>
+  
+function openTab(tabName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+<body onLoad="openTab('difficultyselect')">
+<div id="difficultyselect" class="tabcontent">
+<center>
+<pre>
+      SELECT A DIFFICULTY
+______________________________
+|           <button onClick="openTab('Easy')">EASY</button>             |
+|                            |
+|           <button onClick="openTab('medium')">MEDIUM</button>           |
+|           <button onClick="openTab('Hard')">HARD</button>                 |
+|                            |
+|                            |
+|                            |
+|                            |
+|____________________________| 
+
+</pre>
+<center>
+</div
+</body
