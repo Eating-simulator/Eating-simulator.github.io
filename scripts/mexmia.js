@@ -1,4 +1,12 @@
 var mexmiasteps = -1
+function mexmiastartover() {
+  mexmiasteps = 0;
+  document.getElementById("mexmiaeyes").style.color = "red"
+  document.getElementById("mexmiaSpeak").innerHTML = "WHAT! You got it wrong!"
+  setTimeout(function (){
+    document.getElementById("mexmiaeyes").style.color = "black"
+  }, 1000)
+}
 function mexmiaChoice(leftorright) {
   document.getElementById("mexmiastart").style.display = "none";
   var mexmiahtml = document.getElementById("mexmiaSpeak");
