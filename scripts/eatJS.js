@@ -27,7 +27,7 @@ var data = {
         developermode : false,
         functions : functions,
         candies : 0,
-        mexmiacorrect = false
+        mexmiacorrect : false
 
 
         
