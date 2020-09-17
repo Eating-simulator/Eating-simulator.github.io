@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="main.css">
 <meta charset="utf-8">
  <meta name="description" content="Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!">
@@ -150,12 +151,12 @@
 </div>
 <div id="mexmia" class="tabcontent">
 <span id="mexmiaSpeak">I am Mexmia the Terrible Unicorn!</span>
-<pre>
+<pre>         <button onClick="mexmia('left')" style="display:block" id="mexmiastart">I want to play your game.</button>
                                \                       
                                \\                      
                                 \\                     
                                  >\/7                  
-                             _.-(6'  \                 
+                             _.-(<span id="mexmiaeyes" style="color:black">6</span>'  \                 
                             (=___._/` \                
                                  )  \ |                
                                 /   / |                

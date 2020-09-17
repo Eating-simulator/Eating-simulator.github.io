@@ -26,7 +26,8 @@ var data = {
 	      white : true,
         developermode : false,
         functions : functions,
-        candies : 0
+        candies : 0,
+        mexmiacorrect = false
 
 
         
@@ -405,4 +406,39 @@ function collectmoney() {
   document.getElementById("factorymoney").style.color = "red";
   data.money = data.money + lotterymachinemoney;
   lotterymachinemoney = 0;
+}
+function mexmiastartover() {
+  mexmiasteps = 0;
+  document.getElementById("mexmiaeyes").style.color = "red"
+  document.getElementById("mexmiaSpeak").innerHTML = "WHAT! You got it wrong!"
+  setTimeout(function (){
+    document.getElementById("mexmiaeyes").style.color = "black"
+  }, 1000)
+}
+var mexmiasteps = 0
+function mexmiaChoice(leftorright) {
+  document.getElementById("mexmiastart").style.display = "none";
+  var mexmiahtml = document.getElementById("mexmiaSpeak").innerHTML;
+  var mexmialeft = document.getElementById("mexmiaLeft").innerHTML;
+  var mexmiaright = document.getElementById("mexmiaRight").innerHTML;
+  if (mexmiasteps == 0){
+    if (leftorright == "left"){
+      mexmiahtml == "Hmmm.. i don't know! \n Second question: if E Implies A And A Implies T, What does T imply?"
+      mexmiaLeft = "Of course, that would be the pizza scroll"
+      mexmiaRight = "I!"
+      mexmiasteps++;
+    } else {
+      mexmiastartover()
+      return;
+    }
+  }else if (mexmiasteps == 1) {
+    if (leftorright == "right"){
+      mexmiahtml == "That's correct! Now, Who made eating simulator?"
+      mexmiaLeft = "Bill gates"
+      mexmiaRight = "ID7, Techonodogg, ch1ck3n."
+      mexmiasteps++;
+    } else {
+      mexmiastartover()
+      return;
+    }
 }
