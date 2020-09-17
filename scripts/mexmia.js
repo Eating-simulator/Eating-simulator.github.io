@@ -17,7 +17,8 @@ function mexmiaChoice(leftorright) {
   document.getElementById("mexmiastart").style.display = "none";
     if (mexmiasteps == -1){
     if (leftorright == "left"){
-      mexmiahtml.innerHTML = "I am Mexmia the Terrible Unicorn!"
+      mexmiasteps++;
+      mexmiahtml.innerHTML = "I am Mexmia the Terrible Unicorn! Answer all of my questions and you'll get a prize."
       document.getElementById("mexmiaquestions").style.display =  "block"
     } else {
       mexmiastartover()
