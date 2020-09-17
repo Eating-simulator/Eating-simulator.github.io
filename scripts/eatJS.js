@@ -415,13 +415,20 @@ function mexmiastartover() {
     document.getElementById("mexmiaeyes").style.color = "black"
   }, 1000)
 }
-var mexmiasteps = 0
+var mexmiasteps = -1
 function mexmiaChoice(leftorright) {
   document.getElementById("mexmiastart").style.display = "none";
   var mexmiahtml = document.getElementById("mexmiaSpeak").innerHTML;
   var mexmialeft = document.getElementById("mexmiaLeft").innerHTML;
   var mexmiaright = document.getElementById("mexmiaRight").innerHTML;
-  if (mexmiasteps == 0){
+    if (mexmiasteps == -1){
+    if (leftorright == "left"){
+      mexmiahtml == "I am Mexmia the Terrible Unicorn!"
+    } else {
+      mexmiastartover()
+      return;
+    }
+  }else if (mexmiasteps == 0){
     if (leftorright == "left"){
       mexmiahtml == "Hmmm.. i don't know! \n Second question: if E Implies A And A Implies T, What does T imply?"
       mexmiaLeft = "Of course, that would be the pizza scroll"
