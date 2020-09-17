@@ -27,7 +27,8 @@ var data = {
         developermode : false,
         functions : functions,
         candies : 0,
-        mexmiacorrect : false
+        mexmiacorrect : false,
+        moneyfactorykey : false
 
 
         
@@ -406,4 +407,8 @@ function collectmoney() {
   document.getElementById("factorymoney").style.color = "red";
   data.money = data.money + lotterymachinemoney;
   lotterymachinemoney = 0;
+}
+function getmoneyfactorykey(){
+  data.moneyfactorykey = true;
+  output("You got the keys to the money factory!")
 }

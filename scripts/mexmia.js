@@ -18,6 +18,7 @@ function mexmiaChoice(leftorright) {
     if (mexmiasteps == -1){
     if (leftorright == "left"){
       mexmiahtml.innerHTML = "I am Mexmia the Terrible Unicorn!"
+      document.getElementById("mexmiaquestions").style.display =  "block"
     } else {
       mexmiastartover()
       return;
@@ -42,5 +43,47 @@ function mexmiaChoice(leftorright) {
       mexmiastartover()
       return;
     }
-}
+}else if (mexmiasteps == 2){
+    if (leftorright == "left"){
+      mexmiahtml.innerHTML = "Troll! Of course ch1ck3n, technodoggo and ID7 made eating simulator. \n Now, who's the worst person in eating simulator?"
+      mexmiaLeft.innerHTML = "Yourself!"
+      mexmiaRight.innerHTML = "Landon!"
+      mexmiasteps++;
+    } else {
+      mexmiastartover()
+      return;
+    }
+  }else if (mexmiasteps == 3){
+    if (leftorright == "right"){
+      mexmiahtml.innerHTML = "Good job! And, the answer is, of course, Landon! \n Next question: Why am i asking you questions?"
+      mexmiaLeft.innerHTML = "idk"
+      mexmiaRight.innerHTML = "Because you want to give me a prize?"
+      mexmiasteps++;
+    } else {
+      mexmiastartover()
+      return;
+    }
+  }else if (mexmiasteps == 4){
+    if (leftorright == "right"){
+      mexmiahtml.innerHTML = "Good job! now, what do you think i'm going to give you?"
+      mexmiaLeft.innerHTML = "Money!"
+      mexmiaRight.innerHTML = "A key to something?"
+      mexmiasteps++;
+    } else {
+      mexmiastartover()
+      return;
+    }
+  }else if (mexmiasteps == 5){
+    if (leftorright == "right"){
+      mexmiahtml.innerHTML = "That's correct! a key to something! what's the something? the something is: \n a key to a secret money factory i found! i can't remember where it is though... it's somewhere near the library. it's real hidden."
+      document.getElementById("mexmiaquestions").style.display =  "none"
+      document.getElementById("mexmiastart").style.display = "block";
+      document.getElementById("mexmiastart").innerHTML = "Thanks, mexmia!";
+      document.getElementById("mexmiastart").onClick = "getmoneyfactorykey()";
+      mexmiasteps++;
+    } else {
+      mexmiastartover()
+      return;
+    }
+  }
 }
