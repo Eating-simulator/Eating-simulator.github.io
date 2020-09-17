@@ -423,14 +423,14 @@ function mexmiaChoice(leftorright) {
   var mexmiaright = document.getElementById("mexmiaRight").innerHTML;
     if (mexmiasteps == -1){
     if (leftorright == "left"){
-      mexmiahtml == "I am Mexmia the Terrible Unicorn!"
+      mexmiahtml = "I am Mexmia the Terrible Unicorn!"
     } else {
       mexmiastartover()
       return;
     }
   }else if (mexmiasteps == 0){
     if (leftorright == "left"){
-      mexmiahtml == "Hmmm.. i don't know! \n Second question: if E Implies A And A Implies T, What does T imply?"
+      mexmiahtml = "Hmmm.. i don't know! \n Second question: if E Implies A And A Implies T, What does T imply?"
       mexmiaLeft = "Of course, that would be the pizza scroll"
       mexmiaRight = "I!"
       mexmiasteps++;
@@ -440,7 +440,7 @@ function mexmiaChoice(leftorright) {
     }
   }else if (mexmiasteps == 1) {
     if (leftorright == "right"){
-      mexmiahtml == "That's correct! Now, Who made eating simulator?"
+      mexmiahtml = "That's correct! Now, Who made eating simulator?"
       mexmiaLeft = "Bill gates"
       mexmiaRight = "ID7, Techonodogg, ch1ck3n."
       mexmiasteps++;
