@@ -419,8 +419,8 @@ var mexmiasteps = -1
 function mexmiaChoice(leftorright) {
   document.getElementById("mexmiastart").style.display = "none";
   var mexmiahtml = document.getElementById("mexmiaSpeak").innerHTML;
-  var mexmialeft = document.getElementById("mexmiaLeft").innerHTML;
-  var mexmiaright = document.getElementById("mexmiaRight").innerHTML;
+  var mexmiaLeft = document.getElementById("mexmiaLeft").innerHTML;
+  var mexmiaRight = document.getElementById("mexmiaRight").innerHTML;
     if (mexmiasteps == -1){
     if (leftorright == "left"){
       mexmiahtml = "I am Mexmia the Terrible Unicorn!"
