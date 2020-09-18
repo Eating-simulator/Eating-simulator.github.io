@@ -1,6 +1,9 @@
+
 .center {
     font-family: "monospace";
     text-align: center;
+}
+*{overflow-x: hidden
 }
 html { 
    font-family: "monospace";
@@ -154,3 +157,194 @@ button{
                 cursor: pointer;
             }
 
+
+Option 2: Or upload your CSS file
+  
+UTF-8
+Indentation level:
+
+Tab delimited
+ BEAUTIFY CSS  BEAUTIFY CSS IN NEW WINDOW
+Beautified CSS:
+.center {
+	font-family: "monospace";
+	text-align: center;
+}
+
+* {
+	overflow-x: hidden
+}
+
+html {
+	font-family: "monospace";
+	overflow: auto;
+}
+
+a {
+	color: blue;
+}
+
+a:hover {
+	color: red;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.clickable::selection {
+	user-select: none;
+}
+
+html:selection {
+	user-select: none;
+}
+
+.output {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: 3px solid #000000;
+}
+
+.output-white {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: 3px solid #FFFFFF;
+}
+
+.aroundRealButton {
+	user-select: none;
+}
+
+
+/* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
+
+button {
+	cursor: pointer;
+	/* To change the pointer when we pass the mouse on the button */
+	/* The border itself */
+	border-width: 1px;
+	border-style: solid;
+	border-color: #464c54;
+	/* Grey background color */
+	background-color: #dcdad5;
+	/* Position absolute inside the aroundRealButton span */
+	/*position: absolute; we definitely don't need this it makes an error*/
+	user-select: none;
+}
+
+button:hover {
+	background-color: #eeebe7;
+	/* New background color, lighter grey */
+	border-width: 1px;
+}
+
+.dark-mode {
+	background-color: black;
+	color: white;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.aroundRealButton {
+	user-select: none;
+}
+
+
+/* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
+
+button {
+	cursor: pointer;
+	/* To change the pointer when we pass the mouse on the button */
+	/* The border itself */
+	border-width: 1px;
+	border-style: solid;
+	border-color: #464c54;
+	/* Grey background color */
+	background-color: #dcdad5;
+	user-select: none;
+}
+
+.asciiRealButton:hover {
+	background-color: #eeebe7;
+	/* New background color, lighter grey */
+	border-width: 1px;
+}
+
+.menu {
+	width: 150px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
+	border-radius: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	position: fixed;
+	display: none;
+	background-color: white;
+}
+
+.menu-item {
+	height: 20px;
+}
+
+.menu-item:hover {
+	background-color: #6CB5FF;
+	cursor: pointer;
+}
