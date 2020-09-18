@@ -2,4 +2,4 @@
 function activateError() {
   window.location.replace("/tempdownerror.html");
 }
-// activateError()
+activateError()
