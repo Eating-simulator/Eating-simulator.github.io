@@ -111,7 +111,7 @@ button:hover{
 
 /* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
 
-.asciiRealButton{
+button{
     cursor: pointer; /* To change the pointer when we pass the mouse on the button */
 
     /* The border itself */
