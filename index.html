@@ -680,6 +680,9 @@ ____________________________________________________\\
 <pre>ASCII arts provided by <a href="https://ascii.co.uk/">ascii.co.uk</a></pre>
 <button onclick="triggerColors()">Invert Colors</button>
 <button onclick="save()">Save</button>
+<button onclick="setInterval(function() {
+      save();
+}, 60000);"><Save every minute</button>
 <button onclick="localStorage.clear()">Reset game</button>
 <div class="output">
 <pre style="size: 10em">Output: <span id="output">You loaded eating simulator!</span></pre>
@@ -734,7 +737,6 @@ SOFTWARE.</pre>
             <div class="menu-item" onClick="window.location.replace('https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki')"><pre>▲Visit the wiki▲</pre></div>
             <div class="menu-item" onClick="window.location.replace('https://github.com/Eating-simulator/Eating-simulator.github.io')"><pre>▲Source code▲</pre></div>
             <hr>
-            <div class="menu-item" onClick="window.location.replace('https://jonkoo.com/reply.html')"><pre>▲Visit jonkoo▲</pre></div>
             <div class="menu-item" onClick="window.location.replace('https://ch1ck3n.com?bootstrap=on')"><pre>▲Visit ch1ck3n.com▲</pre></div>
             <div class="menu-item" onClick="window.location.replace('https://sites.google.com/view/id7-e')"><pre>▲Visit ID7.com▲</pre></div>
             <hr>
