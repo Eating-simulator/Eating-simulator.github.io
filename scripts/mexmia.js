@@ -79,7 +79,7 @@ function mexmiaChoice(leftorright) {
       mexmiahtml.innerHTML = "That's correct! a key to something! what's the something? the something is: \n a key to a secret money factory i found! i can't remember where it is though... it's somewhere near the library. it's real hidden."
       document.getElementById("mexmiaquestions").style.display =  "none"
       document.getElementById("mexmiastart").style.display = "block";
-      document.getElementById("mexmiastart").innerHTML = "Thanks, mexmia!";
+      document.getElementById("mexmiastart").innerHTML = "Thanks, Mexmia!";
       document.getElementById("mexmiastart").onClick = "getmoneyfactorykey()";
       mexmiasteps++;
     } else {
