@@ -37,8 +37,8 @@ function mexmiaChoice(leftorright) {
   }else if (mexmiasteps == 1) {
     if (leftorright == "right"){
       mexmiahtml.innerHTML = "That's correct! Now, Who made eating simulator?"
-      mexmiaLeft.innerHTML = "Bill gates"
-      mexmiaRight.innerHTML = "ID7, Techonodogg, ch1ck3n."
+      mexmiaLeft.innerHTML = "Bill Gates"
+      mexmiaRight.innerHTML = "ID7, Techonodoggo, ch1ck3n."
       mexmiasteps++;
     } else {
       mexmiastartover()
