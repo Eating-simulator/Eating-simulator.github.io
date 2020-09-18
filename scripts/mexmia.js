@@ -88,4 +88,4 @@ function mexmiaChoice(leftorright) {
     }
   }
 }
-}
+
