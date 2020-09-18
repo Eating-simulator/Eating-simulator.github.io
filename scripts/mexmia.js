@@ -89,3 +89,4 @@ function mexmiaChoice(leftorright) {
     }
   mexmiasteps++;
 }
+}
