@@ -1,4 +1,4 @@
-var mexmiasteps = 0
+var mexmiasteps = -1
   var mexmiahtml = document.getElementById("mexmiaSpeak");
   var mexmiaLeft = document.getElementById("mexmiaLeft");
   var mexmiaRight = document.getElementById("mexmiaRight");
@@ -15,8 +15,7 @@ function mexmiastartover() {
 }
 function mexmiaChoice(leftorright) {
   document.getElementById("mexmiastart").style.display = "none";
-    switch(mexmiasteps) {
-      case 0:
+    if (mexmiasteps == -1){
     if (leftorright == "left"){
       mexmiasteps++;
       mexmiahtml.innerHTML = "I am Mexmia the Terrible Unicorn! Answer all of my questions and you'll get a prize."
@@ -25,7 +24,7 @@ function mexmiaChoice(leftorright) {
       mexmiastartover()
       return;
     }
-      case 1:
+  }else if (mexmiasteps == 0){
     if (leftorright == "left"){
       mexmiahtml.innerHTML = "Hmmm.. i don't know! \n Second question: if E Implies A And A Implies T, What does T imply?"
       mexmiaLeft.innerHTML = "Of course, that would be the pizza scroll"
@@ -35,7 +34,7 @@ function mexmiaChoice(leftorright) {
       mexmiastartover()
       return;
     }
-      case 2:
+  }else if (mexmiasteps == 1) {
     if (leftorright == "right"){
       mexmiahtml.innerHTML = "That's correct! Now, Who made eating simulator?"
       mexmiaLeft.innerHTML = "Bill Gates"
@@ -45,7 +44,7 @@ function mexmiaChoice(leftorright) {
       mexmiastartover()
       return;
     }
-      case 3:
+}else if (mexmiasteps == 2){
     if (leftorright == "left"){
       mexmiahtml.innerHTML = "Troll! Of course ch1ck3n, technodoggo and ID7 made eating simulator. \n Now, who's the worst person in eating simulator?"
       mexmiaLeft.innerHTML = "Yourself!"
@@ -55,7 +54,7 @@ function mexmiaChoice(leftorright) {
       mexmiastartover()
       return;
     }
-      case 4:
+  }else if (mexmiasteps == 3){
     if (leftorright == "right"){
       mexmiahtml.innerHTML = "Good job! And, the answer is, of course, Landon! \n Next question: Why am i asking you questions?"
       mexmiaLeft.innerHTML = "idk"
@@ -65,7 +64,7 @@ function mexmiaChoice(leftorright) {
       mexmiastartover()
       return;
     }
-      case 5:
+  }else if (mexmiasteps == 4){
     if (leftorright == "right"){
       mexmiahtml.innerHTML = "Good job! now, what do you think i'm going to give you?"
       mexmiaLeft.innerHTML = "Money!"
@@ -75,18 +74,18 @@ function mexmiaChoice(leftorright) {
       mexmiastartover()
       return;
     }
-      case 6:
+  }else if (mexmiasteps == 5){
     if (leftorright == "right"){
       mexmiahtml.innerHTML = "That's correct! a key to something! what's the something? the something is: \n a key to a secret money factory i found! i can't remember where it is though... it's somewhere near the library. it's real hidden."
       document.getElementById("mexmiaquestions").style.display =  "none"
       document.getElementById("mexmiastart").style.display = "block";
-      document.getElementById("mexmiastart").innerHTML = "Thanks, mexmia!";
+      document.getElementById("mexmiastart").innerHTML = "Thanks, Mexmia!";
       document.getElementById("mexmiastart").onClick = "getmoneyfactorykey()";
       mexmiasteps++;
     } else {
       mexmiastartover()
       return;
     }
-  mexmiasteps++;
+  }
 }
 }
