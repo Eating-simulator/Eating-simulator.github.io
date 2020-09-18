@@ -121,9 +121,6 @@ button:hover{
     
     /* Grey background color */
     background-color: #dcdad5;
-    
-    /* Position absolute inside the aroundRealButton span */
-    position: absolute;
     user-select: none;
 }
 
