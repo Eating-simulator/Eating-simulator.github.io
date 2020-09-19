@@ -1,7 +1,7 @@
 var googleuser = {
-email : user.getEmail,
-username : user.getName,
-image : user.getImageUrl
+email : user.getEmail(),
+username : user.getName(),
+image : user.getImageUrl()
 }
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
