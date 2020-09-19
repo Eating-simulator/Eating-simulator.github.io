@@ -510,10 +510,10 @@ Woah! This castle is named "Castle de pizza"! This must contain the ancient scro
               '--------''--------'         
 <span class="linkbotspeech">"Hello. i'm linkbot. i control all of the links in eating simulator!"</span>
 <button onClick="linkbot.insult()">Insult linkbot</button>
-<span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">_________</span><span onClick="window.open('/simulation');">____________</span>
-<span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">|  THE  |</span><span onClick="window.open('/simulation');">|  EATING  |</span>
-<span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">|       |</span><span onClick="window.open('/simulation');">|          |</span>
-<span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">| RULES |</span><span onClick="window.open('/simulation');">|SIMULATION|</span>
+<span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">_________</span><span onClick="window.open('/simulation');">____________</span><span onClick="openTab('google');">__________</span>
+<span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">|  THE  |</span><span onClick="window.open('/simulation');">|  EATING  |</span><span onClick="openTab('google');">| GOOGLE |</span>
+<span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">|       |</span><span onClick="window.open('/simulation');">|          |</span><span onClick="openTab('google');">|        |</span>
+<span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">| RULES |</span><span onClick="window.open('/simulation');">|SIMULATION|</span><span onClick="openTab('google');">| SIGNIN |</span>
 
    </pre>
          </div>
@@ -701,39 +701,15 @@ SOFTWARE.</pre>
             </div>
          </div>
       </div>
-   <pre id="GoogleUserStatus"></pre>
-  <div id="my-signin2"></div>
-  <script>
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-    });
-  }
-var user;
-    function onSuccess(googleUser) {
-      user = googleUser.getBasicProfile()
-      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-if (googleUser.getBasicProfile().getEmail() == null) {
-  document.getElementById("GoogleUserStatus").innerHTML = "User not signed in. such sad."
-}else {
-  document.getElementById("GoogleUserStatus").innerHTML = "Signed in as " + googleUser.getBasicProfile().getName() + ". <a onClick='signOut()'>Sign out?</a>"
-}
-    }
-    function onFailure(error) {
-      console.log(error);
-    }
-    function renderButton() {
-      gapi.signin2.render('my-signin2', {
-        'scope': 'profile email',
-        'width': 240,
-        'height': 50,
-        'longtitle': true,
-        'theme': 'dark',
-        'onsuccess': onSuccess,
-        'onfailure': onFailure
-      });
-    }
-  </script>
+<div id="google" class="tabcontent">
+   <center>
+      <pre id="GoogleUserStatus"></pre>
+      <div id="my-signin2"></div>
+      <script>
+function signOut(){var a=gapi.auth2.getAuthInstance();a.signOut().then(function(){})}var user;function onSuccess(a){user=a.getBasicProfile();console.log("Logged in as: "+a.getBasicProfile().getName());if(a.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+a.getBasicProfile().getName()+". <a onClick='signOut()'>Sign out?</a>"}}function onFailure(a){console.log(a)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
+      </script>
+   </center>
+</div>
 
   <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
       <script src="/scripts/money.js"></script>
