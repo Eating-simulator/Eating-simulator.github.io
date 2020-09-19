@@ -630,6 +630,7 @@ ____________________________________________________\\
          save();
          }, 60000);">Save every minute</button>
       <button onclick="localStorage.clear()">Reset game</button>
+            <button id="myBtn">About eating simulator</button><button id="btnFullscreen" type="button">Toggle Fullscreen</button>
       <div class="bottomline">
       <pre>ASCII arts provided by <a href="https://ascii.co.uk/">ascii.co.uk</a></pre>
       <div class="output">
@@ -671,14 +672,14 @@ SOFTWARE.</pre>
                <pre><a href="https://github.com/Eating-simulator/Eating-simulator.github.io/">Get the source code</a> Or <a href="https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki">visit the wiki</a></pre>
          </div>
       </div>
-      <button id="myBtn">About eating simulator</button><button id="btnFullscreen" type="button">Toggle Fullscreen</button>
+      <div class="bottomline">
       <pre>Eating Simulator v2.8.6</pre>
-      <pre>© Copyright 2020 <a href="https://ch1ck3n.com/" target="_blank">ch1ck3n</a>
-<a href="https://jonkoo.com/" target="_blank">technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo technodoggo</a>
+      <pre>© Copyright 2020 <a href="https://ch1ck3n.com/" target="_blank">ch1ck3n</a> technodoggo
 <a href="https://sites.google.com/view/id7-e/" target="_blank">id7</a> All rights reserved. 
       <a href="https://github.com/Eating-simulator/Eating-simulator.github.io/">Source code</a> <a href="https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki">wiki</a></pre>
       <a href="https://eating-simulator.github.io" target="popup"onclick="window.open('https://eating-simulator.github.io','name','width=1000,height=700')">Open eating simulator in a new window</a>
       <div style='display:none;position:absolute;z-index:3;right:111px;height:44px;background-color:#5f5f5f;text-align:right;padding-top:9px;' id='google_translate_element'></div>
+      </div>
       </footer>
       <div class="menu">
          <div class="menu-item" onClick="window.location.replace('https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki')">
@@ -701,8 +702,7 @@ SOFTWARE.</pre>
             </div>
          </div>
       </div>
-   <pre id="GoogleUserStatus"></pre>
-  <div id="my-signin2"></div>
+  <button id="my-signin2"></button>
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
@@ -713,8 +713,8 @@ SOFTWARE.</pre>
     function renderButton() {
       gapi.signin2.render('my-signin2', {
         'scope': 'profile email',
-        'width': 240,
-        'height': 50,
+        'width': default,
+        'height': default,
         'longtitle': true,
         'theme': 'dark',
         'onsuccess': onSuccess,
@@ -740,6 +740,5 @@ SOFTWARE.</pre>
       <script src="/scripts/linkbot.js"></script>
       <script src="/scripts/rightclick.js"></script>
       <script src="/scripts/textsave.js"></script>
-      <script src="/scripts/google.js"></script>
    </body>
 </html>
