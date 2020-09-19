@@ -704,10 +704,20 @@ SOFTWARE.</pre>
    <pre id="GoogleUserStatus"></pre>
   <div id="my-signin2"></div>
   <script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+    });
+  }
 var user;
     function onSuccess(googleUser) {
       user = googleUser.getBasicProfile()
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+if (googleUser.getBasicProfile().getEmail() == null) {
+  document.getElementById("GoogleUserStatus").innerHTML = "User not signed in. such sad."
+}else {
+  document.getElementById("GoogleUserStatus").innerHTML = "Signed in as " + googleUser.getBasicProfile().getName() + ". <a onClick='signOut()'>Sign out?</a>"
+}
     }
     function onFailure(error) {
       console.log(error);
