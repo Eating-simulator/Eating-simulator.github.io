@@ -1,4 +1,3 @@
-var user = googleUser.getBasicProfile();
 var googleuser = {
 email : user.getEmail,
 username : user.getName,
