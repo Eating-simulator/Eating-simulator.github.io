@@ -1,4 +1,8 @@
-
+.bottomlines {
+	position: fixed;
+	color: blue;
+	font-size: inherit;
+}
 .center {
     font-family: "monospace";
     text-align: center;
