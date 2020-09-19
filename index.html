@@ -624,6 +624,15 @@ ____________________________________________________\\
          </div>
       </div>
       </div>
+      <div id="google" class="tabcontent">
+   <center>
+      <pre id="GoogleUserStatus"></pre>
+      <div id="my-signin2"></div>
+      <script>
+function signOut(){var a=gapi.auth2.getAuthInstance();a.signOut().then(function(){})}var user;function onSuccess(a){user=a.getBasicProfile();console.log("Logged in as: "+a.getBasicProfile().getName());if(a.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+a.getBasicProfile().getName()+". <a onClick='signOut()'>Sign out?</a>"}}function onFailure(a){console.log(a)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
+      </script>
+   </center>
+</div>
             <button onclick="triggerColors()">Invert Colors</button>
                   <button onclick="save()">Save</button>
       <button onclick="setInterval(function() {
@@ -701,15 +710,7 @@ SOFTWARE.</pre>
             </div>
          </div>
       </div>
-<div id="google" class="tabcontent">
-   <center>
-      <pre id="GoogleUserStatus"></pre>
-      <div id="my-signin2"></div>
-      <script>
-function signOut(){var a=gapi.auth2.getAuthInstance();a.signOut().then(function(){})}var user;function onSuccess(a){user=a.getBasicProfile();console.log("Logged in as: "+a.getBasicProfile().getName());if(a.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+a.getBasicProfile().getName()+". <a onClick='signOut()'>Sign out?</a>"}}function onFailure(a){console.log(a)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
-      </script>
-   </center>
-</div>
+
 
   <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
       <script src="/scripts/money.js"></script>
