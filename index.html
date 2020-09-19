@@ -704,7 +704,9 @@ SOFTWARE.</pre>
    <pre id="GoogleUserStatus"></pre>
   <div id="my-signin2"></div>
   <script>
+var user;
     function onSuccess(googleUser) {
+      user = googleUser.getBasicProfile()
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
     }
     function onFailure(error) {
