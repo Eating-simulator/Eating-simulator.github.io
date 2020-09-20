@@ -7,8 +7,6 @@
     font-family: "monospace";
     text-align: center;
 }
-*{overflow-x: hidden
-}
 html { 
    font-family: "monospace";
 overflow: auto;
@@ -163,10 +161,6 @@ button{
 .center {
 	font-family: "monospace";
 	text-align: center;
-}
-
-* {
-	overflow-x: hidden
 }
 
 html {
