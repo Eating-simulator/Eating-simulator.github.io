@@ -40,7 +40,7 @@ function mexmiaChoice(lor) {
       }
       break;
     case 1:
-        if (lor == "right")
+        if (lor == "right") {
         mexmiahtml.innerHTML = "That's correct! Now, Who made eating simulator?"
         mexmiaLeft.innerHTML = "Bill Gates"
         mexmiaRight.innerHTML = "ID7, Technodoggo, ch1ck3n."
