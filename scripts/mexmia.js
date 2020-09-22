@@ -45,7 +45,7 @@ function mexmiaChoice(lor) {
         mexmiaLeft.innerHTML = "Bill Gates"
         mexmiaRight.innerHTML = "ID7, Technodoggo, ch1ck3n."
         mexmiasteps++;
-       else {
+        }else {
         mexmiastartover()
         return;
       }
