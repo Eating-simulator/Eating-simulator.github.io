@@ -43,7 +43,7 @@ function mexmiaChoice(lor) {
         if (lor == "right") {
         mexmiahtml.innerHTML = "That's correct! Now, Who made eating simulator?"
         mexmiaLeft.innerHTML = "Bill Gates"
-        mexmiaRight.innerHTML = "ID7, Technodoggo, ch1ck3n."
+        mexmiaRight.innerHTML = "Technodoggo, ch1ck3n."
         mexmiasteps++;
         }else {
         mexmiastartover()
@@ -52,7 +52,7 @@ function mexmiaChoice(lor) {
       break;
   case 2:
     if (lor == "left") {
-      mexmiahtml.innerHTML = "Troll! Of course ch1ck3n, technodoggo and ID7 made eating simulator. \n Now, who's the worst person in eating simulator?"
+      mexmiahtml.innerHTML = "Troll! Of course ch1ck3n, technodoggo made eating simulator. \n Now, who's the worst person in eating simulator?"
       mexmiaLeft.innerHTML = "Yourself!"
       mexmiaRight.innerHTML = "Landon!"
       mexmiasteps++;
