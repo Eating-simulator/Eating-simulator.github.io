@@ -157,7 +157,7 @@ function librarypathway() {
 }
 
 function output(output) {
-	var sound = new sound("https://eatnig-simulator.github.io/juntos.mp3")
+	var sound = new Sound("https://eatnig-simulator.github.io/juntos.mp3")
 	document.getElementById("output").innerHTML = output;
 	sound.play()
 }
