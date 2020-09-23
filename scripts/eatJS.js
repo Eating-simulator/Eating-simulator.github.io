@@ -155,9 +155,9 @@ function librarypathway() {
 		openTab('Libraryvault')
 	}
 }
-
+function sound(a){this.sound=document.createElement("audio");this.sound.src=a;this.sound.setAttribute("preload","auto");this.sound.setAttribute("controls","none");this.sound.style.display="none";document.body.appendChild(this.sound);this.play=function(){this.sound.play()};this.stop=function(){this.sound.pause()}};
 function output(output) {
-	var sound = new Sound("https://eating-simulator.github.io/juntos.mp3")
+	var sound = new sound("https://eating-simulator.github.io/juntos.mp3")
 	document.getElementById("output").innerHTML = output;
 	sound.play()
 }
