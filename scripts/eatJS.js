@@ -464,6 +464,6 @@ document.getElementById('btnFullscreen').addEventListener('click', function () {
 	toggleFullscreen();
 });
 function darkmode() {
-   var element = document.getElementById("body");
+   var element = document.body;
    element.classList.toggle("dark-mode");
 }
