@@ -28,7 +28,8 @@ var data = {
 	functions: functions,
 	candies: 0,
 	mexmiacorrect: false,
-	moneyfactorykey: false
+	moneyfactorykey: false,
+	awholeheckington = false
 
 
 }
@@ -77,7 +78,7 @@ function chefbutton() {
 }
 setInterval(function () {
 	checkstats()
-	data.money++;
+	data.money = data.money + data.moneypersecond;
 	if (data.lotterymachinemoneyturnedon == true) {
 		data.lotterymachinemoney++;
 	}
