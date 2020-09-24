@@ -116,29 +116,9 @@
       </div>
       <div id="mexmia" class="tabcontent">
          <span id="mexmiaSpeak">I am Mexmia the Terrible Unicorn!</span>
-         <pre>         <button onClick="mexmiaChoice('left')" style="display:block" id="mexmiastart">I want to play your game.</button>
-                               \                       
-                               \\                      
-                                \\                     
-                                 >\/7                  
-                             _.-(<span id="mexmiaeyes" style="color:black">6</span>'  \                 
-                            (=___._/` \                
-                                 )  \ |                
-                                /   / |                
-                               /    > /                
-                              j    < _\                
-                          _.-' :      ``.              
-                          \ r=._\        `.            
-                         <`\\_  \         .`-.         
-                          \ r-7  `-. ._  ' .  `\       
-                           \`,      `-.`7  7)   )      
-                            \/         \|  \'  / `-._  
-                                       ||    .'        
-cjr                                     \\  (          
-10mar02                                  >\  >         
-                                     ,.-' >.'          
-                                    <.'_.''            
-                                      <'               
+         <button onClick="mexmiaChoice('left')" style="display:block" id="mexmiastart">I want to play your game.</button>
+         <pre id="mexmiaascii">         
+          
 </pre>
          <div id="mexmiaquestions" style="display:none"><button onclick="mexmiaChoice('left')" id="mexmiaLeft">Why are you called Terrible?</button><button onclick="mexmiaChoice('right')" id="mexmiaRight">Do you even know what terrible means?</button></div>
       </div>
@@ -153,19 +133,7 @@ cjr                                     \\  (
          </div>
       </div>
       <div id="Desert" class="tabcontent">
-         <pre>
-     .    _    +     .  _________      .          .     ' uuu======uuu     .            '+                          
-  (      /|\      _   _|         \______   .   +    '    .| |======| |        *                                     
-    /\  ||||| .  | | |          _       |        .    '   | | .==. | |     .    '                                   
- __||||_|||||____| |_|_________<span onclick="openTab('mexmia');output('You went into the cave of Mexmia!')" class="clickable">| |</span>_______\________________|___|<span class="clickable" id="fortressdoor" onClick="fortresdoor()">##</span>|___|______________                                                    . 
-   |||| |||||  /\   _____      _____  .   .       . <span class="fortressresponce"></span>                    
-  . \|`-'|||| ||||    __________            .                                                                 
-     \__ |||| ||||      <span onclick="librarykey = true;" class="clickable">*</span>          .     .     .        -            .   .                                    
-  __    ||||`-'|||  .       .    __________                                                                   
- .    . |||| ___/  ___________             .                                                                  
- _   ___|||||__  _           .          _                                                                     
-      _ `---'    .   .    .   _   .   .    .                                                                 
-You walk outside the door. you see a desert fortress! that thing looks pretty cool.
+         <pre id="desertascii">
 </pre>
       </div>
       <div class="center">
@@ -217,14 +185,7 @@ You walk outside the door. you see a desert fortress! that thing looks pretty co
       </div>
       <div class="center">
          <div class="tabcontent" id="upgrades">
-            <pre>
- __    __  .______     _______ .______          ___       _______   _______     _______.
-|  |  |  | |   _  \   /  _____||   _  \        /   \     |       \ |   ____|   /       |
-|  |  |  | |  |_)  | |  |  __  |  |_)  |      /  ^  \    |  .--.  ||  |__     |   (----`
-|  |  |  | |   ___/  |  | |_ | |      /      /  /_\  \   |  |  |  ||   __|     \   \    
-|  `--'  | |  |      |  |__| | |  |\  \----./  _____  \  |  '--'  ||  |____.----)   |   
- \______/  | _|       \______| | _| `._____/__/     \__\ |_______/ |_______|_______/    
-</pre>
+            <pre id="upgradesascii"></pre>
             <pre><button onClick="document.write('<pre><center><h1>Virus installed!</h1></center></pre>')">Install a virus (free)</button></pre>
             <pre><button id="mps" onClick="data.moneypersecond++;data.calories-=100">MONEY PER SECOND (Takes back 100 calories)</button></pre>
             <center>
