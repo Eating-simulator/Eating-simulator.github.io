@@ -25,7 +25,8 @@
 <span onClick="openTab('linkbot')">| THE  |</span><span onClick="openTab('textsave')">|      |</span>
 <span onClick="openTab('linkbot')">| LINK |</span><span onClick="openTab('textsave')">|SAVING|</span>
 <span onClick="openTab('linkbot')">|MASTER|</span><span onClick="openTab('textsave')">|      |</span>
-</div>
+
+      </div>
       </pre>
       <div id="status-tracker" class="center">
          <pre>Calories:<span class="calories">300</span> <span class="calorieconverter" style="display: none;">----CALORIES CONVERTER----> <span id="candies">0</span>candies.</span></pre>
@@ -56,8 +57,8 @@
       </div>
       <div class="center">
          <div id="textsave" class="tabcontent">
-<center>
-   <pre>
+            <center>
+               <pre>
                                    ____              _                                              
                                   / ___|  __ ___   _(_)_ __   __ _                                  
                                   \___ \ / _` \ \ / / | '_ \ / _` |                                 
@@ -65,33 +66,36 @@
                                   |____/ \__,_| \_/ |_|_| |_|\__, |                                 
                                                              |___/                 
                                                              
- </pre>      
-                              <center><pre><strong>LOCALSTORAGE SAVING</strong></pre></center>
-                              <pre>When you save locally on your computer. does not save across computers.</pre>
-                               <button onclick="save()">Save</button>
-      <button onclick="setInterval(function() {
-         save();
-         }, 60000);">Save every minute</button>
-      <button onclick="localStorage.clear()">Reset game</button>
-                              <center><pre><strong>TEXT SAVING</strong></pre></center>
-                             <pre>When you clear your local storage (for whatever reason) and you lose your save,
+ </pre>
+               <center>
+                  <pre><strong>LOCALSTORAGE SAVING</strong></pre>
+               </center>
+               <pre>When you save locally on your computer. does not save across computers.</pre>
+               <button onclick="save()">Save</button>
+               <button onclick="setInterval(function() {
+                  save();
+                  }, 60000);">Save every minute</button>
+               <button onclick="localStorage.clear()">Reset game</button>
+               <center>
+                  <pre><strong>TEXT SAVING</strong></pre>
+               </center>
+               <pre>When you clear your local storage (for whatever reason) and you lose your save,
                              You can text save! Get the text save here and just paste it in the loading area and you go back RIGHT where you left off!
                              (Warning: when game updates, when you text load, there is a chance game might break)</pre>
-
-                                               <button onClick="textsave.save()">Get the current game as text</button>                         <br>
-          <textarea rows=6 cols="96" id="textareasave" onClick="document.getElementById('textareasave').select();" readonly></textarea>
-          <pre>
+               <button onClick="textsave.save()">Get the current game as text</button>                         <br>
+               <textarea rows=6 cols="96" id="textareasave" onClick="document.getElementById('textareasave').select();" readonly></textarea>
+               <pre>
                                  _                    _ _                                           
                                 | |    ___   __ _  __| (_)_ __   __ _                               
                                 | |   / _ \ / _` |/ _` | | '_ \ / _` |                              
                                 | |__| (_) | (_| | (_| | | | | | (_| |                              
                                 |_____\___/ \__,_|\__,_|_|_| |_|\__, |                              
                                                                 |___/                                
-  </pre>                                               
-          <textarea rows=6 cols="96" id="textareasave"></textarea>   <br>
-                   <button onClick="textsave.load()">Load game</button>                   
-
-</center>
+  </pre>
+               <textarea rows=6 cols="96" id="textareasave"></textarea>
+               <br>
+               <button onClick="textsave.load()">Load game</button>                   
+            </center>
          </div>
       </div>
       <div class="center">
@@ -526,11 +530,11 @@ Woah! This castle is named "Castle de pizza"! This must contain the ancient scro
 <span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">|       |</span><span onClick="window.open('/simulation');">|          |</span><span onClick="openTab('google');">|        |</span><span onClick="openTab('upgrades');">|UPGRADES|</span>
 <span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">| RULES |</span><span onClick="window.open('/simulation');">|SIMULATION|</span><span onClick="openTab('google');">| SIGNIN |</span><span onClick="openTab('upgrades');">|        |</span>
 </pre>
-</div>
-</div>
-<div class="center">
-<div class="tabcontent" id="upgrades">
-<pre>
+         </div>
+      </div>
+      <div class="center">
+         <div class="tabcontent" id="upgrades">
+            <pre>
  __    __  .______     _______ .______          ___       _______   _______     _______.
 |  |  |  | |   _  \   /  _____||   _  \        /   \     |       \ |   ____|   /       |
 |  |  |  | |  |_)  | |  |  __  |  |_)  |      /  ^  \    |  .--.  ||  |__     |   (----`
@@ -538,61 +542,61 @@ Woah! This castle is named "Castle de pizza"! This must contain the ancient scro
 |  `--'  | |  |      |  |__| | |  |\  \----./  _____  \  |  '--'  ||  |____.----)   |   
  \______/  | _|       \______| | _| `._____/__/     \__\ |_______/ |_______|_______/    
 </pre>
-<pre><button id="mps" onClick="data.moneypersecond++;">MONEY PER SECOND</button></pre>
-<center><pre><button id="awholeheckington" onClick="document.getElementById('awholeheckington').style.display = 'none';data.awholeheckington = true;data.money = 99999999;output('You just got a WHOLE HECKING TON OF MONEY!');data.calories-=200" style="display:block">A whole heckin ton of money (One-time purchase)(Takes away 200 calories)(Gets you a whole hecking ton of money)</button></pre></center>
-
-
-</div>
-<div id="Libraryvault" class="tabcontent">
-   <h1>the vault</h1>
-   <pre>
-   <span class="soldier">"What are you doing here, in the vault?"</span>
-   <span id="soldierascii">
-   </span>    
-   <pre class="button" id="soldieranswer" onClick="changeSoldier()">The librarian let me come here.</button>
+            <pre><button id="mps" onClick="data.moneypersecond++;">MONEY PER SECOND</button></pre>
+            <center>
+               <pre><button id="awholeheckington" onClick="document.getElementById('awholeheckington').style.display = 'none';data.awholeheckington = true;data.money = 99999999;output('You just got a WHOLE HECKING TON OF MONEY!');data.calories-=200" style="display:block">A whole heckin ton of money (One-time purchase)(Takes away 200 calories)(Gets you a whole hecking ton of money)</button></pre>
+            </center>
+         </div>
+         <div id="Libraryvault" class="tabcontent">
+            <h1>the vault</h1>
+            <pre>
+            <span class="soldier">"What are you doing here, in the vault?"</span>
+            <span id="soldierascii">
+            </span>    
+            <pre class="button" id="soldieranswer" onClick="changeSoldier()">The librarian let me come here.</button>
               <button class="soldieranswer" onClick="changeSoldier()">The librarian let me come here.</button>
 
 </pre>
-</div>
-<div id="Store" class="tabcontent">
-   <pre><h1>The store</h1></pre>
-   <pre>
+         </div>
+         <div id="Store" class="tabcontent">
+            <pre><h1>The store</h1></pre>
+            <pre>
 <span id="merchant">
 </span>    
            <span class="merchantspeech">Arr, i'm the shopkeeper.
            Buy me' food! they' good!</span>
            <button onClick="merchant.givemesomething()">Can you give me something?</button>
 </pre>
-   <pre>
+            <pre>
 <span id="storepizza">
 
 
 </span>
  learn more information about this item in the <button onClick="openTab('pizzainformation',  )">library</button>
 </pre>
-   <button class="pizzabutton" onClick="eat('pizza')">click to eat pizza</button>
-   <pre>
+            <button class="pizzabutton" onClick="eat('pizza')">click to eat pizza</button>
+            <pre>
 <span id="storegingerbreadman">
 
 
 </span>
 </pre>
-   <button class="pizzabutton" onClick="eat('gingerbread')">Click to eat a gingerbread man</button>
-   <pre>
+            <button class="pizzabutton" onClick="eat('gingerbread')">Click to eat a gingerbread man</button>
+            <pre>
 <span id="storemilk">
 
 </span>
 </pre>
-   <button class="milkbutton" onclick="eat('milk')">Click to drink milk</button>
-   <pre>
+            <button class="milkbutton" onclick="eat('milk')">Click to drink milk</button>
+            <pre>
 <span id="storecake">
 
 </span>
 </pre>
-   <button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button> 
-</div>
-<div id="store2door" class="tabcontent">
-<pre>
+            <button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button> 
+         </div>
+         <div id="store2door" class="tabcontent">
+            <pre>
  ____________ 
 |     NO     |
 |TRESSPASSING|
@@ -649,14 +653,15 @@ ____________________________________________________\\
       </div>
       </div>
       <div id="google" class="tabcontent">
-   <center>
-      <pre id="GoogleUserStatus"></pre>
-      <div id="my-signin2"></div>
-      <script>
-function signOut(){var a=gapi.auth2.getAuthInstance();a.signOut().then(function(){})}var user;function onSuccess(a){user=a.getBasicProfile();console.log("Logged in as: "+a.getBasicProfile().getName());if(a.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+a.getBasicProfile().getName()+". <a onClick='signOut()'>Sign out?</a>"}}function onFailure(a){console.log(a)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
-      </script>
-   </center>
-</div>
+         <center>
+            <pre id="GoogleUserStatus"></pre>
+            <div id="my-signin2"></div>
+            <script>
+               function signOut(){var a=gapi.auth2.getAuthInstance();a.signOut().then(function(){})}var user;function onSuccess(a){user=a.getBasicProfile();console.log("Logged in as: "+a.getBasicProfile().getName());if(a.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+a.getBasicProfile().getName()+". <a onClick='signOut()'>Sign out?</a>"}}function onFailure(a){console.log(a)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
+                     
+            </script>
+         </center>
+      </div>
       <div class="bottomline">
       <pre>ASCII arts provided by <a href="https://ascii.co.uk/">ascii.co.uk</a></pre>
       <div class="output">
@@ -668,13 +673,14 @@ function signOut(){var a=gapi.auth2.getAuthInstance();a.signOut().then(function(
       <!-- The Modal -->
       <div id="myModal" class="modal">
          <!-- Modal content -->
- <center>        <div class="modal-content">
-            <span class="close">&times;</span>
-            <pre>EATING SIMULATOR V2.8.6</pre>
-            <pre>
-            © Copyright 2020 <a href="https://ch1ck3n.com" target="popup" onclick="window.open('https://ch1ck3n.com','name','width=1000,height=700')">ch1ck3n</a>, <a href="https://jonkoo.com" target="popup" onclick="window.open('https://jonkoo.com','name','width=1000,height=700')">technodoggo</a>, <a href="https://sites.google.com/view/id7-e" target="popup" onclick="window.open('https://sites.google.com/view/id7-e','name','width=1000,height=700')">ID7</a>,  All rights reserved.</a>
-            <pre>This project is licenced under the MIT licence.</pre>
-            <pre>Copyright (c) 2020 Eating simulator team (ch1ck3n, technodoggo)
+         <center>
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <pre>EATING SIMULATOR V2.8.6</pre>
+               <pre>
+               © Copyright 2020 <a href="https://ch1ck3n.com" target="popup" onclick="window.open('https://ch1ck3n.com','name','width=1000,height=700')">ch1ck3n</a>, <a href="https://jonkoo.com" target="popup" onclick="window.open('https://jonkoo.com','name','width=1000,height=700')">technodoggo</a>, <a href="https://sites.google.com/view/id7-e" target="popup" onclick="window.open('https://sites.google.com/view/id7-e','name','width=1000,height=700')">ID7</a>,  All rights reserved.</a>
+               <pre>This project is licenced under the MIT licence.</pre>
+               <pre>Copyright (c) 2020 Eating simulator team (ch1ck3n, technodoggo)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -693,17 +699,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.</pre>
-            <footer>
-               <pre>Created by ch1ck3n (doge) and technodoggo.</pre>
-               <pre><a href="https://github.com/Eating-simulator/Eating-simulator.github.io/">Get the source code</a> Or <a href="https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki">visit the wiki</a></pre>
-         </div></center>
+               <footer>
+                  <pre>Created by ch1ck3n (doge) and technodoggo.</pre>
+                  <pre><a href="https://github.com/Eating-simulator/Eating-simulator.github.io/">Get the source code</a> Or <a href="https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki">visit the wiki</a></pre>
+            </div>
+         </center>
       </div>
       <button id="myBtn">About eating simulator</button><button id="btnFullscreen" type="button">Toggle Fullscreen</button>
       <pre>Eating Simulator v2.8.6</pre>
       <pre>© Copyright 2020 <a href="https://ch1ck3n.com/" target="_blank">ch1ck3n</a>, <a href="https://jonkoo.com/" target="_blank">technodoggo</a>, <a href="https://sites.google.com/view/id7-e/" target="_blank">id7</a>, All rights reserved. 
       <a href="https://github.com/Eating-simulator/Eating-simulator.github.io" target="_blank">Source code</a> <a href="https://the-eating-simulator.fandom.com/" target="_blank">Wiki</a>
       <pre>Dark mode (Invert colors) --> <input type="checkbox" onClick="darkmode()"></pre>
-    </pre>
+      </pre>
       <div style='display:none;position:absolute;z-index:3;right:111px;height:44px;background-color:#5f5f5f;text-align:right;padding-top:9px;' id='google_translate_element'></div>
       </footer>
       <div class="menu">
@@ -727,9 +734,7 @@ SOFTWARE.</pre>
             </div>
          </div>
       </div>
-
-
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+      <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
       <script src="/scripts/money.js"></script>
       <script src="/scripts/interactions.js"></script>
       <script src="/scripts/random.js"></script>
