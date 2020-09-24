@@ -351,3 +351,7 @@ button {
 	background-color: #6CB5FF;
 	cursor: pointer;
 }
+.dark_button {
+    background-color: #171717;
+    color: #9D9D9D !important;
+}
