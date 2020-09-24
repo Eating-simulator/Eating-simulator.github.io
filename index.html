@@ -542,12 +542,17 @@ Woah! This castle is named "Castle de pizza"! This must contain the ancient scro
 |  `--'  | |  |      |  |__| | |  |\  \----./  _____  \  |  '--'  ||  |____.----)   |   
  \______/  | _|       \______| | _| `._____/__/     \__\ |_______/ |_______|_______/    
 </pre>
-            <pre><button id="mps" onClick="data.moneypersecond++;">MONEY PER SECOND</button></pre>
+            <pre><button id="mps" onClick="data.moneypersecond++;data.calories-=100">MONEY PER SECOND (Takes back 100 calories)</button></pre>
             <center>
               <script>
                 setInterval(function(){
                   if (data.calories < 1000000){
                     document.getElementById("awholeheckington").disabled = true;
+                  }
+                }, 100)
+                setInterval(function(){
+                  if (data.calories < 100){
+                    document.getElementById("mps").disabled = true;
                   }
                 }, 100)
               </script>
