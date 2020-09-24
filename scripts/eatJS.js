@@ -327,6 +327,7 @@ document.getElementById('btnFullscreen').addEventListener('click', function () {
 function darkmode() {
    var element = document.body;
    element.classList.toggle("dark-mode");
+   $(":button").classList.toggle("dark_button");
    if (data.white) {
    	data.white = false
    }else {
