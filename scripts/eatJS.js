@@ -29,7 +29,7 @@ var data = {
 	candies: 0,
 	mexmiacorrect: false,
 	moneyfactorykey: false,
-	awholeheckington = false
+	awholeheckington : false
 
 
 }
