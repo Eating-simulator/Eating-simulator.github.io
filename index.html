@@ -27,6 +27,7 @@
 <span onClick="openTab('linkbot')">| LINK |</span><span onClick="openTab('textsave')">|SAVING|</span>
 <span onClick="openTab('linkbot')">|MASTER|</span><span onClick="openTab('textsave')">|      |</span>
 
+      
       </div>
       </pre>
       <div id="status-tracker" class="center">
@@ -37,18 +38,7 @@
          <div id="Kitchen" class="tabcontent">
             <h1>The kitchen</h1>
             <pre>You do not have the permission to make food. let's try to convince the chef!</pre>
-            <pre>
-       .--,--.        
-       `.  ,.'        
-        |___|         
-        :o o:   O     
-       _`~^~'_  |     
-     /'   ^   `\=)    
-   .'  _______ '~|    
-   `( =|<span class="clickable" onclick="aprontalk()">     </span>|= /'    
-       |<span class="clickable" onclick="aprontalk()">     </span>|        
-       |_____|        
-~~~~~~~ ===== ~~~~~~~~</pre>
+            <pre id="chefascii"></pre>
             <pre>"eh, i don't really think you can cook. you can help me by finding 2 ingredients, dorito and cheese! That should cure your boredom. wait, why did you come here?"
 <pre class="chefresponce1"></pre>
 <pre id="chefresponce2"></pre>
@@ -59,51 +49,7 @@
       <div class="center">
          <div id="textsave" class="tabcontent">
             <center>
-               <pre>
-                                   ____              _                                              
-                                  / ___|  __ ___   _(_)_ __   __ _                                  
-                                  \___ \ / _` \ \ / / | '_ \ / _` |                                 
-                                   ___) | (_| |\ V /| | | | | (_| |                                 
-                                  |____/ \__,_| \_/ |_|_| |_|\__, |                                 
-                                                             |___/                 
-                                                             
- </pre>
-               <center>
-                  <pre><strong>LOCALSTORAGE SAVING</strong></pre>
-               </center>
-               <pre>When you save locally on your computer. does not save across computers.</pre>
-               <button onclick="save()">Save</button>
-               <button onclick="setInterval(function() {
-                  save();
-                  }, 60000);">Save every minute</button>
-               <button onclick="localStorage.clear()">Reset game</button>
-               <center>
-                  <pre><strong>TEXT SAVING</strong></pre>
-               </center>
-               <pre>When you clear your local storage (for whatever reason) and you lose your save,
-                             You can text save! Get the text save here and just paste it in the loading area and you go back RIGHT where you left off!
-                             (Warning: when game updates, when you text load, there is a chance game might break)</pre>
-               <button onClick="textsave.save()">Get the current game as text</button>                         <br>
-               <textarea rows=6 cols="96" id="textareasave" onClick="document.getElementById('textareasave').select();" readonly></textarea>
-               <pre>
-                                 _                    _ _                                           
-                                | |    ___   __ _  __| (_)_ __   __ _                               
-                                | |   / _ \ / _` |/ _` | | '_ \ / _` |                              
-                                | |__| (_) | (_| | (_| | | | | | (_| |                              
-                                |_____\___/ \__,_|\__,_|_|_| |_|\__, |                              
-                                                                |___/                                
-  </pre>
-               <textarea rows=6 cols="96" id="textareasave"></textarea>
-               <br>
-               <button onClick="textsave.load()">Load game</button>                   
-            </center>
-         </div>
-      </div>
-      <div class="center">
-         <div id="vault" class="tabcontent">
-            <pre id="vaultascii">
-  
-  </pre>
+<div id="loadingarea"></div>
          </div>
       </div>
       <div class="center">
@@ -173,7 +119,7 @@
          <div class="tabcontent" id="linkbot">
             <pre id="linkbotascii">
 </pre>
-<pre>
+            <pre>
 <span class="linkbotspeech">"Hello. i'm linkbot. i control all of the links in eating simulator!"</span>
 <button onClick="linkbot.insult()">Insult linkbot</button>
 <span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">_________</span><span onClick="window.open('/simulation');">____________</span><span onClick="openTab('google');">__________</span><span onClick="openTab('upgrades');">__________</span>
@@ -189,18 +135,18 @@
             <pre><button onClick="document.write('<pre><center><h1>Virus installed!</h1></center></pre>')">Install a virus (free)</button></pre>
             <pre><button id="mps" onClick="data.moneypersecond++;data.calories-=100">MONEY PER SECOND (Takes back 100 calories)</button></pre>
             <center>
-              <script>
-                setInterval(function(){
-                  if (data.calories < 1000000){
-                    document.getElementById("awholeheckington").disabled = true;
-                  }
-                }, 100)
-                setInterval(function(){
-                  if (data.calories < 100){
-                    document.getElementById("mps").disabled = true;
-                  }
-                }, 100)
-              </script>
+               <script>
+                  setInterval(function(){
+                    if (data.calories < 1000000){
+                      document.getElementById("awholeheckington").disabled = true;
+                    }
+                  }, 100)
+                  setInterval(function(){
+                    if (data.calories < 100){
+                      document.getElementById("mps").disabled = true;
+                    }
+                  }, 100)
+               </script>
                <pre><button id="awholeheckington" onClick="document.getElementById('awholeheckington').style.display = 'none';data.awholeheckington = true;data.money = 99999999;output('You just got a WHOLE HECKING TON OF MONEY!');data.calories-=200" style="display:block">A whole heckin ton of money (One-time purchase)(Takes away 200 calories)(Gets you a whole hecking ton of money)</button></pre>
             </center>
          </div>
@@ -253,18 +199,7 @@
             <button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button> 
          </div>
          <div id="store2door" class="tabcontent">
-            <pre>
- ____________ 
-|     NO     |
-|TRESSPASSING|
-|            |
-|         <span class="clickable" onclick="triggerstore2()">_</span>  |
-|        <span class="clickable" onclick="triggerstore2()">(_)</span> |
-|            |
-|  THE STORE |
-|            |
-|____________|
-</pre>
+            <pre id="notrespassing"></pre>
          </div>
          <div id="store2" class="tabcontent">
             <pre id="store2ascii">
@@ -295,9 +230,8 @@
       <div id="myModal" class="modal">
          <!-- Modal content -->
          <center>
-<div id="copyrightnotice">
-
-</div>
+            <div id="copyrightnotice">
+            </div>
          </center>
       </div>
       <button id="myBtn">About eating simulator</button><button id="btnFullscreen" type="button">Toggle Fullscreen</button>
