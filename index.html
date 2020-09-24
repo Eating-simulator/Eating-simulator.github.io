@@ -101,66 +101,14 @@
       </div>
       <div class="center">
          <div id="vault" class="tabcontent">
-            <pre>
-          _________________________________________________________ 
-       ||-------------------------------------------------------|| 
-       ||.--.    .-._   the vault            .----.             || 
-       |||==|____| |H|___            .---.___|""""|_____.--.___ || 
-       |||  |====| | |xxx|_          |+++|=-=|_  _|-=+=-|==|---||| 
-       |||==|    | | |   | \         |   |   |_\/_|Black|  | ^ ||| 
-       |||  |    | | |   |\ \   .--. |   |=-=|_/\_|-=+=-|  | ^ ||| 
-       |||  |    | | |   |_\ \_( oo )|   |   |    |Magus|  | ^ ||| 
-       |||==|====| |H|xxx|  \ \ |''| |+++|=-=|""""|-=+=-|==|---||| 
-       ||`--^----'-^-^---'   `-' ""  '---^---^----^-----^--^---^|| 
-       ||-------------------------------------------------------|| 
-       ||-------------------------------------------------------|| 
-       ||               ___                   .-.__<span class="clickable" onClick="alert('you just obtained a dorito!');  founddorito();">.-----.</span> .---.|| 
-       ||              |===| .---.   __   .---| |XX<span class="clickable" onClick="alert('you just obtained a dorito!');  founddorito();'">| (*) |</span>_|^^^||| 
-       ||         ,  /(|   |_|III|__|''|__|:x:|=|  <span class="clickable" onClick="alert('you just obtained a dorito!');  founddorito();">|     |</span>=| Q ||| 
-       ||      _a'{ / (|===|+|   |++|  |==|   | |  <span class="clickable" onClick="alert('you just obtained a dorito!');  founddorito();">| DOR |</span> | R ||| 
-       ||      '/\\/ _(|===|-|   |  |''|  |:x:|=|  <span class="clickable" onClick="alert('you just obtained a dorito!');  founddorito();">| ITO |</span> | Y ||| 
-       ||_____  -\{___(|   |-|   |  |  |  |   | |  |     | | Z ||| 
-       ||       _(____)|===|+|[I]|DK|''|==|:x:|=|XX| (*) |=|^^^||| 
-       ||              `---^-^---^--^--'--^---^-^--^-----^-^---^|| 
-       ||-------------------------------------------------------|| 
-       ||_______________________________________________________|| 
+            <pre id="vaultascii">
   
   </pre>
          </div>
       </div>
       <div class="center">
          <div id="factorymachine" class="tabcontent">
-            <pre>                             
-                  _________________________________     
-                 |  __    __    ___  _____   __    |    
-                 | / _\  / /   /___\/__   \ / _\   |    
-                 | \ \  / /   //  //  / /\ \\ \  25|    
-                 | _\ \/ /___/ \_//  / /  \/_\ \ []|    
-                 | \__/\____/\___/   \/     \__/ []|    
-                 |====<span class="clickable" id="factorymoney"  onClick="lotterymachine('money')" style="color:red">MONEY</span>====_______===<span class="clickable" id="factorycandies" style="color:red" onclick="alert('This lottery machine cant make candies yet!')">CANDIES</span>===|    
-                 ||*|\_     |*| _____ |*|\_     |*||    
-                 ||*|| \ _  |*||     ||*|| \ _  |*||    
-                 ||*| \_(_) |*||*BAR*||*| \_(_) |*||    
-                 ||*| (_)   |*||_____||*| (_)   |*|| __ 
-                 ||*|_______|*|_______|*|_______|*||<span class="clickable">(__)</span>
-                 |===_______===_______===_______===| || 
-                 ||*| _____ |*|\_     |*|  ___  |*|| || 
-                 ||*||     ||*|| \ _  |*| |_  | |*|| || 
-                 ||*||*BAR*||*| \_(_) |*|  / /  |*|| || 
-                 ||*||_____||*| (_)   |*| /_/   |*|| || 
-                 ||*|_______|*|_______|*|_______|*||_// 
-                 |===_______===_______===_______===|_/  
-                 ||*|  ___  |*|   |   |*| _____ |*||    
-                 ||*| |_  | |*|  / \  |*||     ||*||    
-                 ||*|  / /  |*| /_ _\ |*||*BAR*||*||    
-                 ||*| /_/   |*|   O   |*||_____||*||    
-                 ||*|_______|*|_______|*|_______|*||    
-                 |lc=___________________________===|    
-                 |  /___________________________\  |    
-                 |   |                         |   |    
-                _|    \_______________________/    |_   
-               (_____________________________________)  
-  <span>This machine has generated <strong><span class="factoryhowmany">0</span></strong> money.</span>
+            <pre id="factoryascii">                             
 </pre>
             <pre><span class="asciiRealButton" onclick="collectmoney()">Collect them</span></pre>
             <pre id="collected"></pre>
@@ -358,44 +306,8 @@ You walk outside the door. you see a desert fortress! that thing looks pretty co
 </pre>
          </div>
          <div id="store2" class="tabcontent">
-            <pre>
-_____________________________________________________                     
-____________________________________________________\\                    
-|.-------.-------.|_.----._.----._|.-------.-------.\\\                   
-|]       |       [|       .       |]       |       [ \\\                  
-||       |       ||     .':'.     ||       |       |  |\\                 
-||       |       ||    .' : '.    ||       |       |  |\\\                
-||     (O|O)     ||   .'  :  '.   ||     (O|O)     |  | \\\               
-||       |       ||  .'===:==='.  ||       |       | O|  |\\              
-||       |       ||=='    :    '==||       |       |  |  |\\\             
-|]       |       [|  )    :    (  |]       |       [  |O | \\\            
-||_______|_______||"" ____:_____""||_______|_______|  |  |  |\\           
-'-----------------'_______________'----------------'  |  |  |\\\          
-|.--------.  |    '---------------'  (o)______)(0)  \ |  |  | \\\         
-||        |::|_________________________________())___\|  | O|  \\\______  
-||        |::|-----______*!*______-------------))( .'.\  |  |   | _____ | 
-||________|::|  _ /       '       \  _        _   (__.'\ |  |O  ||     || 
-|____________| _  \_______________/     _           (_.'\|  |   ||  _  || 
- ___________________________________________      _  (___\  |   ||     || 
-||.-----.|.------.|.-.-.--.--.-.-.||.-----.||\   _        \ |   ||     || 
-||| === ||| ==== ||| | |  |  | | |||| === ||| \     _      \|   ||    _|| 
-||'-----'|'------'|'-'-'--'--'-'-'||'-----'||. \  \       _ \   ||     || 
-||.-----.|.------.|.------.------.||.-----.|| `|\       _    \  || _   || 
-||| === |||      |||      |      |||| === |||\ | \  _         \ ||_____|| 
-||'-----'|]      ||]      |      [||'-----'|| \|. \        _   \|_______| 
-||.-----.||    (O|||    (O|O)    |||.-----.||  | `|\                   || 
-||| === |||      |||      |      |||| === |||  |\ | \__________________|| 
-|||     ||]      ||]      |      [|||     ||| O| \|. |  _____________  || 
-||'-----'||______|||______|______|||'-----'||  |  | `| |             | || 
-||LGB____|________|_______________||_______||  |O |\ | |   _         | || 
-''-----------------------------------------' \ |  | \| |          _  | || 
-   ____                 _______               \|  |  | | _     _     | || 
-           _________                  ______   \  |O | |<span class="clickable" onclick="libraryKey=true;output('You found the keys to the Great Library of the Eating Simulator World!')">(_)</span>          | || 
-                                                \ |  | |   _      _  | || 
-                                _________        \|  | |             | || 
-      ___________        __                       \  | | _        _  | || 
-    __                              _________      \ | |_____________| || 
-               ___________                          \|_________________|| 
+            <pre id="store2ascii">
+
                </pre>
          </div>
       </div>
@@ -422,35 +334,9 @@ ____________________________________________________\\
       <div id="myModal" class="modal">
          <!-- Modal content -->
          <center>
-            <div class="modal-content">
-               <span class="close">&times;</span>
-               <pre>EATING SIMULATOR V2.8.6</pre>
-               <pre>
-               © Copyright 2020 <a href="https://ch1ck3n.com" target="popup" onclick="window.open('https://ch1ck3n.com','name','width=1000,height=700')">ch1ck3n</a>, <a href="https://jonkoo.com" target="popup" onclick="window.open('https://jonkoo.com','name','width=1000,height=700')">technodoggo</a>, <a href="https://sites.google.com/view/id7-e" target="popup" onclick="window.open('https://sites.google.com/view/id7-e','name','width=1000,height=700')">ID7</a>,  All rights reserved.</a>
-               <pre>This project is licenced under the MIT licence.</pre>
-               <pre>Copyright (c) 2020 Eating simulator team (ch1ck3n, technodoggo)
+<div id="copyrightnotice">
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</pre>
-               <footer>
-                  <pre>Created by ch1ck3n (doge) and technodoggo.</pre>
-                  <pre><a href="https://github.com/Eating-simulator/Eating-simulator.github.io/">Get the source code</a> Or <a href="https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki">visit the wiki</a></pre>
-            </div>
+</div>
          </center>
       </div>
       <button id="myBtn">About eating simulator</button><button id="btnFullscreen" type="button">Toggle Fullscreen</button>
