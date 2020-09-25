@@ -28,6 +28,7 @@
 <span onClick="openTab('linkbot')">|MASTER|</span><span onClick="openTab('textsave')">|      |</span>
 
       
+      
       </div>
       </pre>
       <div id="status-tracker" class="center">
@@ -49,7 +50,7 @@
       <div class="center">
          <div id="textsave" class="tabcontent">
             <center>
-<div id="loadingarea"></div>
+            <div id="loadingarea"></div>
          </div>
       </div>
       <div class="center">
@@ -110,8 +111,8 @@
             <pre id="vaultascii">
   
   </pre>
-</div>
-</div>
+         </div>
+      </div>
       <div id="Library" class="tabcontent">
          <pre id="libraryascii">
   </pre>
@@ -127,7 +128,7 @@
          <div class="tabcontent" id="linkbot">
             <pre id="linkbotascii">
 </pre>
-            <pre>
+            <pre class="clickable">
 <span class="linkbotspeech">"Hello. i'm linkbot. i control all of the links in eating simulator!"</span>
 <button onClick="linkbot.insult()">Insult linkbot</button>
 <span onClick="window.open('https://eating-simulator.github.io/Rules.html'); output('You opened the rules!')">_________</span><span onClick="window.open('/simulation');">____________</span><span onClick="openTab('google');">__________</span><span onClick="openTab('upgrades');">__________</span>
@@ -143,18 +144,7 @@
             <pre><button onClick="document.write('<pre><center><h1>Virus installed!</h1><br><pre>Note: ES Would never save anything on your computer.<br>Except  the localstorage save, at least</pre></center></pre>')">Install a virus (free)</button></pre>
             <pre><button id="mps" onClick="data.moneypersecond++;data.calories-=100">MONEY PER SECOND (Takes back 100 calories)</button></pre>
             <center>
-               <script>
-                  setInterval(function(){
-                    if (data.calories < 1000000){
-                      document.getElementById("awholeheckington").disabled = true;
-                    }
-                  }, 100)
-                  setInterval(function(){
-                    if (data.calories < 100){
-                      document.getElementById("mps").disabled = true;
-                    }
-                  }, 100)
-               </script>
+               <script>setInterval(function(){if(data.calories<10000){document.getElementById("awholeheckington").disabled=true}},100);setInterval(function(){if(data.calories<100){document.getElementById("mps").disabled=true}},100);</script>
                <pre><button id="awholeheckington" onClick="document.getElementById('awholeheckington').style.display = 'none';data.awholeheckington = true;data.money = 99999999;output('You just got a WHOLE HECKING TON OF MONEY!');data.calories-=200" style="display:block">A whole heckin ton of money (One-time purchase)(Takes away 200 calories)(Gets you a whole hecking ton of money)</button></pre>
             </center>
          </div>
