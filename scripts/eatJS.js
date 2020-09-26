@@ -33,7 +33,7 @@ var data = {
 
 
 }
-
+setInterval(function(){if(data.calories<10000){document.getElementById("awholeheckington").disabled=true}},100);setInterval(function(){if(data.calories<100){document.getElementById("mps").disabled=true}},100);
 function classchange(classname, changeto) {
 	document.querySelector("." + classname).innerHTML = changeto;
 }
