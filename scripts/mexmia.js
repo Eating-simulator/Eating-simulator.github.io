@@ -90,6 +90,7 @@ function mexmiaChoice(lor) {
         document.getElementById("mexmiastart").style.display = "block";
         document.getElementById("mexmiastart").innerHTML = "Thanks, Mexmia!";
         document.getElementById("mexmiastart").onClick = "getmoneyfactorykey()";
+        getmoneyfactorykey()
         mexmiasteps++;
       } else {
         mexmiastartover()
