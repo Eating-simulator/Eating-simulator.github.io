@@ -170,7 +170,6 @@ function sound(src) {
     this.sound.pause();
   }
 }
-var outputsound = new sound("https://eating-simulator.github.io/juntos.mp3")
 function output(output) {
 	document.getElementById("output").innerHTML = output;
 }
