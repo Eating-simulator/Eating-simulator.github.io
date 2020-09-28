@@ -173,7 +173,6 @@ function sound(src) {
 var outputsound = new sound("https://eating-simulator.github.io/juntos.mp3")
 function output(output) {
 	document.getElementById("output").innerHTML = output;
-	outputsound.play()
 }
 
 function changeSoldier() {
