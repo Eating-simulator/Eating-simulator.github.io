@@ -257,7 +257,7 @@ function checkstats() {
 }
 
 function enterLibrary() {
-	if (data.libraryKey){
+	if (data.libraryKey == true){
 		output("You entered the giant library!")
 		openTab("glibrary")
 	}
