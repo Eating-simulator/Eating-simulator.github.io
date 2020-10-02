@@ -258,7 +258,6 @@ function checkstats() {
 
 function enterLibrary() {
 	output("You entered the giant library!")
-	openTab("glibrary")
 }
 
 function triggerstore2door() {
