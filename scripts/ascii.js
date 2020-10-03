@@ -49,7 +49,7 @@ var ascii = {
     document.getElementById("chefascii").innerHTML = this.art.chef
     document.getElementById("notrespassing").innerHTML = this.art.store2door
     document.getElementById("loadingarea").innerHTML = this.art.textload
-    document.getElementById("glibraryascii").innerHTML = this.glibrary
+    document.getElementById("glibraryascii").innerHTML = this.art.glibrary
   }
 
 
