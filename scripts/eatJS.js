@@ -334,4 +334,3 @@ function darkmode() {
    	data.white = true
    }
 }
-3
