@@ -153,7 +153,7 @@ function librarypathway() {
 		output("The librarian gave you permission to go inside the vault")
 	}
 	if (data.buttontime >= 5) {
-		openTab('vault')
+		openTab("Libraryvault")
 	}
 }
 function sound(src) {
