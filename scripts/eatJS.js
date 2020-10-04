@@ -314,4 +314,5 @@ function darkmode() {
 function foundpizzascroll(){
   data.pizzascroll = true
   output("You found the pizza scroll! maybe you can show it to the librarian. he might be happy!")
+  document.getElementById("glibraryascii").innerHTML = ascii.art.glibrarypizzascrolltook
 }
