@@ -7,6 +7,12 @@ Rules: NO GOING INTO CONSOLE OR INSPECT ELEMENT UNLESS YOU ARE A DEV AND ARE FIX
 
 _Current status: making the giant library of the eating simulator world and the secret store section_
 
+# Update log
+## Bug fixes:
+* fix the soldier ascii
+* you can right click the right click menu and that right-click menu inside of rightclick menu is scrollable
+* Landon was messed up
+
 WIKI:
 https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki
 
