@@ -21,11 +21,14 @@ _Current status: making the giant library of the eating simulator world and the 
 * Notification sound removed because too annoying
 
 WIKI:
+
 https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki
 
 FULL TEXT VERSION:
+
 https://eating-simulator-python.eatingsimulator.repl.run/
 
 REPL.IT TEAM:
+
 https://repl.it/team/EatingSimulator
 
