@@ -12,6 +12,10 @@ _Current status: making the giant library of the eating simulator world and the 
 * fix the soldier ascii
 * you can right click the right click menu and that right-click menu inside of rightclick menu is scrollable
 * Landon was messed up
+## Additions:
+* New dialogue with Landon
+* Mexmia is finished!
+* EVERY ASCII ART IS JS (Except for glibrary)
 
 WIKI:
 https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki
