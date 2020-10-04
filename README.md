@@ -1,4 +1,4 @@
-# Eating simulator V2.8.8
+# Eating simulator V2.8.9
 _Epic Lord Technodoggo_ has been promoted to ES Master, due to confidential reasons...
 
 Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!
@@ -16,6 +16,8 @@ _Current status: making the giant library of the eating simulator world and the 
 * New dialogue with Landon
 * Mexmia is finished!
 * EVERY ASCII ART IS JS (Except for glibrary)
+## Deletions:
+* Notification sound removed because too annoying
 
 WIKI:
 https://the-eating-simulator.fandom.com/wiki/The_Eating_Simulator_Wiki
