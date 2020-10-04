@@ -246,8 +246,6 @@ function checkstats() {
 	if (data.libraryKey) {
 		document.getElementById("door1").className = 'clickable';
 		document.getElementById("door2").className = 'clickable';
-		document.getElementById("door1").onclick = 'enterLibrary()';
-		document.getElementById("door2").onclick = 'enterLibrary()';
 	}
 	if (data.white) {
 		document.body.style = `background-color:white;color:black;`;
