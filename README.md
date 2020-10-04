@@ -12,6 +12,7 @@ _Current status: making the giant library of the eating simulator world and the 
 * Fix the soldier ascii
 * You can right click the right click menu and that right-click menu inside of rightclick menu is scrollable
 * Landon was messed up
+* Vault was not showing up
 ## Additions:
 * New dialogue with Landon
 * Mexmia is finished!
