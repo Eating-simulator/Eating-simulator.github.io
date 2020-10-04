@@ -29,7 +29,8 @@ var data = {
 	candies: 0,
 	mexmiacorrect: false,
 	moneyfactorykey: false,
-	awholeheckington : false
+	awholeheckington : false,
+  pizzascroll : false
 
 
 }
@@ -331,4 +332,8 @@ function darkmode() {
    }else {
    	data.white = true
    }
+}
+function foundpizzascroll(){
+  data.pizzascroll = true
+  output("You found the pizza scroll! maybe you can show it to the librarian. he might be happy!")
 }
