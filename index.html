@@ -29,6 +29,7 @@
 
       
       
+      
       </div>
       </pre>
       <div id="status-tracker" class="center">
@@ -36,8 +37,8 @@
          <pre>Money: <span class="money">0</span></pre>
       </div>
       <div class="center">
-                  <div id="giantolibrary" class="tabcontent">
-         <pre id="glibraryascii">
+         <div id="giantolibrary" class="tabcontent">
+            <pre id="glibraryascii">
          </pre>
          </div>
          <div id="Kitchen" class="tabcontent">
@@ -59,11 +60,14 @@
       </div>
       <div class="center">
          <div id="factorymachine" class="tabcontent">
-           <center>
-            <pre id="factoryascii">                             
+            <center>
+               <pre id="factoryascii">                             
 </pre>
-            <center><pre><button onclick="collectmoney()">Collect them</button></center></pre>
-            <pre id="collected"></pre>
+               <center>
+                  <pre><button onclick="collectmoney()">Collect them</button>
+               </center>
+               </pre>
+               <pre id="collected"></pre>
             </center>
          </div>
       </div>
@@ -153,7 +157,9 @@
             </center>
          </div>
          <div id="Libraryvault" class="tabcontent">
-            <h1><pre>the vault</pre></h1>
+            <h1>
+               <pre>the vault</pre>
+            </h1>
             <pre>
             <center><span class="soldier">"What are you doing here, in the vault?"</span></center>
             <span id="soldierascii">
@@ -213,9 +219,7 @@
          <center>
             <pre id="GoogleUserStatus">User not signed in. such sad.</pre>
             <div id="my-signin2"></div>
-            <script>function signOut(){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad.";var b=gapi.auth2.getAuthInstance();b.signOut().then(function(){})}var user;function onSuccess(b){user=b.getBasicProfile();console.log("Logged in as: "+b.getBasicProfile().getName());if(b.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+b.getBasicProfile().getName()+". <a onClick='signOut()' class='clickable'>Sign out?</a>"}}function onFailure(b){console.log(b)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
-                     
-            </script>
+            <script>function signOut(){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad.";var b=gapi.auth2.getAuthInstance();b.signOut().then(function(){})}var user;function onSuccess(b){user=b.getBasicProfile();console.log("Logged in as: "+b.getBasicProfile().getName());if(b.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+b.getBasicProfile().getName()+". <a onClick='signOut()' class='clickable'>Sign out?</a>"}}function onFailure(b){console.log(b)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};</script>
          </center>
       </div>
       <div class="bottomline">
