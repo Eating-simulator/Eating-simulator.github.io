@@ -213,8 +213,7 @@
          <center>
             <pre id="GoogleUserStatus"></pre>
             <div id="my-signin2"></div>
-            <script>
-if(location.hostname!="https://eating-simulator.github.io"){document.getElementById("google").innerHTML="<center><pre>Such sorry, google login not supported on this page. such sad. doge make sure you feel ok.</center>"}function signOut(){var b=gapi.auth2.getAuthInstance();b.signOut().then(function(){})}var user;function onSuccess(b){user=b.getBasicProfile();console.log("Logged in as: "+b.getBasicProfile().getName());if(b.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+b.getBasicProfile().getName()+". <a onClick='signOut()'>Sign out?</a>"}}function onFailure(b){console.log(b)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
+            <script>function signOut(){var b=gapi.auth2.getAuthInstance();b.signOut().then(function(){})}var user;function onSuccess(b){user=b.getBasicProfile();console.log("Logged in as: "+b.getBasicProfile().getName());if(b.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+b.getBasicProfile().getName()+". <a onClick='signOut()'>Sign out?</a>"}}function onFailure(b){console.log(b)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
                      
             </script>
          </center>
