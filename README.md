@@ -13,12 +13,17 @@ _Current status: making the giant library of the eating simulator world and the 
 * You can right click the right click menu and that right-click menu inside of rightclick menu is scrollable
 * Landon was messed up
 * Vault was not showing up
+* You couldn't go in the giant library
 ## Additions:
 * New dialogue with Landon
 * Mexmia is finished!
-* EVERY ASCII ART IS JS (Except for glibrary)
+* EVERY ASCII ART IS JS
+* Mobile has been banned.
+* Another line for the merchant
+
 ## Deletions:
 * Notification sound removed because too annoying
+
 
 WIKI:
 
