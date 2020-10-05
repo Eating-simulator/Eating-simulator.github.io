@@ -20,6 +20,7 @@ _Current status: making the giant library of the eating simulator world and the 
 * EVERY ASCII ART IS JS
 * Mobile has been banned.
 * Another line for the merchant
+* GOOGLE SIGNIN ON REPLIT
 
 ## Deletions:
 * Notification sound removed because too annoying
