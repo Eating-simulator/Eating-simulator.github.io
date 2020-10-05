@@ -13,3 +13,4 @@ if (user.getBasicProfile().getEmail() == null) {
 }else {
   document.getElementById("GoogleUserStatus").innerHTML = "Signed in as " + googleuser.username + ". <a onClick='signOut()'>Sign out?</a>"
 }
+ 
