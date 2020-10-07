@@ -57,3 +57,4 @@ var ascii = {
 
 
 }
+ascii.reload()
