@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://apis.google.com/js/platform.js" async defer></script>
-      <meta name="google-signin-client_id" content="513423326300-cd12hvm2m07q8ok28kt4trb37u3uqkmh.apps.googleusercontent.com">
-      <link rel="stylesheet" type="text/css" href="main.css">
-      <meta charset="utf-8">
-      <meta name="description" content="Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!">
-      <meta property="og:title" content="Eating Simulator">
-      <meta property="og:type" content="game">
-      <meta property="og:url" content="https://eating-simulator.github.io">
-      <title id="title">Th3 Eat↑ng $↑mµlat0r - ch↑ck3n T3chn0d0gg0, ID7</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <body id="body" onLoad="openTab('Store')" onscroll="document.getElementById('body').click()">
-      <!-- Hey, you're looking at the source code, cheater! :) -->
-      <pre class="clickable">
+
+<head>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
+	</script>
+	<script src="https://apis.google.com/js/platform.js" async defer>
+	</script>
+	<meta name="google-signin-client_id" content="513423326300-cd12hvm2m07q8ok28kt4trb37u3uqkmh.apps.googleusercontent.com">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8">
+	<meta name="description" content="Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!">
+	<meta property="og:title" content="Eating Simulator">
+	<meta property="og:type" content="game">
+	<meta property="og:url" content="https://eating-simulator.github.io">
+	<title id="title">Th3 Eat↑ng $↑mµlat0r - ch↑ck3n T3chn0d0gg0, ID7</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="body" onLoad="openTab('Store')" onscroll="document.getElementById('body').click()">
+	<!-- Hey, you're looking at the source code, cheater! :) -->
+	<pre class="clickable">
       <div class="center">
          <pre>
 <span onClick="openTab('Kitchen',  )">_________</span><span id="defaultOpen" onClick="openTab('Store',  )">_________</span><span onClick="openTab('Library',  )">_________</span>
@@ -29,25 +33,22 @@
 
       
       
+      
       </div>
       </pre>
-      <div id="status-tracker" class="center">
-         <pre>Calories:<span class="calories">300</span> <span class="calorieconverter" style="display: none;">----CALORIES CONVERTER----> <span id="candies">0</span>candies.</span></pre>
-         <pre>Money: <span class="money">0</span></pre>
-      </div>
-      <div class="center">
-                  <div id="giantolibrary" class="tabcontent">
-         <pre id="glibraryascii">
-         </pre>
-         </div>
-         <div id="Kitchen" class="tabcontent">
-            <h1>The kitchen</h1>
-            <pre>You do not have the permission to make food. let's try to convince the chef!</pre>
-            <pre id="chefascii"></pre>
-            <pre>"eh, i don't really think you can cook. you can help me by finding 2 ingredients, dorito and cheese! That should cure your boredom. wait, why did you come here?"
+	<div id="status-tracker" class="center">
+		<pre>Calories:<span class="calories">300</span> <span class="calorieconverter" style="display: none;">----CALORIES CONVERTER----> <span id="candies">0</span>candies.</span></pre>
+		<pre>Money: <span class="money">0</span></pre>
+	</div>
+	<div class="center">
+		<div id="Kitchen" class="tabcontent">
+			<h1>The kitchen</h1>
+			<pre>You do not have the permission to make food. let's try to convince the chef!</pre>
+			<pre id="chefascii"></pre>
+			<pre>"eh, i don't really think you can cook. you can help me by finding 2 ingredients, dorito and cheese! That should cure your boredom. wait, why did you come here?"
 <pre class="chefresponce1"></pre>
-<pre id="chefresponce2"></pre>
-<span class="asciiRealButton" onClick="chefbutton()">Let's go!</span></pre>
+			<pre id="chefresponce2"></pre>
+			<span class="asciiRealButton" onClick="chefbutton()">Let's go!</span></pre>
             <pre id="yay"></pre>
          </div>
       </div>
@@ -59,10 +60,15 @@
       </div>
       <div class="center">
          <div id="factorymachine" class="tabcontent">
-            <pre id="factoryascii">                             
+            <center>
+               <pre id="factoryascii">                             
 </pre>
-            <pre><span class="asciiRealButton" onclick="collectmoney()">Collect them</span></pre>
-            <pre id="collected"></pre>
+               <center>
+                  <pre><button onclick="collectmoney()">Collect them</button>
+               </center>
+               </pre>
+               <pre id="collected"></pre>
+            </center>
          </div>
       </div>
       <div id="mexmia" class="tabcontent">
@@ -151,7 +157,9 @@
             </center>
          </div>
          <div id="Libraryvault" class="tabcontent">
-            <h1><pre>the vault</pre></h1>
+            <h1>
+               <pre>the vault</pre>
+            </h1>
             <pre>
             <center><span class="soldier">"What are you doing here, in the vault?"</span></center>
             <span id="soldierascii">
@@ -205,20 +213,21 @@
 
                </pre>
          </div>
+      		<div id="giantolibrary" class="tabcontent">
+			<pre id="glibraryascii">
+         </pre>
+		</div>
       </div>
       </div>
       <div id="google" class="tabcontent">
          <center>
-            <pre id="GoogleUserStatus"></pre>
+            <pre id="GoogleUserStatus">User not signed in. such sad.</pre>
             <div id="my-signin2"></div>
-            <script>
-if(location.hostname!="https://eating-simulator.github.io"){document.getElementById("google").innerHTML="<center><pre>Such sorry, google login not supported on this page. such sad. doge make sure you feel ok.</center>"}function signOut(){var b=gapi.auth2.getAuthInstance();b.signOut().then(function(){})}var user;function onSuccess(b){user=b.getBasicProfile();console.log("Logged in as: "+b.getBasicProfile().getName());if(b.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+b.getBasicProfile().getName()+". <a onClick='signOut()'>Sign out?</a>"}}function onFailure(b){console.log(b)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};
-                     
-            </script>
+            <script>function signOut(){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad.";var b=gapi.auth2.getAuthInstance();b.signOut().then(function(){})}var user;function onSuccess(b){user=b.getBasicProfile();console.log("Logged in as: "+b.getBasicProfile().getName());if(b.getBasicProfile().getEmail()==null){document.getElementById("GoogleUserStatus").innerHTML="User not signed in. such sad."}else{document.getElementById("GoogleUserStatus").innerHTML="Signed in as "+b.getBasicProfile().getName()+". <a onClick='signOut()' class='clickable'>Sign out?</a>"}}function onFailure(b){console.log(b)}function renderButton(){gapi.signin2.render("my-signin2",{scope:"profile email",width:240,height:50,longtitle:true,theme:"dark",onsuccess:onSuccess,onfailure:onFailure})};</script>
          </center>
       </div>
       <div class="bottomline">
-      <pre>ASCII arts provided by <a href="https://ascii.co.uk/">ascii.co.uk</a></pre>
+      <pre>ASCII arts provided by <a href="https://ascii.co.uk/" rel="noopener">ascii.co.uk</a></pre>
       <div class="output">
          <pre style="size: 10em">Output: <span id="output">You loaded eating simulator!</span></pre>
       </div>
@@ -235,9 +244,9 @@ if(location.hostname!="https://eating-simulator.github.io"){document.getElementB
       </div>
       <button id="myBtn">About eating simulator</button><button id="btnFullscreen" type="button">Toggle Fullscreen</button>
       <pre>Eating Simulator v2.8.6</pre>
-      <pre>© Copyright 2020 <a href="https://ch1ck3n.com/" target="_blank">ch1ck3n</a>, <a href="https://jonkoo.com/" target="_blank">technodoggo</a>, <a href="https://sites.google.com/view/id7-e/" target="_blank">id7</a>, All rights reserved. 
-      <a href="https://github.com/Eating-simulator/Eating-simulator.github.io" target="_blank">Source code</a> <a href="https://the-eating-simulator.fandom.com/" target="_blank">Wiki</a>
-      <pre>Dark mode (Invert colors) --> <input type="checkbox" onClick="darkmode()"></pre>
+      <pre>© Copyright 2020 <a href="https://ch1ck3n.com/" target="_blank" rel="noopener">ch1ck3n</a>, <a href="https://jonkoo.com/" target="_blank" rel="noopener">technodoggo</a>, <a href="https://sites.google.com/view/id7-e/" target="_blank" rel="noopener">id7</a>, All rights reserved. 
+      <a href="https://github.com/Eating-simulator/Eating-simulator.github.io" target="_blank" rel="noopener">Source code</a> <a href="https://the-eating-simulator.fandom.com/" target="_blank" rel="noopener">Wiki</a>
+      <pre>Dark mode (Invert colors) --> <input name="darkmodecheckbox" type="checkbox" onClick="darkmode()" name="darkmode"></pre>
       </pre>
       <div style='display:none;position:absolute;z-index:3;right:111px;height:44px;background-color:#5f5f5f;text-align:right;padding-top:9px;' id='google_translate_element'></div>
       </footer>

@@ -1,0 +1,4 @@
+# beep boop. boop beep? beep!
+User-agent: *
+Disallow:
+Sitemap: https://eating-simulator.github.io/sitemap.txt
