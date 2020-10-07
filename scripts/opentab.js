@@ -11,5 +11,5 @@ function openTab(tabName,elmnt,color) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
-  ascii.showAscii(tabName)
+  document.getElementById(tabName).style.display = "block";
 }
