@@ -42,6 +42,43 @@
 		<pre>Money: <span class="money">0</span></pre>
 	</div>
 	<div class="center">
+          <div id="Store" class="tabcontent">
+            <pre><h1>The store</h1></pre>
+            <pre>
+<span id="merchant">
+</span>    
+           <span class="merchantspeech">Arr, i'm the shopkeeper.
+           Buy me' food! they' good!</span>
+           <button onClick="merchant.givemesomething()">Can you give me something?</button>
+</pre>
+            <pre>
+<span id="storepizza">
+
+
+</span>
+ learn more information about this item in the <button onClick="openTab('pizzainformation',  )">library</button>
+</pre>
+            <button class="pizzabutton" onClick="eat('pizza')">click to eat pizza</button>
+            <pre>
+<span id="storegingerbreadman">
+
+
+</span>
+</pre>
+            <button class="pizzabutton" onClick="eat('gingerbread')">Click to eat a gingerbread man</button>
+            <pre>
+<span id="storemilk">
+
+</span>
+</pre>
+            <button class="milkbutton" onclick="eat('milk')">Click to drink milk</button>
+            <pre>
+<span id="storecake">
+
+</span>
+</pre>
+            <button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button> 
+         </div>
 		<div id="Kitchen" class="tabcontent">
 			<h1>The kitchen</h1>
 			<pre>You do not have the permission to make food. let's try to convince the chef!</pre>
@@ -169,43 +206,7 @@
 
 </pre>
          </div>
-         <div id="Store" class="tabcontent">
-            <pre><h1>The store</h1></pre>
-            <pre>
-<span id="merchant">
-</span>    
-           <span class="merchantspeech">Arr, i'm the shopkeeper.
-           Buy me' food! they' good!</span>
-           <button onClick="merchant.givemesomething()">Can you give me something?</button>
-</pre>
-            <pre>
-<span id="storepizza">
-
-
-</span>
- learn more information about this item in the <button onClick="openTab('pizzainformation',  )">library</button>
-</pre>
-            <button class="pizzabutton" onClick="eat('pizza')">click to eat pizza</button>
-            <pre>
-<span id="storegingerbreadman">
-
-
-</span>
-</pre>
-            <button class="pizzabutton" onClick="eat('gingerbread')">Click to eat a gingerbread man</button>
-            <pre>
-<span id="storemilk">
-
-</span>
-</pre>
-            <button class="milkbutton" onclick="eat('milk')">Click to drink milk</button>
-            <pre>
-<span id="storecake">
-
-</span>
-</pre>
-            <button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button> 
-         </div>
+ 
          <div id="store2door" class="tabcontent">
             <pre id="notrespassing"></pre>
          </div>
