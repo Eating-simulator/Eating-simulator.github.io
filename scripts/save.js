@@ -23,8 +23,8 @@ function loadfile() {
             fr.readAsText(this.files[0]); 
         })
 }
-function download(data, filename, type) {
-    var file = new Blob([JSON.stringify(btoa(btoa(data)))], {type: type});
+function download(yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee, filename, type) {
+    var file = new Blob([JSON.stringify(btoa(btoa(yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee)))], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
         window.navigator.msSaveOrOpenBlob(file, filename);
     else { // Others
