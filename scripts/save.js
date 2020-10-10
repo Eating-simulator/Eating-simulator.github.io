@@ -24,7 +24,7 @@ function loadfile() {
         })
 }
 function download(data, filename, type) {
-    var file = new Blob([btoa(btoa(data))], {type: type});
+    var file = new Blob([JSON.stringify(btoa(btoa(data)))], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
         window.navigator.msSaveOrOpenBlob(file, filename);
     else { // Others
@@ -45,7 +45,7 @@ function download(data, filename, type) {
               
             var fr=new FileReader(); 
             fr.onload=function(){ 
-data=atob(atob(fr.result)); 
+data=JSON.parse(atob(atob(fr.result))); 
             } 
               
             fr.readAsText(this.files[0]); 
