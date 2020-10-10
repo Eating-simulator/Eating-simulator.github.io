@@ -24,7 +24,7 @@ function loadfile() {
         })
 }
 function download(yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee, filename, type) {
-    var file = new Blob([JSON.stringify(btoa(btoa(yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee)))], {type: type});
+    var file = new Blob([btoa(btoa(yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee))], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
         window.navigator.msSaveOrOpenBlob(file, filename);
     else { // Others
