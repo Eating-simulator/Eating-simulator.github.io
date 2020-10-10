@@ -56,4 +56,4 @@ var ascii = {
 
 }
 ascii.reload()
-var date = new new Date();
+var date = new Date();
