@@ -306,13 +306,9 @@ document.getElementById('btnFullscreen').addEventListener('click', function () {
 	toggleFullscreen();
 });
 function darkmode() {
+   triggerColors()
    var element = document.body;
    element.classList.toggle("dark-mode");
-   if (data.white) {
-   	data.white = false
-   }else {
-   	data.white = true
-   }
 }
 function foundpizzascroll(){
   data.pizzascroll = true
