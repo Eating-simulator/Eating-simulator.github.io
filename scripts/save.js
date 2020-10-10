@@ -45,7 +45,12 @@ function download(yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee, filename, type) {
               
             var fr=new FileReader(); 
             fr.onload=function(){ 
-data=JSON.parse(atob(atob(fr.result))); 
+            try{
+                data=JSON.parse(atob(atob(fr.result))); 
+            }
+            catch(err){
+                alert("Something went wrong.. \n" + err)
+            }
             } 
               
             fr.readAsText(this.files[0]); 
