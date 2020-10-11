@@ -14,6 +14,9 @@ _Current status: making the giant library of the eating simulator world and the 
 * Landon was messed up
 * Vault was not showing up
 * You couldn't go in the giant library
+* Dark mode style fixes on right click menu
+* Dark mode style change on output box
+
 ## Additions:
 * New dialogue with Landon
 * Mexmia is finished!
@@ -23,8 +26,6 @@ _Current status: making the giant library of the eating simulator world and the 
 * GOOGLE SIGNIN ON REPLIT
 * robots.txt . beep beep. boop boop?
 * File saving. Much download.
-* Dark mode style fixes on right click menu
-* Dark mode style change on output box
 
 ## Deletions:
 * Notification sound removed because too annoying
