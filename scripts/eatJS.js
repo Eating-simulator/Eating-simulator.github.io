@@ -125,6 +125,8 @@ setInterval(function () {
 	} else{
 	document.querySelector(".menu").style.backgroundColor = "white"
       document.querySelector(".output").style.border = "3px solid #FFFFFF"
+     var element = document.body;
+   element.classList.toggle("dark-mode");
 	}
 }, 1000)
 setInterval(function () {
