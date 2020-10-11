@@ -1,15 +1,14 @@
 // For saving and loading
 // Has error, do not work it yet
-
 function loadOrSave() {
     if (localStorage.getItem('data')) {
-        data = JSON.parse(localStorage.getItem('data'));
+        data = JSON.parse(converFromHex(localStorage.getItem('data')));
     } else {
         save()
     }
 }
 function save() {
-    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("data", convertToHex(JSON.stringify(data)));
 }
 function loadfile() {
         document.getElementById('inputfile') 
