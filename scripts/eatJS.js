@@ -34,6 +34,23 @@ var data = {
 
 
 }
+function buyfrompopup(){
+  var whatdobuy = document.getElementById("whattobuy").value;
+  if (whatdobuy == "pizza"){
+    		data.calories += 300
+		data.money -= 5
+		output("Oh dear. you lost 5 dollars and gained 300 callories!")
+  } else if (whatdobuy == "gbman"){
+    		data.money -= 5
+		output("Oh dear. you lost 5 dollars! That cookie looks nice though. probably shouldn't eat it.")
+
+  }else if (whatdobuy == "milk"){
+    		data.calories += 299
+		data.money -= 3
+		output("You drunk some milk!")
+  }
+  closeStore()
+}
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  document.write("<pre>Doge has detected you're using mobile. Eating simulator only works on Computers.</pre><br><pre>                  twoep   mkkkkkkk\r\n                z1     ldk        Vtmn\r\n               i   Cm    k        k   Tkm\r\n              k   xk D     k        V     m\r\n             yl                            m\r\n              m                             m\r\n               h                             l\r\n                l            k        Y       k\r\n                 p           yk       l       l\r\n                  k   V     y  k      l        k\r\n                   r 7h    z  l k     l        l\r\n                    o `\'   l 7   l     k        k\r\n                     r  \' p  m   k    lmmmt      k\r\n                     l  .l  m    k    l          km\r\n                     l  r   k   Yh   y            k\r\n                     2oP     k   t   tyyy         k\r\n                       \'  y  k   Dk      D        m\r\n                         mm  m  V  mmmmyt         mn\r\n                              Tyl t               m Ymmm\r\n                 (---. \' __        r             mt     Yz\r\n             (`--     `-\'  )        mmm      mmlt  YMmmmmnnc\r\n              -_    =    --        wwwwt       D\r\n                >    =  (BP     mkT           Y\r\n                ---______)    K          m mkT\r\n                               Ym       y Y\r\n                                 ym    m\r\n                                    Ymm</pre>")
 }
@@ -121,10 +138,12 @@ setInterval(function () {
 	document.querySelector(".calories").innerHTML = data.calories;
 	if (data.white){
 		      document.querySelector(".menu").style.backgroundColor = "black"
-      document.querySelector(".output").style.border = "3px solid #FFFFFF"
+      document.querySelector(".output").style.border = "3px solid #000000"
 	} else{
 	document.querySelector(".menu").style.backgroundColor = "white"
-      document.querySelector(".output").style.border = "3px solid #000000"
+      document.querySelector(".output").style.border = "3px solid #FFFFFF"
+     var element = document.body;
+   element.classList.toggle("dark-mode");
 	}
 }, 1000)
 setInterval(function () {
@@ -321,4 +340,11 @@ function foundpizzascroll(){
   data.pizzascroll = true
   output("You found the pizza scroll! maybe you can show it to the librarian. he might be happy!")
   document.getElementById("glibraryascii").innerHTML = ascii.art.glibrarypizzascrolltook
+}
+function openStore() {
+  document.querySelector(".store-popup").style.display = "block";
+}
+
+function closeStore() {
+  document.querySelector(".store-popup").style.display = "none";
 }

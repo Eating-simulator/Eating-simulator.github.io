@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
-	</script>
-	<script src="https://apis.google.com/js/platform.js" async defer>
-	</script>
-	<link rel="manifest" src="manifest.json">
-	<meta name="google-signin-client_id" content="513423326300-cd12hvm2m07q8ok28kt4trb37u3uqkmh.apps.googleusercontent.com">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<meta charset="utf-8">
-	<meta name="description" content="Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!">
-	<meta property="og:title" content="Eating Simulator">
-	<meta property="og:type" content="game">
-	<meta property="og:url" content="https://eating-simulator.github.io">
-	<title id="title">Th3 Eat↑ng $↑mµlat0r - ch↑ck3n T3chn0d0gg0, ID7</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
+   </script>
+   <script src="https://apis.google.com/js/platform.js" async defer>
+   </script>
+   <link rel="manifest" src="manifest.json">
+   <meta name="google-signin-client_id" content="513423326300-cd12hvm2m07q8ok28kt4trb37u3uqkmh.apps.googleusercontent.com">
+   <link rel="stylesheet" type="text/css" href="main.css">
+   <meta charset="utf-8">
+   <meta name="description" content="Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!">
+   <meta property="og:title" content="Eating Simulator">
+   <meta property="og:type" content="game">
+   <meta property="og:url" content="https://eating-simulator.github.io">
+   <title id="title">Th3 Eat↑ng $↑mµlat0r - ch↑ck3n T3chn0d0gg0, ID7</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body id="body" onLoad="openTab('Store')" onscroll="document.getElementById('body').click()">
-	<!-- Hey, you're looking at the source code, cheater! :) -->
-	<pre class="clickable">
+   <!-- Hey, you're looking at the source code, cheater! :) -->
+   <pre class="clickable">
       <div class="center">
          <pre>
 <span onClick="openTab('Kitchen',  )">_________</span><span id="defaultOpen" onClick="openTab('Store',  )">_________</span><span onClick="openTab('Library',  )">_________</span>
@@ -37,11 +37,11 @@
       
       </div>
       </pre>
-	<div id="status-tracker" class="center">
-		<pre>Calories:<span class="calories">300</span> <span class="calorieconverter" style="display: none;">----CALORIES CONVERTER----> <span id="candies">0</span>candies.</span></pre>
-		<pre>Money: <span class="money">0</span></pre>
-	</div>
-	<div class="center">
+   <div id="status-tracker" class="center">
+      <pre>Calories:<span class="calories">300</span> <span class="calorieconverter" style="display: none;">----CALORIES CONVERTER----> <span id="candies">0</span>candies.</span></pre>
+      <pre>Money: <span class="money">0</span></pre>
+   </div>
+   <div class="center">
           <div id="Store" class="tabcontent">
             <pre><h1>The store</h1></pre>
             <pre>
@@ -79,14 +79,14 @@
 </pre>
             <button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button> 
          </div>
-		<div id="Kitchen" class="tabcontent">
-			<h1>The kitchen</h1>
-			<pre>You do not have the permission to make food. let's try to convince the chef!</pre>
-			<pre id="chefascii"></pre>
-			<pre>"eh, i don't really think you can cook. you can help me by finding 2 ingredients, dorito and cheese! That should cure your boredom. wait, why did you come here?"
+      <div id="Kitchen" class="tabcontent">
+         <h1>The kitchen</h1>
+         <pre>You do not have the permission to make food. let's try to convince the chef!</pre>
+         <pre id="chefascii"></pre>
+         <pre>"eh, i don't really think you can cook. you can help me by finding 2 ingredients, dorito and cheese! That should cure your boredom. wait, why did you come here?"
 <pre class="chefresponce1"></pre>
-			<pre id="chefresponce2"></pre>
-			<span class="asciiRealButton" onClick="chefbutton()">Let's go!</span></pre>
+         <pre id="chefresponce2"></pre>
+         <span class="asciiRealButton" onClick="chefbutton()">Let's go!</span></pre>
             <pre id="yay"></pre>
          </div>
       </div>
@@ -188,7 +188,9 @@
       <div class="center">
          <div class="tabcontent" id="upgrades">
             <pre id="upgradesascii"></pre>
+                                    <pre><button id="popupstoreupgrade" onClick="document.getElementById('storebuttonbottom').style.display = 'block';document.getElementById('popupstoreupgrade').style.display = 'none'">POPUP STORE</button></pre>
             <pre><button onClick="document.write('<pre><center><h1>Virus installed!</h1><br><pre>Note: ES Would never save anything on your computer.<br>Except  the localstorage save, at least</pre></center></pre>')">Install a virus (free)</button></pre>
+            
             <pre><button id="mps" onClick="data.moneypersecond++;data.calories-=100">MONEY PER SECOND (Takes back 100 calories)</button></pre>
             <center>
                <pre><button id="awholeheckington" onClick="document.getElementById('awholeheckington').style.display = 'none';data.awholeheckington = true;data.money = 99999999;output('You just got a WHOLE HECKING TON OF MONEY!');data.calories-=200" style="display:block">A whole heckin ton of money (One-time purchase)(Takes away 200 calories)(Gets you a whole hecking ton of money)</button></pre>
@@ -215,10 +217,10 @@
 
                </pre>
          </div>
-      		<div id="giantolibrary" class="tabcontent">
-			<pre id="glibraryascii">
+            <div id="giantolibrary" class="tabcontent">
+         <pre id="glibraryascii">
          </pre>
-		</div>
+      </div>
       </div>
       </div>
       <div id="google" class="tabcontent">
@@ -230,6 +232,21 @@
       </div>
       <div class="bottomline">
       <pre>ASCII arts provided by <a href="https://ascii.co.uk/" rel="noopener">ascii.co.uk</a></pre>
+      <button id="storebuttonbottom" onClick="openStore()" style="display:none">Open Popup store</button>
+      <div class="store-popup">
+  <form class="form-container">
+    <pre><h1>The store</h1></pre>
+    <pre><h3>Arr. Select an option.</h3></pre>
+      <select id="whattobuy"> 
+        <option value="pizza" selected>pizza (5.00)</option> 
+        <option value="gbman">Gingerbread man (5.00)</option> 
+        <option value="milk">Milk (3.00)</option> 
+    </select> 
+    <button onClick="buyfrompopup()">buy</button><br>
+    <button type="button" class="btn cancel" onclick="closeStore()">Close</button>
+  </form>
+</div>
+
       <div class="output">
          <pre style="size: 10em">Output: <span id="output">You loaded eating simulator!</span></pre>
       </div>

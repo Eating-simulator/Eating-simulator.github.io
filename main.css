@@ -34,7 +34,34 @@ html:selection {
 	right: 0;
 	border: 3px solid #000000;
 }
-
+#storebuttonbottom {
+  position: fixed;
+	bottom: 50px;
+	right: 0;
+}
+.store-popup {
+  display: none;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container .btn {
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
 .output-white {
 	position: fixed;
 	bottom: 0;
