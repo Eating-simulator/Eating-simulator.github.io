@@ -121,10 +121,10 @@ setInterval(function () {
 	document.querySelector(".calories").innerHTML = data.calories;
 	if (data.white){
 		      document.querySelector(".menu").style.backgroundColor = "black"
-      document.querySelector(".output").style.border = "3px solid #FFFFFF"
+      document.querySelector(".output").style.border = "3px solid #000000"
 	} else{
 	document.querySelector(".menu").style.backgroundColor = "white"
-      document.querySelector(".output").style.border = "3px solid #000000"
+      document.querySelector(".output").style.border = "3px solid #FFFFFF"
 	}
 }, 1000)
 setInterval(function () {
