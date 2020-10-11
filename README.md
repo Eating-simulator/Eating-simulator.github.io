@@ -26,6 +26,7 @@ _Current status: making the giant library of the eating simulator world and the 
 * GOOGLE SIGNIN ON REPLIT
 * robots.txt . beep beep. boop boop?
 * File saving. Much download.
+* More encryptions for saving
 
 ## Deletions:
 * Notification sound removed because too annoying
