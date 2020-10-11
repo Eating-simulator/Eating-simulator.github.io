@@ -22,6 +22,9 @@ _Current status: making the giant library of the eating simulator world and the 
 * Another line for the merchant
 * GOOGLE SIGNIN ON REPLIT
 * robots.txt . beep beep. boop boop?
+* File saving. Much download.
+* Dark mode style fixes on right click menu
+* Dark mode style change on output box
 
 ## Deletions:
 * Notification sound removed because too annoying
