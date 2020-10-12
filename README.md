@@ -27,6 +27,7 @@ _Current status: making the giant library of the eating simulator world and the 
 * robots.txt . beep beep. boop boop?
 * File saving. Much download.
 * More encryptions for saving
+* Popup store so you don't have to go all the back to store while in quest
 
 ## Deletions:
 * Notification sound removed because too annoying

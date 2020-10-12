@@ -188,7 +188,7 @@
       <div class="center">
          <div class="tabcontent" id="upgrades">
             <pre id="upgradesascii"></pre>
-                                    <pre><button id="popupstoreupgrade" onClick="document.getElementById('storebuttonbottom').style.display = 'block';document.getElementById('popupstoreupgrade').style.display = 'none'">POPUP STORE</button></pre>
+                                    
             <pre><button onClick="document.write('<pre><center><h1>Virus installed!</h1><br><pre>Note: ES Would never save anything on your computer.<br>Except  the localstorage save, at least</pre></center></pre>')">Install a virus (free)</button></pre>
             
             <pre><button id="mps" onClick="data.moneypersecond++;data.calories-=100">MONEY PER SECOND (Takes back 100 calories)</button></pre>
@@ -232,9 +232,9 @@
       </div>
       <div class="bottomline">
       <pre>ASCII arts provided by <a href="https://ascii.co.uk/" rel="noopener">ascii.co.uk</a></pre>
-      <button id="storebuttonbottom" onClick="openStore()" style="display:none">Open Popup store</button>
+      <button id="storebuttonbottom" onClick="openStore()">Open Popup store</button>
       <div class="store-popup">
-  <form class="form-container">
+  <div class="form-container">
     <pre><h1>The store</h1></pre>
     <pre><h3>Arr. Select an option.</h3></pre>
       <select id="whattobuy"> 
@@ -243,8 +243,8 @@
         <option value="milk">Milk (3.00)</option> 
     </select> 
     <button onClick="buyfrompopup()">buy</button><br>
-    <button type="button" class="btn cancel" onclick="closeStore()">Close</button>
-  </form>
+    <button onclick="closeStore()">Close</button>
+  </div>
 </div>
 
       <div class="output">
