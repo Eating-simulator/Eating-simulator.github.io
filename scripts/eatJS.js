@@ -137,10 +137,10 @@ setInterval(function () {
 	document.querySelector(".money").innerHTML = data.money;
 	document.querySelector(".calories").innerHTML = data.calories;
 	if (data.white){
-		      document.querySelector(".menu").style.backgroundColor = "black"
+		      document.querySelector(".menu").style.backgroundColor = "white"
       document.querySelector(".output").style.border = "3px solid #000000"
 	} else{
-	document.querySelector(".menu").style.backgroundColor = "white"
+	document.querySelector(".menu").style.backgroundColor = "black"
       document.querySelector(".output").style.border = "3px solid #FFFFFF"
      var element = document.body;
    element.classList.toggle("dark-mode");
