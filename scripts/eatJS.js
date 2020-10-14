@@ -34,6 +34,9 @@ var data = {
 
 
 }
+if (location.hostname != "https://play.eatingsimulator.com"){
+  location.replace("https://play.eatingsimulator.com")
+}
 function buyfrompopup(){
   var whatdobuy = document.getElementById("whattobuy").value;
   if (whatdobuy == "pizza"){
