@@ -1,5 +1,6 @@
 function convertFromHex(b) {
-	return b.hexDecode()
+	b = b.hexDecode()
+	return b
 }
 String.prototype.hexEncode = function(){
     var hex, i;
@@ -24,7 +25,8 @@ String.prototype.hexDecode = function(){
 }
 //Functions from https://stackoverflow.com/questions/21647928/javascript-unicode-string-to-hex/21648161#21648161
 function convertToHex(c) {
-	return c.hexEncode
+	c = c.hexEncode()
+	return c
 }
 
 function loadOrSave() {
