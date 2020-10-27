@@ -1,18 +1,30 @@
 function convertFromHex(b) {
-	var b = b.toString();
-	var c = "";
-	for (var a = 0; a < b.length; a += 2) {
-		c += String.fromCharCode(parseInt(b.substr(a, 2), 16))
-	}
-	return c
+	return b.hexDecode()
 }
+String.prototype.hexEncode = function(){
+    var hex, i;
 
+    var result = "";
+    for (i=0; i<this.length; i++) {
+        hex = this.charCodeAt(i).toString(16);
+        result += ("000"+hex).slice(-4);
+    }
+
+    return result
+}
+String.prototype.hexDecode = function(){
+    var j;
+    var hexes = this.match(/.{1,4}/g) || [];
+    var back = "";
+    for(j = 0; j<hexes.length; j++) {
+        back += String.fromCharCode(parseInt(hexes[j], 16));
+    }
+
+    return back;
+}
+//Functions from https://stackoverflow.com/questions/21647928/javascript-unicode-string-to-hex/21648161#21648161
 function convertToHex(c) {
-	var b = "";
-	for (var a = 0; a < c.length; a++) {
-		b += "" + c.charCodeAt(a).toString(16)
-	}
-	return b
+	return c.hexEncode
 }
 
 function loadOrSave() {
