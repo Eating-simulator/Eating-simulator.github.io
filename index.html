@@ -2,25 +2,26 @@
 <html lang="en">
 
 <head>
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
-   </script>
-   <script src="https://apis.google.com/js/platform.js" async defer>
-   </script>
-   <link rel="manifest" src="manifest.json">
-   <meta name="google-signin-client_id" content="513423326300-cd12hvm2m07q8ok28kt4trb37u3uqkmh.apps.googleusercontent.com">
-   <link rel="stylesheet" type="text/css" href="main.css">
-   <meta charset="utf-8">
-   <meta name="description" content="Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!">
-   <meta property="og:title" content="Eating Simulator">
-   <meta property="og:type" content="game">
-   <meta property="og:url" content="https://eating-simulator.github.io">
-   <title id="title">Th3 Eat↑ng $↑mµlat0r - ch↑ck3n T3chn0d0gg0, ID7</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
+	</script>
+	<script src="https://apis.google.com/js/platform.js" async defer>
+
+	</script>
+	<link rel="manifest" src="manifest.json">
+	<meta name="google-signin-client_id" content="513423326300-cd12hvm2m07q8ok28kt4trb37u3uqkmh.apps.googleusercontent.com">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8">
+	<meta name="description" content="Eating simulator! No, it's not all about eating simulation. It's an adventure game! Find ingredients, annoy librarians, sneak into vaults, and much more!">
+	<meta property="og:title" content="Eating Simulator">
+	<meta property="og:type" content="game">
+	<meta property="og:url" content="https://eating-simulator.github.io">
+	<title id="title">Th3 Eat↑ng $↑mµlat0r - ch↑ck3n T3chn0d0gg0, ID7</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body id="body" onLoad="openTab('Store')" onscroll="document.getElementById('body').click()">
-   <!-- Hey, you're looking at the source code, cheater! :) -->
-   <pre class="clickable">
+	<!-- Hey, you're looking at the source code, cheater! :) -->
+	<pre class="clickable">
       <div class="center">
          <pre>
 <span onClick="openTab('Kitchen',  )">_________</span><span id="defaultOpen" onClick="openTab('Store',  )">_________</span><span onClick="openTab('Library',  )">_________</span>
@@ -37,28 +38,28 @@
       
       </div>
       </pre>
-   <div id="status-tracker" class="center">
-      <pre>Calories:<span class="calories">300</span> <span class="calorieconverter" style="display: none;">----CALORIES CONVERTER----> <span id="candies">0</span>candies.</span></pre>
-      <pre>Money: <span class="money">0</span></pre>
-   </div>
-   <div class="center">
-          <div id="Store" class="tabcontent">
-            <pre><h1>The store</h1></pre>
-            <pre>
+	<div id="status-tracker" class="center">
+		<pre>Calories:<span class="calories">300</span> <span class="calorieconverter" style="display: none;">----CALORIES CONVERTER----> <span id="candies">0</span>candies.</span></pre>
+		<pre>Money: <span class="money">0</span></pre>
+	</div>
+	<div class="center">
+		<div id="Store" class="tabcontent">
+			<pre><h1>The store</h1></pre>
+			<pre>
 <span id="merchant">
 </span>    
            <span class="merchantspeech">Arr, i'm the shopkeeper.
            Buy me' food! they' good!</span>
            <button onClick="merchant.givemesomething()">Can you give me something?</button>
 </pre>
-            <pre>
+			<pre>
 <span id="storepizza">
 
 
 </span>
  learn more information about this item in the <button onClick="openTab('pizzainformation',  )">library</button>
 </pre>
-            <button class="pizzabutton" onClick="eat('pizza')">click to eat pizza</button>
+			<button class="pizzabutton" onClick="eat('pizza')">click to eat pizza</button>
             <pre>
 <span id="storegingerbreadman">
 
