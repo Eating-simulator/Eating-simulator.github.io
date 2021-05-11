@@ -4,15 +4,15 @@ var ascii = {
         merchant: "                .---.            <br>               |   '.|  __       <br>               | ___.--'  )      <br>             _.-'_` _%%%_/       <br>          .-'%%% a: a %%%        <br>              %%  L   %%_        <br>              _%\\'=' |  /-.__    <br>           .-' / )--' #/     '\\  <br>          /'  /  /---'(    :   \\ <br>         /   |  /( /|##|  \\     |<br>        /   ||# | / | /|   \\    \\<br>        |   ||##| I \\/ |   |   _|<br>        |   ||: | o  |#|   |  / |<br>        |   ||  / I  |:/  /   |/ <br>        |   ||  | o   /  /    /  <br>        |   \\|  | I  |. /    /   <br>         \\  /|##| o  |.|    /    <br>          \\/ \\::|/\\_ /  ---'|    <br>           \\ |\\ |    |     :\\    <br>           | |  /     \\...' |    <br>           | |# |/\\    \\    |    <br>           | | :|  |    |   |    <br>                | |  |  |    |   |   ",
         glibrary: ` _____________________________________________ 
 |_|',                 ___                 ,'' |
-|_|__',              <span onclick=\"cure()\">|MED|</span>              ,'    |
-|_|  | ',            <span onclick=\"cure()\">|NOT|</span>            ,'      |
-|_|  |__|',          <span onclick=\"cure()\">|EBO|</span>          ,'        |
-|_|__|te| |          <span onclick=\"cure()\">|OKX|</span>          |         |
-|_|ch|ch| |===;      <span onclick=\"cure()\">|___|</span>      ;===|         |
+|_|__',              <span onclick="cure()">|MED|</span>              ,'    |
+|_|  | ',            <span onclick="cure()">|NOT|</span>            ,'      |
+|_|  |__|',          <span onclick="cure()">|EBO|</span>          ,'        |
+|_|__|te| |          <span onclick="cure()">|OKX|</span>          |         |
+|_|ch|ch| |===;      <span onclick="cure()">|___|</span>      ;===|         |
 |_|1k|no| |:::|',             ,'|:::|         |
 |_|en|do| |---|  |, _______ ,|  |---|         |
 |_|  |gg| |:::|  | |  ___  | |  |:::|         |
-|_|  |o | |---|  | | _<span class=\"clickable\" onClick=\"foundpizzascroll()\">|_|</span>_ | |  |---|         |
+|_|  |o | |---|  | | _<span class="clickable" onClick="foundpizzascroll()">|_|</span>_ | |  |---|         |
 |_|__|  | |:::|  | |       | |  |:::|         |
 |_|ID|__| |---| ,'   /%%%\\   ', |---|         |
 |_|7 |  | |===:'    /%%%%%\\    ':===|         |
@@ -22,7 +22,7 @@ var ascii = {
 |_|  ,'         /%/%%%%X%%%%\\%\\         ',    |
 |_|,'          /%/%%%%/%\\%%%%\\%\\          ',  |
 |;____________/%/%%%%/%%%\\%%%%\\%\\____________;|
-<span id=\"librarywow\">You enter the library. wow! there's something there.
+<span id="librarywow">You enter the library. wow! there's something there.
 it might be the pizza scroll!</span>`,
         yummypizza: "                                    ._           <br>                                   ,(  `-.       <br>                                 ,': `.   `.     <br>                               ,` *   `-.   \\    <br>                             ,'  ` :+  = `.  `.  <br>                           ,~  (o):  .,   `.  `. <br>                         ,'  ; :   ,(__) x;`.  ; <br>                       ,'  :'  itz  ;  ; ; _,-'  <br>                     .'O ; = _' C ; ;'_,_ ;      <br>                   ,;  _;   ` : ;'_,-'   i'      <br>                 ,` `;(_)  0 ; ','       :       <br>               .';6     ; ' ,-'~                 <br>             ,' Q  ,  ;',-.'                     <br>           ,( :` ; _,-'~  ;                      <br>         ,~.`c _','                              <br>       .';^_,-' ~                                <br>     ,'_;-''                                     <br>    ,,~                                          <br>    i'                                           <br>    :  ",
         pizza: "// ''--.._         <br>||  (_)  _ '-._    <br>||    _ (_)    '-. <br>||   (_)   __..-'  <br> \\\\__..--''        <br> calories: 300<br> money: 5.00$",
